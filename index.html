@@ -31,10 +31,14 @@
         <span class="campo-rotulo">Zona</span>
         <select id="f-zona"></select>
       </label>
-      <label class="campo campo-escola">
-        <span class="campo-rotulo">Escola</span>
-        <select id="f-local"></select>
-      </label>
+      <div class="campo campo-escola">
+        <label class="campo-rotulo" for="f-local">Escola</label>
+        <div class="combo">
+          <input id="f-local" type="search" autocomplete="off" placeholder="Todas as escolas · digite para buscar"
+                 role="combobox" aria-expanded="false" aria-controls="local-lista" aria-autocomplete="list">
+          <ul id="local-lista" class="combo-lista combo-locais" role="listbox" hidden></ul>
+        </div>
+      </div>
       <div class="campo campo-candidatos">
         <label class="campo-rotulo" for="f-candidato">Candidatos <span id="cand-contagem" class="texto-mudo"></span></label>
         <div class="combo">

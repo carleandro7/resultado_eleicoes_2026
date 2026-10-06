@@ -158,6 +158,13 @@ select:disabled { opacity: 0.6; cursor: not-allowed; }
 .opcao-votos { font-variant-numeric: tabular-nums; color: var(--texto-sec); font-size: 13px; grid-row: 1 / span 2; grid-column: 3; }
 .combo-aviso { padding: 8px; color: var(--texto-mudo); font-size: 13px; }
 
+/* lista de escolas: mais larga que o campo (nomes longos), alinhada à direita */
+.combo-locais { left: auto; right: 0; min-width: min(520px, calc(100vw - 32px)); }
+.opcao-local { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+.opcao-local .opcao-nome { white-space: normal; }
+.opcao-local .opcao-info { grid-column: 1; margin-top: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.opcao-local[aria-selected="true"] .opcao-nome { font-weight: 600; }
+
 /* ---------- candidatos escolhidos ---------- */
 
 .chips { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; min-height: 0; }

@@ -51,9 +51,11 @@ Fontes usadas:
 ## Como usar
 
 - **Estado / Cargo / Cidade / Zona / Escola**: filtram tudo que aparece na página. Ao
-  trocar de estado o cargo é mantido. A lista de escolas mostra as da cidade/zona
-  escolhida; nos estados com mais de 1.500 escolas, escolha antes a cidade ou a zona.
-  Escolhendo uma escola, o resumo mostra quem foi mais votado nela.
+  trocar de estado o cargo é mantido.
+- **Escola**: digite parte do nome, do endereço, da cidade ou "zona 5" e a lista vai
+  filtrando (sem diferença de acentos), dentro da cidade/zona escolhida. Escolhendo
+  uma escola, o resumo mostra quem foi mais votado nela. Apagar o texto ou escolher
+  "Todas as escolas" tira o filtro.
 - **Candidatos**: digite parte do nome ou o número e marque um ou mais.
   - Nenhum selecionado: a tabela mostra o total de votos e o mais votado de cada local.
   - Um selecionado: votos, % dos válidos e colocação dele em cada local.

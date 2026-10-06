@@ -236,8 +236,13 @@
   const selEleicao = $('#f-eleicao');
   const selMun = $('#f-municipio');
   const selZona = $('#f-zona');
-  const selLocal = $('#f-local');
-  const LIMITE_ESCOLAS = 1500; // sem cidade nem zona escolhida, listas maiores ficam pesadas demais
+  const entradaLocal = $('#f-local');
+  const listaLocal = $('#local-lista');
+  const MAX_OPCOES_LOCAL = 100;
+  let buscaLocais = []; // texto de busca de cada escola (nome, endereço, cidade e zona), sem acento
+  let ordemLocais = []; // índices das escolas em ordem alfabética
+  let locaisVisiveis = [];
+  let ativoLocal = -1;
 
   function prepararEstado() {
     LOCAIS = D.locais;
@@ -247,6 +252,8 @@
       zonasDoMun.get(m).add(z);
     }
     todasZonas = [...new Set(LOCAIS.map((L) => L[1]))].sort(ordenaTexto);
+    buscaLocais = LOCAIS.map(([m, z, nome, endereco]) => semAcento(`${nome} ${endereco || ''} ${D.municipios[m]} zona ${z}`));
+    ordemLocais = [...LOCAIS.keys()].sort((a, b) => ordenaTexto(LOCAIS[a][2], LOCAIS[b][2]));
 
     document.title = `${INFO.nome} · Painel Eleitoral`;
     $('#titulo').textContent = INFO.titulo;
@@ -273,23 +280,76 @@
     montarLocais();
   }
 
-  // escolas da cidade/zona escolhida; com o estado inteiro, só se a lista for pequena
+  // a escola escolhida precisa estar na cidade/zona escolhida; o campo mostra o nome dela
   function montarLocais() {
-    const escolas = [];
-    LOCAIS.forEach((L, l) => {
-      if ((est.mun < 0 || L[0] === est.mun) && (!est.zona || L[1] === est.zona)) escolas.push(l);
-    });
-    if (!escolas.includes(est.local)) est.local = -1;
-    const grande = est.mun < 0 && !est.zona && escolas.length > LIMITE_ESCOLAS;
-    selLocal.disabled = grande;
-    if (grande) {
-      selLocal.innerHTML = '<option value="-1">Escolha antes a cidade ou a zona</option>';
-      return;
+    const L = LOCAIS[est.local];
+    if (L && ((est.mun >= 0 && L[0] !== est.mun) || (est.zona && L[1] !== est.zona))) est.local = -1;
+    entradaLocal.value = est.local >= 0 ? LOCAIS[est.local][2] : '';
+  }
+
+  /* ---------- busca de escola (digitar filtra a lista) ---------- */
+
+  function abrirLocais() {
+    listaLocal.hidden = false;
+    entradaLocal.setAttribute('aria-expanded', 'true');
+    renderLocais();
+  }
+
+  function fecharLocais() {
+    listaLocal.hidden = true;
+    entradaLocal.setAttribute('aria-expanded', 'false');
+    entradaLocal.removeAttribute('aria-activedescendant');
+    entradaLocal.value = est.local >= 0 ? LOCAIS[est.local][2] : ''; // desfaz o texto digitado e não escolhido
+  }
+
+  function escolherLocal(l) {
+    est.local = l;
+    est.limite = PAGINA;
+    fecharLocais();
+    entradaLocal.blur();
+    atualizar();
+  }
+
+  function renderLocais() {
+    if (listaLocal.hidden) return;
+    // com uma escola escolhida o campo mostra o nome dela, o que não conta como busca
+    const texto = est.local >= 0 && entradaLocal.value === LOCAIS[est.local][2] ? '' : entradaLocal.value;
+    const termos = semAcento(texto.trim()).split(/\s+/).filter(Boolean);
+    const achados = [];
+    let total = 0;
+    for (const l of ordemLocais) {
+      const L = LOCAIS[l];
+      if ((est.mun >= 0 && L[0] !== est.mun) || (est.zona && L[1] !== est.zona)) continue;
+      if (termos.length && !termos.every((t) => buscaLocais[l].includes(t))) continue;
+      total++;
+      if (achados.length < MAX_OPCOES_LOCAL) achados.push(l);
     }
-    escolas.sort((a, b) => ordenaTexto(LOCAIS[a][2], LOCAIS[b][2]));
-    selLocal.innerHTML = '<option value="-1">Todas as escolas</option>' + escolas.map((l) =>
-      `<option value="${l}">${h(LOCAIS[l][2])}${est.mun < 0 ? ` · ${h(D.municipios[LOCAIS[l][0]])}` : ''}</option>`).join('');
-    selLocal.value = String(est.local);
+    locaisVisiveis = [-1, ...achados]; // -1 = "Todas as escolas"
+    ativoLocal = termos.length && !achados.length ? -1 : Math.min(ativoLocal, locaisVisiveis.length - 1);
+
+    let html = locaisVisiveis.map((l, i) => {
+      const classe = `opcao opcao-local${i === ativoLocal ? ' ativa' : ''}`;
+      if (l < 0) {
+        return `<li id="local-todas" class="${classe}" role="option" data-l="-1" aria-selected="${est.local < 0}">
+          <span class="opcao-nome">Todas as escolas</span></li>`;
+      }
+      const [mun, zona, nome, endereco] = LOCAIS[l];
+      return `<li id="local-${l}" class="${classe}" role="option" data-l="${l}" aria-selected="${l === est.local}">
+        <span class="opcao-nome">${h(nome)}</span>
+        <span class="opcao-info">${h(D.municipios[mun])} · Zona ${h(zona)}${endereco ? ` · ${h(endereco)}` : ''}</span>
+      </li>`;
+    }).join('');
+    if (total > achados.length) html += `<li class="combo-aviso">e mais ${num(total - achados.length)}… digite para refinar.</li>`;
+    if (!total) html += '<li class="combo-aviso">Nenhuma escola encontrada.</li>';
+    listaLocal.innerHTML = html;
+
+    const idAtivo = ativoLocal < 0 ? null : locaisVisiveis[ativoLocal] < 0 ? 'local-todas' : `local-${locaisVisiveis[ativoLocal]}`;
+    if (idAtivo) {
+      entradaLocal.setAttribute('aria-activedescendant', idAtivo);
+      document.getElementById(idAtivo)?.scrollIntoView({ block: 'nearest' });
+    } else {
+      entradaLocal.removeAttribute('aria-activedescendant');
+    }
   }
 
   function descricaoEscopo() {
@@ -1015,10 +1075,8 @@
     if (!g || (est.aba === 'local' && est.local === g.chave)) return;
     dica.hidden = true;
     if (est.aba === 'local') {
-      est.mun = LOCAIS[g.chave][0];
       est.local = g.chave;
-      selMun.value = String(est.mun);
-      montarZonas(); // remonta a lista de escolas da cidade, com esta selecionada
+      montarLocais();
       atualizar();
       return;
     }
@@ -1069,11 +1127,52 @@
     atualizar();
   });
 
-  selLocal.addEventListener('change', () => {
-    est.local = Number(selLocal.value);
-    est.limite = PAGINA;
-    atualizar();
+  // ao entrar no campo, seleciona o texto para a digitação substituir o nome da escola escolhida
+  let selecionarTudo = false;
+  entradaLocal.addEventListener('focus', () => {
+    entradaLocal.select();
+    selecionarTudo = true;
+    ativoLocal = -1;
+    abrirLocais();
   });
+  entradaLocal.addEventListener('mouseup', (ev) => {
+    if (selecionarTudo) ev.preventDefault(); // senão o clique desfaz a seleção do texto
+    selecionarTudo = false;
+  });
+  entradaLocal.addEventListener('click', () => { if (listaLocal.hidden) abrirLocais(); });
+  entradaLocal.addEventListener('input', () => {
+    // apagar o texto todo tira o filtro de escola
+    if (!entradaLocal.value && est.local >= 0) {
+      est.local = -1;
+      est.limite = PAGINA;
+      atualizar();
+    }
+    ativoLocal = entradaLocal.value.trim() ? 1 : -1; // 1 = primeira escola encontrada
+    if (listaLocal.hidden) abrirLocais(); else renderLocais();
+  });
+  entradaLocal.addEventListener('keydown', (ev) => {
+    selecionarTudo = false;
+    if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp') {
+      ev.preventDefault();
+      if (listaLocal.hidden) return abrirLocais();
+      ativoLocal = Math.max(0, Math.min(locaisVisiveis.length - 1, ativoLocal + (ev.key === 'ArrowDown' ? 1 : -1)));
+      renderLocais();
+    } else if (ev.key === 'Enter') {
+      ev.preventDefault();
+      if (ativoLocal >= 0 && locaisVisiveis[ativoLocal] !== undefined) escolherLocal(locaisVisiveis[ativoLocal]);
+    } else if (ev.key === 'Escape') {
+      ev.preventDefault(); // num campo de busca o Esc também apagaria o texto (e tiraria o filtro)
+      fecharLocais();
+    }
+  });
+  listaLocal.addEventListener('mousedown', (ev) => {
+    ev.preventDefault();
+    const item = ev.target.closest('[data-l]');
+    if (item) escolherLocal(Number(item.dataset.l));
+  });
+  entradaLocal.addEventListener('blur', () => setTimeout(() => {
+    if (document.activeElement !== entradaLocal && !listaLocal.hidden) fecharLocais();
+  }, 0));
 
   document.querySelectorAll('[data-aba]').forEach((botao) => {
     botao.addEventListener('click', () => trocarAba(botao.dataset.aba));
@@ -1141,6 +1240,7 @@
         alternar(escolhido);
       }
     } else if (ev.key === 'Escape') {
+      ev.preventDefault(); // num campo de busca o Esc também apagaria o texto
       fecharLista();
     } else if (ev.key === 'Backspace' && !entrada.value && est.sel.length) {
       alternar(est.sel[est.sel.length - 1]);
@@ -1151,9 +1251,13 @@
     const item = ev.target.closest('[data-c]');
     if (item && item.getAttribute('aria-disabled') !== 'true') alternar(Number(item.dataset.c));
   });
+  const comboCandidatos = entrada.closest('.combo');
+  const comboLocais = entradaLocal.closest('.combo');
   document.addEventListener('mousedown', (ev) => {
     // composedPath: o item clicado já foi trocado pelo re-render, mas o caminho original continua válido
-    if (!ev.composedPath().some((no) => no.classList?.contains('combo'))) fecharLista();
+    const caminho = ev.composedPath();
+    if (!caminho.includes(comboCandidatos)) fecharLista();
+    if (!caminho.includes(comboLocais) && !listaLocal.hidden) fecharLocais();
   });
   entrada.addEventListener('blur', () => setTimeout(() => {
     if (document.activeElement !== entrada) fecharLista();
