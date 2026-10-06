@@ -1,0 +1,38 @@
+{
+ "uf": "CE",
+ "nome": "Ceará",
+ "titulo": "Eleições 2026 · Ceará",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 184,
+ "locais": 6724,
+ "base": {
+  "bytes": 578630
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 308342
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 231148
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 322430
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 2172361
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 2502471
+  }
+ ]
+}

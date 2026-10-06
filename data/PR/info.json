@@ -1,0 +1,38 @@
+{
+ "uf": "PR",
+ "nome": "Paraná",
+ "titulo": "Eleições 2026 · Paraná",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 399,
+ "locais": 4815,
+ "base": {
+  "bytes": 493664
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 261220
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 213037
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 304331
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 2462537
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 2955603
+  }
+ ]
+}

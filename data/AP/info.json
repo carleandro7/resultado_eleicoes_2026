@@ -1,0 +1,38 @@
+{
+ "uf": "AP",
+ "nome": "Amapá",
+ "titulo": "Eleições 2026 · Amapá",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 16,
+ "locais": 376,
+ "base": {
+  "bytes": 36527
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 19136
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 12127
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 22631
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 116788
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 206886
+  }
+ ]
+}

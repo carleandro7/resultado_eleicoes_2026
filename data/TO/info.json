@@ -1,0 +1,38 @@
+{
+ "uf": "TO",
+ "nome": "Tocantins",
+ "titulo": "Eleições 2026 · Tocantins",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 139,
+ "locais": 927,
+ "base": {
+  "bytes": 90903
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 43393
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 39513
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 73657
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 204390
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 341282
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel Eleitoral</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="pagina">
+    <header class="topo">
+      <h1 id="titulo">Painel eleitoral</h1>
+      <p id="subtitulo" class="texto-sec"></p>
+    </header>
+
+    <section class="filtros" aria-label="Filtros">
+      <label class="campo">
+        <span class="campo-rotulo">Estado</span>
+        <select id="f-estado"></select>
+      </label>
+      <label class="campo">
+        <span class="campo-rotulo">Cargo</span>
+        <select id="f-eleicao"></select>
+      </label>
+      <label class="campo">
+        <span class="campo-rotulo">Cidade</span>
+        <select id="f-municipio"></select>
+      </label>
+      <label class="campo">
+        <span class="campo-rotulo">Zona</span>
+        <select id="f-zona"></select>
+      </label>
+      <div class="campo campo-candidatos">
+        <label class="campo-rotulo" for="f-candidato">Candidatos <span id="cand-contagem" class="texto-mudo"></span></label>
+        <div class="combo">
+          <input id="f-candidato" type="search" autocomplete="off" placeholder="Buscar por nome ou número"
+                 role="combobox" aria-expanded="false" aria-controls="combo-lista" aria-autocomplete="list">
+          <ul id="combo-lista" class="combo-lista" role="listbox" aria-multiselectable="true" hidden></ul>
+        </div>
+      </div>
+    </section>
+
+    <p id="status" class="status" role="status" aria-live="polite" hidden></p>
+
+    <div id="selecionados" class="chips" aria-live="polite"></div>
+
+    <section id="kpis" class="kpis" aria-label="Resumo"></section>
+
+    <section class="cartao">
+      <div class="cartao-topo">
+        <div>
+          <h2 id="resumo-titulo"></h2>
+          <p id="resumo-sub" class="texto-sec"></p>
+        </div>
+      </div>
+      <div id="resumo" class="barras"></div>
+    </section>
+
+    <section class="cartao">
+      <div class="cartao-topo tabela-topo">
+        <div class="abas" role="tablist" aria-label="Agrupar por">
+          <button type="button" role="tab" data-aba="municipio" aria-selected="true">Por cidade</button>
+          <button type="button" role="tab" data-aba="zona" aria-selected="false">Por zona</button>
+          <button type="button" role="tab" data-aba="local" aria-selected="false">Por escola</button>
+        </div>
+        <div class="tabela-acoes">
+          <input id="f-busca" type="search" placeholder="Filtrar linhas" aria-label="Filtrar linhas da tabela">
+          <button type="button" id="btn-csv" class="botao">Baixar CSV</button>
+        </div>
+      </div>
+      <p id="tabela-nota" class="texto-sec tabela-nota"></p>
+      <div class="tabela-rolagem">
+        <table id="tabela">
+          <thead></thead>
+          <tbody></tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+      <div class="tabela-rodape">
+        <span id="contagem" class="texto-sec"></span>
+        <button type="button" id="btn-mais" class="botao">Mostrar mais</button>
+      </div>
+    </section>
+
+    <footer class="rodape texto-mudo" id="rodape"></footer>
+  </main>
+
+  <div id="dica" class="dica" role="tooltip" hidden></div>
+
+  <script src="data/estados.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+ "uf": "AC",
+ "nome": "Acre",
+ "titulo": "Eleições 2026 · Acre",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 22,
+ "locais": 668,
+ "base": {
+  "bytes": 60650
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 31785
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 26897
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 40285
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 170991
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 288276
+  }
+ ]
+}

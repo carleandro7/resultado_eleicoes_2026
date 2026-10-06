@@ -1,0 +1,38 @@
+{
+ "uf": "AM",
+ "nome": "Amazonas",
+ "titulo": "Eleições 2026 · Amazonas",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 62,
+ "locais": 1631,
+ "base": {
+  "bytes": 150282
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 77871
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 73383
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 96529
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 514416
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 783339
+  }
+ ]
+}

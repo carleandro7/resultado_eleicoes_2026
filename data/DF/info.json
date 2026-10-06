@@ -1,0 +1,38 @@
+{
+ "uf": "DF",
+ "nome": "Distrito Federal",
+ "titulo": "Eleições 2026 · Distrito Federal",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 1,
+ "locais": 622,
+ "base": {
+  "bytes": 55180
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 41722
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 43407
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 52838
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 421188
+  },
+  {
+   "id": "deputado-distrital-1t",
+   "rotulo": "Deputado Distrital · 1º turno",
+   "bytes": 813805
+  }
+ ]
+}
