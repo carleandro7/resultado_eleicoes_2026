@@ -15,7 +15,7 @@ Arquivos do TSE usados (ficam em .cache-tse/ e só são baixados de novo quando 
 publica uma versão nova, por exemplo depois do 2º turno):
   votacao_secao_<ano>_<UF>.zip         votos por seção dos cargos do estado (ou municipais)
   votacao_secao_<ano>_BR.zip           votos para presidente no país todo (eleições gerais)
-  eleitorado_local_votacao_<ano>.zip   nome e endereço das escolas, quando faltam no arquivo de votos
+  eleitorado_local_votacao_<ano>.zip   coordenadas das escolas (mapa) e nome/endereço quando faltam
 
 Só usa a biblioteca padrão do Python 3.
 """
@@ -186,7 +186,7 @@ class Estado:
         self.uf = uf
         self.municipios = {}   # código -> nome
         self.locais = {}       # (município, zona, nº do local) -> índice em self.info
-        self.info = []         # [município, zona, nº do local, nome, endereço]
+        self.info = []         # [município, zona, nº do local, nome, endereço, latitude, longitude]
         self.eleicoes = {}     # (ano, eleição, turno, cargo) -> dict
         self.geracoes = set()
 
@@ -195,7 +195,7 @@ class Estado:
         l = self.locais.get(chave)
         if l is None:
             l = self.locais[chave] = len(self.info)
-            self.info.append([cd_mun, zona, numero, '', ''])
+            self.info.append([cd_mun, zona, numero, '', '', None, None])
             self.municipios.setdefault(cd_mun, nome_mun)
         return l
 
@@ -235,10 +235,12 @@ class Estado:
     def juntar(self, outro):
         """Soma os dados de outro Estado (ex.: os votos para presidente vindos do arquivo BR)."""
         mapa_local = []
-        for cd_mun, zona, numero, nome, endereco in outro.info:
+        for cd_mun, zona, numero, *dados in outro.info:
             l = self.local(cd_mun, zona, numero, outro.municipios[cd_mun])
-            self.info[l][3] = self.info[l][3] or nome
-            self.info[l][4] = self.info[l][4] or endereco
+            info = self.info[l]
+            for i, valor in enumerate(dados, start=3):
+                if info[i] in ('', None):
+                    info[i] = valor
             mapa_local.append(l)
         for chave, e in outro.eleicoes.items():
             destino = self.eleicao(chave, e['ano'], e['descricao'], e['turno'], e['cd_cargo'], e['cargo'])
@@ -279,27 +281,12 @@ def ler_votos(caminho, estados, filtros, ufs=None):
     return lidas
 
 
-def faltam_nomes(caminho, amostra=2000):
-    """O arquivo de votos traz o nome das escolas? (nos dias seguintes à eleição, não traz)"""
-    for cabecalho, leitor in tabelas(caminho):
-        c = Colunas(cabecalho)
-        if c.nm_local is None:
-            return True
-        for i, r in enumerate(leitor):
-            if vazio(r[c.nm_local]):
-                return True
-            if i >= amostra:
-                return False
-    return False
-
-
 def completar_locais(est, caminho):
-    """Preenche nome/endereço dos locais a partir do arquivo de eleitorado por local de votação."""
-    faltando = {k for k, l in est.locais.items() if not est.info[l][3] or not est.info[l][4]}
-    if not faltando:
-        return
+    """Preenche nome, endereço e coordenadas dos locais com o arquivo de eleitorado por local de votação."""
+    achados = set()
     # Quando um local muda de prédio, o arquivo de votos pode manter o número antigo,
     # que aparece em NR_LOCAL_VOTACAO_ORIGINAL; usado só se o número atual não bater.
+    # As coordenadas são as do prédio novo, onde os votos foram dados.
     pelo_original = {}
     for cabecalho, leitor in tabelas(caminho, {est.uf}):
         p = {nome: i for i, nome in enumerate(cabecalho)}
@@ -311,24 +298,48 @@ def completar_locais(est, caminho):
                 chave = (int(r[p['CD_MUNICIPIO']]), int(r[p['NR_ZONA']]), int(r[p['NR_LOCAL_VOTACAO']]))
             except ValueError:
                 continue
-            if chave in faltando:
+            posicao = (coordenada(valor(r, 'NR_LATITUDE')), coordenada(valor(r, 'NR_LONGITUDE')))
+            if chave in est.locais and chave not in achados:
+                achados.add(chave)
                 preencher_local(est.info[est.locais[chave]], valor(r, 'NM_LOCAL_VOTACAO'),
-                                valor(r, 'DS_ENDERECO'), valor(r, 'NM_BAIRRO'))
+                                valor(r, 'DS_ENDERECO'), valor(r, 'NM_BAIRRO'), *posicao)
             try:
                 original = (chave[0], chave[1], int(valor(r, 'NR_LOCAL_VOTACAO_ORIGINAL')))
             except ValueError:
                 continue
-            if original != chave and original in faltando and original not in pelo_original:
-                pelo_original[original] = (valor(r, 'NM_LOCAL_VOTACAO_ORIGINAL'), valor(r, 'DS_ENDERECO_LOCVT_ORIGINAL'))
-    for chave, (nome, endereco) in pelo_original.items():
-        preencher_local(est.info[est.locais[chave]], nome, endereco)
+            if original != chave and original in est.locais and original not in pelo_original:
+                pelo_original[original] = (valor(r, 'NM_LOCAL_VOTACAO_ORIGINAL'), valor(r, 'DS_ENDERECO_LOCVT_ORIGINAL'),
+                                           None, *posicao)
+    for chave, dados in pelo_original.items():
+        if chave not in achados:
+            preencher_local(est.info[est.locais[chave]], *dados)
 
 
-def preencher_local(info, nome, endereco, bairro=None):
+def preencher_local(info, nome, endereco, bairro=None, latitude=None, longitude=None):
     if not info[3] and not vazio(nome):
         info[3] = nome.strip()
     if not info[4]:
         info[4] = ' - '.join(p.strip() for p in (endereco, bairro) if not vazio(p))
+    if info[5] is None and latitude is not None and longitude is not None:
+        info[5], info[6] = latitude, longitude
+
+
+def coordenada(texto):
+    try:
+        valor = float(texto.replace(',', '.'))
+    except (AttributeError, ValueError):
+        return None
+    return None if valor == -1 else round(valor, 5)
+
+
+def limpar_coordenadas(est):
+    """Descarta coordenadas fora do Brasil (latitude e longitude trocadas, sinal errado etc.)."""
+    if est.uf == 'ZZ':
+        return
+    for info in est.info:
+        lat, lon = info[5], info[6]
+        if lat is not None and not (-34 <= lat <= 6 and -74 <= lon <= -28):
+            info[5] = info[6] = None
 
 
 # ---------------------------------------------------------------- gravação
@@ -363,8 +374,9 @@ def gravar(est):
         novo_local[antigo] = novo
     base = {
         'municipios': [est.municipios[cd] for cd in cods],
-        'locais': [[idx_mun[cd], str(zona), nome or f'LOCAL {numero}', endereco]
-                   for cd, zona, numero, nome, endereco in (est.info[l] for l in ordem)],
+        'locais': [[idx_mun[cd], str(zona), nome or f'LOCAL {numero}', endereco,
+                    None if lat is None else round(lat, 4), None if lon is None else round(lon, 4)]
+                   for cd, zona, numero, nome, endereco, lat, lon in (est.info[l] for l in ordem)],
     }
     bytes_base = escrever_js(pasta, est.uf, 'base', base)
 
@@ -420,9 +432,12 @@ def gravar(est):
     with open(os.path.join(pasta, 'info.json'), 'w', encoding='utf-8') as arquivo:
         json.dump(info, arquivo, ensure_ascii=False, indent=1)
     sem_nome = sum(1 for i in est.info if not i[3])
+    sem_mapa = sum(1 for i in est.info if i[5] is None)
     total = bytes_base + sum(c['bytes'] for c in cargos)
+    avisos = [f'{sem_nome} sem nome' if sem_nome else '', f'{sem_mapa} sem coordenadas' if sem_mapa else '']
+    avisos = ', '.join(a for a in avisos if a)
     return f"{est.uf}: {len(cods)} cidades, {len(ordem)} locais, {len(cargos)} cargos, {total / 1e6:.1f} MB" + \
-        (f' (atenção: {sem_nome} locais sem nome)' if sem_nome else '')
+        (f' (locais {avisos})' if avisos else '')
 
 
 def atualizar_indice():
@@ -455,6 +470,7 @@ def processar_estado(uf, arquivo, parcial, filtros, arquivo_locais):
         return f'{uf}: nenhum voto com esses filtros'
     if arquivo_locais:
         completar_locais(est, arquivo_locais)
+    limpar_coordenadas(est)
     return gravar(est)
 
 
@@ -511,11 +527,12 @@ def main():
         if not todos:
             sys.exit('nenhum voto encontrado')
 
-        # 3. nome das escolas
+        # 3. nome, endereço e coordenadas das escolas
         arquivo_locais = a.locais
-        amostras = list(por_estado.values()) or compartilhados
-        if not arquivo_locais and a.ano and any(faltam_nomes(c) for c in amostras[:3]):
-            arquivo_locais = baixar(URL_LOCAIS.format(ano=a.ano))
+        if not arquivo_locais and a.ano:
+            arquivo_locais = baixar(URL_LOCAIS.format(ano=a.ano), obrigatorio=False)
+            if not arquivo_locais:
+                print('aviso: sem o arquivo de locais de votação, o mapa fica sem as escolas')
 
         # 4. um estado por processo, maiores primeiro
         ordem = sorted(todos, key=lambda uf: -os.path.getsize(por_estado[uf]) if uf in por_estado else 0)

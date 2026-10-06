@@ -2,8 +2,8 @@
 
 Painel estático (HTML + CSS + JS, sem banco de dados e sem servidor) com os votos
 da eleição por **cidade**, **zona** e **escola/local de votação**, em qualquer
-estado. Dá para escolher um ou mais candidatos (até 8) e comparar os votos de cada
-um em cada local.
+estado, com mapa, gráficos e tabela. Dá para escolher um ou mais candidatos (até 8)
+e comparar os votos de cada um em cada local.
 
 ## Como abrir
 
@@ -43,9 +43,10 @@ Fontes usadas:
   candidato em cada seção. O script soma as seções de cada local de votação.
 - **Votação por seção, Brasil** (`votacao_secao_<ano>_BR.zip`): votos para presidente,
   separados por estado.
-- **Eleitorado por local de votação** (`eleitorado_local_votacao_<ano>.zip`): nome e
-  endereço das escolas quando o arquivo de votação vem sem eles (como nos primeiros
-  dias depois da eleição).
+- **Eleitorado por local de votação** (`eleitorado_local_votacao_<ano>.zip`): latitude
+  e longitude das escolas (para o mapa), e nome e endereço quando o arquivo de votação
+  vem sem eles (como nos primeiros dias depois da eleição). Algumas escolas não têm
+  coordenadas no cadastro do TSE e ficam fora do mapa; a página avisa quantas.
 
 ## Como usar
 
@@ -57,8 +58,18 @@ Fontes usadas:
   - Dois ou mais: uma coluna por candidato, uma barra comparativa e quem está na
     frente em cada linha. O resumo mostra em quantas cidades, zonas e escolas
     cada um ficou na frente dos outros selecionados.
-- **Por cidade / Por zona / Por escola**: muda o agrupamento da tabela. Clique no
-  cabeçalho de uma coluna para ordenar.
+- **Ver por Cidade / Zona / Escola**: muda o agrupamento do mapa, do gráfico e da
+  tabela. Clique no cabeçalho de uma coluna da tabela para ordenar.
+- **Mapa**: um círculo por cidade, zona ou escola, do tamanho dos votos. A cor depende
+  da seleção: sem candidato, mostra o mais votado em cada lugar; com um, o % dele
+  (quanto mais forte a cor, maior o %); com dois ou mais, quem está na frente entre
+  eles. Clicar numa cidade ou zona (no mapa ou no gráfico) mostra as escolas dela.
+  A roda do mouse só dá zoom depois de clicar no mapa.
+- **Gráfico**: as 15 cidades/zonas/escolas com mais votos. Sem candidato selecionado,
+  mostra como os votos se dividiram entre os mais votados; com seleção, os votos dos
+  selecionados.
+- **Cores**: os 8 mais votados de cada cargo no estado têm cor fixa, a mesma no mapa,
+  no gráfico e quando são selecionados.
 - **Baixar CSV**: exporta a tabela atual (abre direto no Excel).
 
 Percentuais são sempre sobre os **votos válidos** (sem brancos e nulos). Para
@@ -70,7 +81,8 @@ votos passa do número de eleitores.
 ```
 index.html              página
 css/style.css           visual (tema claro e escuro automáticos)
-js/app.js               carregamento, filtros, cálculos e tabela
+js/app.js               carregamento, filtros, cálculos, mapa, gráfico e tabela
+vendor/leaflet/         biblioteca do mapa (Leaflet 1.9.4, licença BSD-2)
 data/estados.js         lista dos estados gerados
 data/<UF>/base.js       cidades e locais de votação do estado
 data/<UF>/<cargo>.js    candidatos e votos por local (um arquivo por cargo e turno)
@@ -79,3 +91,7 @@ scripts/gerar_dados.py  conversor dos arquivos do TSE
 
 A página só baixa o estado e o cargo que estão sendo vistos, por isso continua leve
 mesmo com todos os estados. Os maiores arquivos são os de deputado em São Paulo.
+
+O fundo do mapa (ruas, rios e nomes das cidades) vem dos mapas cinza da Esri
+(`server.arcgisonline.com`), que não pedem chave de acesso. É o único recurso de fora
+do projeto e precisa de internet; sem ele, os círculos continuam aparecendo.

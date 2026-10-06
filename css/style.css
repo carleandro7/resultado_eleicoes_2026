@@ -339,11 +339,52 @@ body.carregando .chips { opacity: 0.45; pointer-events: none; transition: opacit
 .erro { padding: 24px; border: 1px solid var(--borda); border-radius: var(--raio); background: var(--superficie); }
 .erro code { background: var(--fundo); padding: 2px 6px; border-radius: 4px; }
 
+/* ---------- agrupamento, mapa e gráfico ---------- */
+
+.agrupar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+.agrupar-nota { font-size: 12px; }
+.agrupar .abas { background: var(--hover); }
+
+.graficos { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 16px; align-items: start; }
+
+/* z-index 0 cria um contexto próprio: as camadas do Leaflet (z-index 400+) não cobrem a dica nem a lista */
+.mapa {
+  position: relative;
+  z-index: 0;
+  height: 480px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--fundo);
+  border: 1px solid var(--borda);
+}
+.mapa.leaflet-container { font: inherit; background: var(--fundo); }
+.mapa .leaflet-control-attribution { background: color-mix(in srgb, var(--superficie) 85%, transparent); color: var(--texto-sec); font-size: 10px; }
+.mapa .leaflet-control-attribution a { color: var(--texto-sec); }
+.mapa .leaflet-bar a { background: var(--superficie); color: var(--texto); border-color: var(--grade); }
+.mapa .leaflet-bar a:hover { background: var(--hover); }
+.mapa .leaflet-bar { border-color: var(--borda); }
+.mapa-vazio { display: grid; place-items: center; height: 100%; color: var(--texto-mudo); padding: 24px; text-align: center; }
+
+.legenda { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--texto-sec); }
+.legenda:empty { display: none; }
+.legenda-item { display: inline-flex; align-items: center; gap: 6px; }
+.legenda-titulo { color: var(--texto-mudo); }
+.legenda-faixa { width: 22px; height: 10px; border-radius: 2px; }
+.nota-pequena { font-size: 12px; }
+.nota-pequena:empty { display: none; }
+
+/* barras empilhadas em valor absoluto: segmentos separados por 2px, ponta arredondada */
+.pilha-abs { display: flex; gap: 2px; height: 100%; min-width: 2px; border-radius: 0 4px 4px 0; overflow: hidden; }
+.pilha-abs span { height: 100%; min-width: 2px; }
+#grafico-barras .barra-linha { grid-template-columns: minmax(110px, 200px) 1fr minmax(84px, auto); }
+#grafico-barras .barra-trilho { height: 16px; }
+
 /* ---------- telas menores ---------- */
 
 @media (max-width: 1100px) {
   .filtros { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .campo-candidatos { grid-column: 1 / -1; }
+  .graficos { grid-template-columns: minmax(0, 1fr); }
 }
 
 @media (max-width: 640px) {
@@ -361,4 +402,7 @@ body.carregando .chips { opacity: 0.45; pointer-events: none; transition: opacit
   .abas { width: 100%; }
   .abas button { flex: 1; padding: 6px 8px; }
   .cel-nome { min-width: 150px; max-width: 200px; }
+  .mapa { height: 360px; }
+  .agrupar-nota { display: none; }
+  #grafico-barras .barra-linha { grid-template-columns: 1fr auto; }
 }

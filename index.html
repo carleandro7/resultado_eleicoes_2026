@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Painel Eleitoral</title>
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -56,13 +57,44 @@
       <div id="resumo" class="barras"></div>
     </section>
 
+    <div class="agrupar">
+      <span class="campo-rotulo" id="rotulo-agrupar">Ver por</span>
+      <div class="abas" role="tablist" aria-labelledby="rotulo-agrupar">
+        <button type="button" role="tab" data-aba="municipio" aria-selected="true">Cidade</button>
+        <button type="button" role="tab" data-aba="zona" aria-selected="false">Zona</button>
+        <button type="button" role="tab" data-aba="local" aria-selected="false">Escola</button>
+      </div>
+      <span class="texto-mudo agrupar-nota">vale para o mapa, o gráfico e a tabela</span>
+    </div>
+
+    <div class="graficos">
+      <section class="cartao" id="cartao-mapa">
+        <div class="cartao-topo">
+          <div>
+            <h2 id="mapa-titulo">Mapa</h2>
+            <p id="mapa-sub" class="texto-sec"></p>
+          </div>
+        </div>
+        <div id="mapa" class="mapa" aria-label="Mapa dos locais de votação"></div>
+        <div id="mapa-legenda" class="legenda"></div>
+        <p id="mapa-nota" class="texto-mudo nota-pequena"></p>
+      </section>
+
+      <section class="cartao">
+        <div class="cartao-topo">
+          <div>
+            <h2 id="barras-titulo">Gráfico</h2>
+            <p id="barras-sub" class="texto-sec"></p>
+          </div>
+        </div>
+        <div id="barras-legenda" class="legenda"></div>
+        <div id="grafico-barras" class="barras"></div>
+      </section>
+    </div>
+
     <section class="cartao">
       <div class="cartao-topo tabela-topo">
-        <div class="abas" role="tablist" aria-label="Agrupar por">
-          <button type="button" role="tab" data-aba="municipio" aria-selected="true">Por cidade</button>
-          <button type="button" role="tab" data-aba="zona" aria-selected="false">Por zona</button>
-          <button type="button" role="tab" data-aba="local" aria-selected="false">Por escola</button>
-        </div>
+        <h2 id="tabela-titulo">Tabela</h2>
         <div class="tabela-acoes">
           <input id="f-busca" type="search" placeholder="Filtrar linhas" aria-label="Filtrar linhas da tabela">
           <button type="button" id="btn-csv" class="botao">Baixar CSV</button>
@@ -87,6 +119,7 @@
 
   <div id="dica" class="dica" role="tooltip" hidden></div>
 
+  <script src="vendor/leaflet/leaflet.js"></script>
   <script src="data/estados.js"></script>
   <script src="js/app.js"></script>
 </body>

@@ -71,7 +71,13 @@
 
   const eleicao = () => CARGO;
   const cands = () => eleicao().candidatos;
-  const cor = (c) => `var(--s${est.cor.get(c) + 1})`;
+  // Os 8 mais votados do cargo no estado têm cor fixa (a lista de candidatos vem ordenada por votos),
+  // usada no mapa e no gráfico; ao ser selecionado, o candidato fica com essa mesma cor se ela estiver livre.
+  const corFixa = (c) => (c < MAX_SELECIONADOS && cands()[c][3] !== ESPECIAL ? c : -1);
+  const corSlot = (slot) => `var(--s${slot + 1})`;
+  const cor = (c) => corSlot(est.cor.get(c));
+  const corNeutra = 'var(--neutro)';
+  const corPadrao = (c) => (corFixa(c) >= 0 ? corSlot(corFixa(c)) : corNeutra);
 
   function nomeCand(c, curto) {
     const [, nome, , tipo] = cands()[c];
@@ -188,7 +194,15 @@
     for (const g of linhas) {
       finalizar(g, C, n);
       const muns = new Set(), zonas = new Set();
-      for (const l of g.locais) { muns.add(LOCAIS[l][0]); zonas.add(LOCAIS[l][1]); }
+      let somaLat = 0, somaLon = 0, comPosicao = 0;
+      for (const l of g.locais) {
+        const L = LOCAIS[l];
+        muns.add(L[0]);
+        zonas.add(L[1]);
+        if (L[4] != null) { somaLat += L[4]; somaLon += L[5]; comPosicao++; }
+      }
+      g.lat = comPosicao ? somaLat / comPosicao : null;
+      g.lon = comPosicao ? somaLon / comPosicao : null;
       g.muns = [...muns].map((m) => D.municipios[m]).sort(ordenaTexto);
       g.nZonas = zonas.size;
       g.busca = semAcento([g.nome, g.endereco || '', ...g.muns].join(' '));
@@ -275,9 +289,13 @@
     } else {
       if (est.sel.length >= MAX_SELECIONADOS) return;
       const usadas = new Set(est.cor.values());
-      let livre = 0;
-      while (usadas.has(livre)) livre++;
-      est.cor.set(c, livre);
+      let slot = corFixa(c);
+      if (slot < 0 || usadas.has(slot)) {
+        // sem cor própria livre: pega a última livre, para não tomar a cor dos primeiros colocados
+        slot = MAX_SELECIONADOS - 1;
+        while (usadas.has(slot)) slot--;
+      }
+      est.cor.set(c, slot);
       est.sel.push(c);
     }
     est.limite = PAGINA;
@@ -372,7 +390,7 @@
   function linhaBarra(c, valor, max, validos, corBarra, detalhe, comoBotao) {
     const tag = comoBotao ? 'button' : 'div';
     return `<${tag} ${comoBotao ? `type="button" data-adicionar="${c}" title="Selecionar ${h(nomeCand(c))}"` : ''} class="barra-linha">
-      <span class="barra-nome">${corBarra !== 'var(--neutro)' ? `<span class="ponto" style="background:${corBarra}"></span>` : ''}
+      <span class="barra-nome">${corBarra !== corNeutra ? `<span class="ponto" style="background:${corBarra}"></span>` : ''}
         <span>${h(nomeCand(c))}</span><small>${h(cands()[c][0])}</small></span>
       <span class="barra-trilho"><span class="barra-preenchida" style="width:${max ? (valor / max) * 100 : 0}%;background:${corBarra}"></span></span>
       <span class="barra-valor">${num(valor)}<small>${pct(valor, validos)}</small></span>
@@ -390,7 +408,7 @@
       $('#resumo-titulo').textContent = 'Mais votados';
       $('#resumo-sub').textContent = `${descricaoEscopo()} · % sobre os votos válidos · clique num nome para selecionar`;
       alvo.innerHTML = top.length
-        ? top.map((c) => linhaBarra(c, totCand[c], totCand[top[0]], escopo.validos, 'var(--neutro)', '', true)).join('')
+        ? top.map((c) => linhaBarra(c, totCand[c], totCand[top[0]], escopo.validos, corPadrao(c), '', true)).join('')
         : '<p class="vazio">Sem votos para este recorte.</p>';
       return;
     }
@@ -606,6 +624,7 @@
     tabela.querySelector('tfoot').innerHTML = linhas.length > 1 ? `<tr>${celulas(linhaTotal(linhas, r.C), true)}</tr>` : '';
 
     const unidade = { municipio: ['cidade', 'cidades'], zona: ['zona', 'zonas'], local: ['local', 'locais'] }[est.aba];
+    $('#tabela-titulo').textContent = `Tabela por ${UNIDADES[est.aba][0]}`;
     $('#contagem').textContent = `Exibindo ${num(pagina.length)} de ${plural(linhas.length, ...unidade)}`;
     $('#btn-mais').hidden = linhas.length <= est.limite;
 
@@ -735,12 +754,256 @@
     return [uf ? uf.toUpperCase() : '', cargo];
   }
 
+  /* ---------- mapa e gráfico de barras ---------- */
+
+  const UNIDADES = { municipio: ['cidade', 'cidades'], zona: ['zona', 'zonas'], local: ['escola', 'escolas'] };
+  const TOP_BARRAS = 15;
+  const OPACIDADES = [0.18, 0.36, 0.54, 0.72, 0.9]; // 5 faixas de % quando há um candidato selecionado
+  const temaEscuro = window.matchMedia('(prefers-color-scheme: dark)');
+  const ESRI = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/';
+  let mapa = null;
+  let fundo = [];  // mapa base cinza + camada de nomes (Esri, sem chave de acesso)
+  let pontos = null;
+  let enquadramento = ''; // recorte (estado/cidade/zona) do último ajuste automático de zoom
+
+  const itemLegenda = (corValor, rotulo, opacidade = 1, faixa = false) =>
+    `<span class="legenda-item"><span class="${faixa ? 'legenda-faixa' : 'ponto'}" style="background:${corValor};opacity:${opacidade}"></span>${h(rotulo)}</span>`;
+
+  function nomeComLocal(g) {
+    if (est.aba === 'local') return `${g.nome}\n${D.municipios[g.mun]} · Zona ${g.zona}`;
+    if (est.aba === 'zona') return `${g.nome} · ${g.muns.length <= 3 ? g.muns.join(', ') : plural(g.muns.length, 'cidade', 'cidades')}`;
+    return g.nome;
+  }
+
+  function trocarFundo() {
+    fundo.forEach((camada) => camada.remove());
+    const tom = temaEscuro.matches ? 'Dark' : 'Light';
+    const opcoes = { maxNativeZoom: 16, maxZoom: 18 };
+    fundo = [
+      L.tileLayer(`${ESRI}World_${tom}_Gray_Base/MapServer/tile/{z}/{y}/{x}`, {
+        ...opcoes,
+        attribution: 'Mapa base: <a href="https://www.esri.com">Esri</a>, HERE, Garmin, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }),
+      L.tileLayer(`${ESRI}World_${tom}_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, { ...opcoes, pane: 'rotulos' }),
+    ];
+    fundo.forEach((camada) => camada.addTo(mapa));
+  }
+
+  function iniciarMapa() {
+    $('#mapa').innerHTML = '';
+    mapa = L.map('mapa', { preferCanvas: true, zoomSnap: 0.5, scrollWheelZoom: false, maxZoom: 18 });
+    // nomes das cidades por cima dos pontos, sem capturar o mouse
+    mapa.createPane('rotulos');
+    Object.assign(mapa.getPane('rotulos').style, { zIndex: 450, pointerEvents: 'none' });
+    trocarFundo();
+    pontos = L.featureGroup().addTo(mapa);
+    // a roda do mouse só dá zoom depois de clicar no mapa, para não prender a rolagem da página
+    mapa.on('click', () => mapa.scrollWheelZoom.enable());
+    mapa.on('mouseout', () => mapa.scrollWheelZoom.disable());
+    pontos.on('mouseover', (ev) => {
+      ev.layer.setStyle({ weight: 2, color: ev.layer.contorno[1] });
+      mostrarDica(ev.layer.dica(ev.layer.grupo));
+    });
+    pontos.on('mouseout', (ev) => {
+      ev.layer.setStyle({ weight: 1, color: ev.layer.contorno[0] });
+      dica.hidden = true;
+    });
+    pontos.on('click', (ev) => detalhar(ev.layer.grupo));
+  }
+
+  function mapaVazio(mensagem) {
+    if (mapa) {
+      mapa.remove();
+      mapa = pontos = null;
+      fundo = [];
+      enquadramento = '';
+    }
+    $('#mapa').innerHTML = `<div class="mapa-vazio">${h(mensagem)}</div>`;
+    $('#mapa-sub').textContent = '';
+    $('#mapa-legenda').innerHTML = '';
+    $('#mapa-nota').textContent = '';
+  }
+
+  // Cada ponto é uma cidade, zona ou escola (centro das escolas, para cidades e zonas).
+  function renderMapa(r) {
+    const n = est.sel.length;
+    const [um, varios] = UNIDADES[est.aba];
+    $('#mapa-titulo').textContent = `Mapa por ${um}`;
+    const comPosicao = r.linhas.filter((g) => g.lat != null);
+    if (!window.L) return mapaVazio('Não foi possível carregar a biblioteca do mapa.');
+    if (!comPosicao.length) return mapaVazio('Os locais de votação deste recorte não têm coordenadas.');
+    if (!mapa) iniciarMapa();
+
+    let corDe, tamanhoDe, textoDe, legenda, sub;
+    let opacidadeDe = () => 0.85;
+    if (!n) {
+      corDe = (g) => (g.lider >= 0 ? corPadrao(g.lider) : corNeutra);
+      tamanhoDe = (g) => g.validos;
+      textoDe = (g) => `${nomeComLocal(g)}\nMais votado: ${g.lider >= 0 ? `${nomeCand(g.lider)} (${pct(g.liderVotos, g.validos)})` : '—'}\n${num(g.validos)} votos válidos`;
+      const lideres = [...new Set(comPosicao.map((g) => g.lider))];
+      legenda = lideres.filter((c) => c >= 0 && corFixa(c) >= 0).sort((a, b) => a - b)
+        .map((c) => itemLegenda(corPadrao(c), nomeCand(c, true))).join('') +
+        (lideres.some((c) => c < 0 || corFixa(c) < 0) ? itemLegenda(corNeutra, 'Outros') : '');
+      sub = `Cor: mais votado em cada ${um} · tamanho: votos válidos`;
+    } else if (n === 1) {
+      const c = est.sel[0];
+      const parte = (g) => (g.validos ? g.sel[0] / g.validos : 0);
+      const maior = comPosicao.reduce((m, g) => Math.max(m, parte(g)), 0);
+      const passo = maior > 0.1 ? 0.05 : maior > 0.01 ? 0.01 : 0.001;
+      const topo = Math.min(1, Math.max(passo, Math.ceil(maior / passo) * passo));
+      const casas = topo >= 0.1 ? 0 : topo >= 0.01 ? 1 : 2;
+      const fmt = (x) => (x * 100).toLocaleString('pt-BR', { maximumFractionDigits: casas });
+      corDe = () => cor(c);
+      opacidadeDe = (g) => (g.sel[0] > 0 ? OPACIDADES[Math.min(4, Math.floor((parte(g) / topo) * 5))] : 0.06);
+      tamanhoDe = (g) => g.validos;
+      textoDe = (g) => `${nomeComLocal(g)}\n${nomeCand(c)}: ${num(g.sel[0])} votos (${pct(g.sel[0], g.validos)})${g.posicao ? ` · ${g.posicao}º lugar` : ''}`;
+      legenda = '<span class="legenda-titulo">% dos válidos</span>' + OPACIDADES
+        .map((o, i) => itemLegenda(cor(c), `${fmt((topo * i) / 5)}–${fmt((topo * (i + 1)) / 5)}%`, o, true)).join('');
+      sub = `Cor: % de ${nomeCand(c)} em cada ${um} · tamanho: votos válidos`;
+    } else {
+      corDe = (g) => (g.frente >= 0 ? cor(g.frente) : corNeutra);
+      tamanhoDe = (g) => g.somaSel;
+      textoDe = (g) => `${nomeComLocal(g)}\n` + est.sel.map((c, i) => `${nomeCand(c, true)}: ${num(g.sel[i])} (${pct(g.sel[i], g.validos)})`).join('\n');
+      legenda = est.sel.map((c) => itemLegenda(cor(c), nomeCand(c, true))).join('') +
+        (comPosicao.some((g) => g.frente < 0) ? itemLegenda(corNeutra, 'Empate ou sem votos') : '');
+      sub = `Cor: quem está na frente entre os selecionados · tamanho: votos dos selecionados`;
+    }
+
+    // o canvas do mapa não entende var(--x): resolve cada cor uma vez por desenho
+    const estilos = getComputedStyle(document.documentElement);
+    const resolvidas = new Map();
+    const corReal = (valor) => {
+      if (!resolvidas.has(valor)) {
+        const nome = /var\((--[\w-]+)\)/.exec(valor);
+        resolvidas.set(valor, nome ? estilos.getPropertyValue(nome[1]).trim() : valor);
+      }
+      return resolvidas.get(valor);
+    };
+    const contorno = [corReal('var(--superficie)'), corReal('var(--texto)')];
+    const maiorTamanho = comPosicao.reduce((m, g) => Math.max(m, tamanhoDe(g)), 0) || 1;
+    const [rMin, rMax] = est.aba === 'local' ? [2.5, 9] : [4, 24];
+
+    pontos.clearLayers();
+    // os maiores primeiro, para os pequenos ficarem por cima
+    for (const g of comPosicao.sort((a, b) => tamanhoDe(b) - tamanhoDe(a))) {
+      const marca = L.circleMarker([g.lat, g.lon], {
+        radius: rMin + (rMax - rMin) * Math.sqrt(tamanhoDe(g) / maiorTamanho),
+        fillColor: corReal(corDe(g)),
+        fillOpacity: opacidadeDe(g),
+        color: contorno[0],
+        weight: 1,
+      });
+      marca.grupo = g;
+      marca.dica = textoDe;
+      marca.contorno = contorno;
+      pontos.addLayer(marca);
+    }
+
+    const recorte = `${INFO.uf}|${est.mun}|${est.zona}`;
+    if (recorte !== enquadramento) {
+      enquadramento = recorte;
+      mapa.fitBounds(pontos.getBounds(), { padding: [20, 20], maxZoom: 15 });
+    }
+
+    const semPosicao = r.linhas.length - comPosicao.length;
+    $('#mapa-sub').textContent = sub + (est.aba !== 'local' ? ` · clique numa ${um} para ver as escolas` : '');
+    $('#mapa-legenda').innerHTML = legenda;
+    $('#mapa-nota').textContent = semPosicao
+      ? `${plural(semPosicao, um, varios)} sem coordenadas no cadastro do TSE ${semPosicao === 1 ? 'fica' : 'ficam'} fora do mapa.`
+      : '';
+  }
+
+  temaEscuro.addEventListener?.('change', () => {
+    if (!mapa) return;
+    trocarFundo();
+    if (ultimo) renderMapa(ultimo);
+  });
+
+  // Barras horizontais das cidades/zonas/escolas com mais votos, divididas por candidato.
+  function renderBarras(r) {
+    const n = est.sel.length;
+    const [um, varios] = UNIDADES[est.aba];
+    const Varios = varios.charAt(0).toUpperCase() + varios.slice(1);
+    let valorDe, partesDe, legenda = '';
+    let divisao = false; // true: todas as barras com o mesmo tamanho, mostrando a divisão dos votos
+    if (!n) {
+      // sem seleção: divisão dos válidos entre os mais votados do estado; quem tem menos de 1% na
+      // linha entra em "Outros", senão vira um risco fino demais para ler
+      const fixos = [...r.C.keys()].filter((c) => corFixa(c) >= 0);
+      divisao = true;
+      valorDe = (g) => g.validos;
+      partesDe = (g) => {
+        const partes = fixos.map((c) => [c, g.votos.get(c) || 0]).filter(([, q]) => q >= g.validos * 0.01);
+        return [...partes, [-1, g.validos - partes.reduce((soma, [, q]) => soma + q, 0)]];
+      };
+      $('#barras-titulo').textContent = `Como votaram as ${TOP_BARRAS} ${varios} com mais votos`;
+      $('#barras-sub').textContent = 'Divisão dos votos válidos entre os mais votados do estado';
+      legenda = fixos.map((c) => itemLegenda(corPadrao(c), nomeCand(c, true))).join('') + itemLegenda(corNeutra, 'Outros');
+    } else if (n === 1) {
+      const c = est.sel[0];
+      valorDe = (g) => g.sel[0];
+      partesDe = (g) => [[c, g.sel[0]]];
+      $('#barras-titulo').textContent = `${Varios} com mais votos de ${nomeCand(c, true)}`;
+      $('#barras-sub').textContent = `As ${TOP_BARRAS} primeiras · % sobre os votos válidos de cada ${um}`;
+    } else {
+      valorDe = (g) => g.somaSel;
+      partesDe = (g) => est.sel.map((c, i) => [c, g.sel[i]]);
+      $('#barras-titulo').textContent = `${Varios} com mais votos dos selecionados`;
+      $('#barras-sub').textContent = `As ${TOP_BARRAS} primeiras · soma dos votos dos selecionados`;
+      legenda = est.sel.map((c) => itemLegenda(cor(c), nomeCand(c, true))).join('');
+    }
+    $('#barras-legenda').innerHTML = legenda;
+
+    const top = r.linhas.filter((g) => valorDe(g) > 0).sort((a, b) => valorDe(b) - valorDe(a)).slice(0, TOP_BARRAS);
+    const max = top.length ? valorDe(top[0]) : 0;
+    const detalhavel = est.aba !== 'local';
+    $('#grafico-barras').innerHTML = top.length ? top.map((g) => {
+      const total = valorDe(g);
+      const segmentos = partesDe(g).filter(([, q]) => q > 0).map(([c, q]) => {
+        const nome = c < 0 ? 'Outros' : nomeCand(c);
+        const corSegmento = c < 0 ? corNeutra : n ? cor(c) : corPadrao(c);
+        return `<span style="flex:${q} 1 0;background:${corSegmento}" data-dica="${h(`${g.nome}\n${nome}: ${num(q)} votos (${pct(q, g.validos)} dos válidos)`)}"></span>`;
+      }).join('');
+      const nomeCompleto = est.aba === 'local' ? `${g.nome} · ${D.municipios[g.mun]}` : g.nome;
+      const tag = detalhavel ? 'button' : 'div';
+      return `<${tag} ${detalhavel ? `type="button" data-detalhar="${h(String(g.chave))}" title="Ver as escolas de ${h(g.nome)}"` : ''} class="barra-linha">
+        <span class="barra-nome"><span title="${h(nomeCompleto)}">${h(g.nome)}</span></span>
+        <span class="barra-trilho"><span class="pilha-abs" style="width:${divisao ? 100 : ((total / max) * 100).toFixed(2)}%">${segmentos}</span></span>
+        <span class="barra-valor">${num(total)}${n === 1 ? `<small>${pct(total, g.validos)}</small>` : ''}</span>
+      </${tag}>`;
+    }).join('') : '<p class="vazio">Sem votos para este recorte.</p>';
+  }
+
+  function trocarAba(aba) {
+    est.aba = aba;
+    est.limite = PAGINA;
+    document.querySelectorAll('[data-aba]').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.aba === aba)));
+    atualizar();
+  }
+
+  // clique numa cidade ou zona (no mapa ou no gráfico): filtra por ela e mostra as escolas
+  function detalhar(g) {
+    if (!g || est.aba === 'local') return;
+    dica.hidden = true;
+    if (est.aba === 'municipio') {
+      est.mun = g.chave;
+      selMun.value = String(est.mun);
+      montarZonas();
+    } else {
+      est.zona = g.chave;
+      selZona.value = est.zona;
+    }
+    trocarAba('local');
+  }
+
   /* ---------- ciclo de atualização ---------- */
 
   function atualizar() {
     ultimo = calcular();
     renderKpis(ultimo);
     renderResumo(ultimo);
+    renderMapa(ultimo);
+    renderBarras(ultimo);
     renderTabela(ultimo);
     renderChips();
     renderLista();
@@ -769,12 +1032,12 @@
   });
 
   document.querySelectorAll('[data-aba]').forEach((botao) => {
-    botao.addEventListener('click', () => {
-      est.aba = botao.dataset.aba;
-      est.limite = PAGINA;
-      document.querySelectorAll('[data-aba]').forEach((b) => b.setAttribute('aria-selected', String(b === botao)));
-      atualizar();
-    });
+    botao.addEventListener('click', () => trocarAba(botao.dataset.aba));
+  });
+
+  $('#grafico-barras').addEventListener('click', (ev) => {
+    const botao = ev.target.closest('[data-detalhar]');
+    if (botao && ultimo) detalhar(ultimo.linhas.find((g) => String(g.chave) === botao.dataset.detalhar));
   });
 
   $('#f-busca').addEventListener('input', (ev) => {
@@ -852,14 +1115,17 @@
     if (document.activeElement !== entrada) fecharLista();
   }, 0));
 
-  // dica ao passar o mouse nos segmentos da barra comparativa
+  // dica ao passar o mouse nas barras e nos pontos do mapa
   const dica = $('#dica');
-  document.addEventListener('mouseover', (ev) => {
-    const alvo = ev.target.closest('[data-dica]');
-    if (!alvo) { dica.hidden = true; return; }
-    dica.textContent = alvo.dataset.dica;
+  function mostrarDica(texto) {
+    dica.textContent = texto;
     dica.style.whiteSpace = 'pre-line';
     dica.hidden = false;
+  }
+  document.addEventListener('mouseover', (ev) => {
+    const alvo = ev.target.closest('[data-dica]');
+    if (alvo) mostrarDica(alvo.dataset.dica);
+    else dica.hidden = true;
   });
   document.addEventListener('mousemove', (ev) => {
     if (dica.hidden) return;
