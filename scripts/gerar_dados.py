@@ -20,6 +20,7 @@ publica uma versão nova, por exemplo depois do 2º turno):
 Só usa a biblioteca padrão do Python 3.
 """
 import argparse
+import collections
 import csv
 import glob
 import io
@@ -88,12 +89,16 @@ def data_hora(texto):
 # ---------------------------------------------------------------- download
 
 
-def baixar(url, obrigatorio=True):
-    """Baixa para .cache-tse/, reaproveitando a cópia local enquanto o TSE não publicar outra."""
+def baixar(url, obrigatorio=True, usar_cache=False):
+    """Baixa para .cache-tse/, reaproveitando a cópia local enquanto o TSE não publicar outra.
+
+    Com usar_cache, a cópia local é usada sem perguntar ao TSE se há versão nova."""
     os.makedirs(CACHE, exist_ok=True)
     destino = os.path.join(CACHE, url.rsplit('/', 1)[1])
     marca = destino + '.versao'
     nome = os.path.basename(destino)
+    if usar_cache and os.path.exists(destino):
+        return destino
 
     versao = tamanho = None
     try:
@@ -186,7 +191,7 @@ class Estado:
         self.uf = uf
         self.municipios = {}   # código -> nome
         self.locais = {}       # (município, zona, nº do local) -> índice em self.info
-        self.info = []         # [município, zona, nº do local, nome, endereço, latitude, longitude]
+        self.info = []         # [município, zona, nº do local, nome, endereço, latitude, longitude, bairro]
         self.eleicoes = {}     # (ano, eleição, turno, cargo) -> dict
         self.geracoes = set()
 
@@ -195,7 +200,7 @@ class Estado:
         l = self.locais.get(chave)
         if l is None:
             l = self.locais[chave] = len(self.info)
-            self.info.append([cd_mun, zona, numero, '', '', None, None])
+            self.info.append([cd_mun, zona, numero, '', '', None, None, ''])
             self.municipios.setdefault(cd_mun, nome_mun)
         return l
 
@@ -309,7 +314,7 @@ def completar_locais(est, caminho):
                 continue
             if original != chave and original in est.locais and original not in pelo_original:
                 pelo_original[original] = (valor(r, 'NM_LOCAL_VOTACAO_ORIGINAL'), valor(r, 'DS_ENDERECO_LOCVT_ORIGINAL'),
-                                           None, *posicao)
+                                           valor(r, 'NM_BAIRRO'), *posicao)
     for chave, dados in pelo_original.items():
         if chave not in achados:
             preencher_local(est.info[est.locais[chave]], *dados)
@@ -318,10 +323,23 @@ def completar_locais(est, caminho):
 def preencher_local(info, nome, endereco, bairro=None, latitude=None, longitude=None):
     if not info[3] and not vazio(nome):
         info[3] = nome.strip()
-    if not info[4]:
-        info[4] = ' - '.join(p.strip() for p in (endereco, bairro) if not vazio(p))
+    if not info[4] and not vazio(endereco):
+        info[4] = re.sub(r'\s+', ' ', endereco).strip()
+    if not info[7] and not vazio(bairro):
+        info[7] = limpar_bairro(bairro)
     if info[5] is None and latitude is not None and longitude is not None:
         info[5], info[6] = latitude, longitude
+
+
+def limpar_bairro(texto):
+    """Tira espaços repetidos e pontuação solta nas pontas ("- BAIRRO CENTRO" vira "BAIRRO CENTRO")."""
+    return re.sub(r'\s+', ' ', texto).strip(' -–.,:;')
+
+
+def chave_bairro(nome):
+    """Grafias do mesmo bairro (acento, pontuação, "BAIRRO" na frente) dão a mesma chave."""
+    chave = re.sub(r'[^A-Z0-9]+', ' ', normaliza(nome)).strip()
+    return re.sub(r'^BAIRRO ', '', chave) or chave
 
 
 def coordenada(texto):
@@ -372,11 +390,25 @@ def gravar(est):
     novo_local = [0] * len(ordem)
     for novo, antigo in enumerate(ordem):
         novo_local[antigo] = novo
+    # bairros: na mesma cidade, grafias que só diferem em acento ou pontuação viram um só (vence a mais comum)
+    grafias = {}
+    for info in est.info:
+        if info[7]:
+            grafias.setdefault((info[0], chave_bairro(info[7])), collections.Counter())[info[7]] += 1
+    nome_bairro = {grupo: contagem.most_common(1)[0][0] for grupo, contagem in grafias.items()}
+    bairros = sorted(set(nome_bairro.values()), key=normaliza)
+    idx_bairro = {nome: i for i, nome in enumerate(bairros)}
+
+    def bairro_de(cd, bairro):
+        return idx_bairro[nome_bairro[(cd, chave_bairro(bairro))]] if bairro else -1
+
     base = {
         'municipios': [est.municipios[cd] for cd in cods],
+        'bairros': bairros,
         'locais': [[idx_mun[cd], str(zona), nome or f'LOCAL {numero}', endereco,
-                    None if lat is None else round(lat, 4), None if lon is None else round(lon, 4)]
-                   for cd, zona, numero, nome, endereco, lat, lon in (est.info[l] for l in ordem)],
+                    None if lat is None else round(lat, 4), None if lon is None else round(lon, 4),
+                    bairro_de(cd, bairro)]
+                   for cd, zona, numero, nome, endereco, lat, lon, bairro in (est.info[l] for l in ordem)],
     }
     bytes_base = escrever_js(pasta, est.uf, 'base', base)
 
@@ -481,6 +513,7 @@ def main():
     p.add_argument('--arquivo', action='append', default=[], help='votacao_secao_*.zip já baixado (pode repetir)')
     p.add_argument('--locais', help='eleitorado_local_votacao_*.zip já baixado')
     p.add_argument('--sem-presidente', action='store_true', help='não incluir os votos para presidente (arquivo BR)')
+    p.add_argument('--usar-cache', action='store_true', help='usar os arquivos já baixados em .cache-tse/ sem procurar versão nova no TSE')
     p.add_argument('--cargo', action='append', help='manter só este cargo, ex.: Governador (pode repetir)')
     p.add_argument('--turno', action='append', help='manter só este turno: 1 ou 2 (pode repetir)')
     p.add_argument('--municipio', action='append', help='manter só esta cidade (pode repetir)')
@@ -505,9 +538,9 @@ def main():
         if a.ano:
             alvo = ufs or sorted(ESTADOS)
             with ThreadPoolExecutor(4) as fila:
-                tarefas = {fila.submit(baixar, URL_VOTOS.format(ano=a.ano, uf=uf), False): uf for uf in alvo}
+                tarefas = {fila.submit(baixar, URL_VOTOS.format(ano=a.ano, uf=uf), False, a.usar_cache): uf for uf in alvo}
                 if not a.sem_presidente:
-                    tarefas[fila.submit(baixar, URL_VOTOS.format(ano=a.ano, uf='BR'), False)] = 'BR'
+                    tarefas[fila.submit(baixar, URL_VOTOS.format(ano=a.ano, uf='BR'), False, a.usar_cache)] = 'BR'
                 for tarefa in as_completed(tarefas):
                     uf, caminho = tarefas[tarefa], tarefa.result()
                     if uf == 'BR':
@@ -530,7 +563,7 @@ def main():
         # 3. nome, endereço e coordenadas das escolas
         arquivo_locais = a.locais
         if not arquivo_locais and a.ano:
-            arquivo_locais = baixar(URL_LOCAIS.format(ano=a.ano), obrigatorio=False)
+            arquivo_locais = baixar(URL_LOCAIS.format(ano=a.ano), obrigatorio=False, usar_cache=a.usar_cache)
             if not arquivo_locais:
                 print('aviso: sem o arquivo de locais de votação, o mapa fica sem as escolas')
 

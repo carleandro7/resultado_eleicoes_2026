@@ -2,11 +2,11 @@
  "uf": "PI",
  "nome": "Piauí",
  "titulo": "Eleições 2026 · Piauí",
- "gerado": "05/10/2026 09:50",
+ "gerado": "05/10/2026 14:03",
  "cidades": 224,
  "locais": 3422,
  "base": {
-  "bytes": 363720
+  "bytes": 342119
  },
  "cargos": [
   {
