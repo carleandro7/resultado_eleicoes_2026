@@ -84,6 +84,10 @@ Fontes usadas:
 - **Cores**: os 8 mais votados de cada cargo no estado têm cor fixa, a mesma no mapa,
   no gráfico e quando são selecionados.
 - **Baixar CSV**: exporta a tabela atual (abre direto no Excel).
+- **Baixar PDF**: relatório do recorte atual, com os filtros aplicados, os números
+  principais, o resumo dos mais votados (ou dos candidatos escolhidos) e a tabela
+  completa, com todas as linhas e não só as que aparecem na tela. Sai sempre no tema
+  claro, deitado quando a tabela tem muitas colunas.
 - **Tema**: a página abre no tema claro. O botão no canto do topo troca para o escuro
   (e de volta); a escolha fica guardada neste navegador.
 
@@ -98,6 +102,8 @@ index.html              página
 css/style.css           visual (tema claro como padrão e escuro opcional)
 js/app.js               carregamento, filtros, cálculos, mapa, gráfico e tabela
 vendor/leaflet/         biblioteca do mapa (Leaflet 1.9.4, licença BSD-2)
+vendor/jspdf/           geração do PDF (jsPDF 4.2.1 e jspdf-autotable 5.0.8, licença MIT),
+                        carregada só quando alguém clica em "Baixar PDF"
 data/estados.js         lista dos estados gerados
 data/<UF>/base.js       cidades, bairros e locais de votação do estado
 data/<UF>/<cargo>.js    candidatos e votos por local (um arquivo por cargo e turno)

@@ -613,6 +613,16 @@
     </${tag}>`;
   }
 
+  // "Na frente dos demais selecionados em X de Y cidades · ..." (só os níveis com mais de um lugar disputado)
+  function textoVitorias(vitorias, c) {
+    if (!vitorias) return '';
+    const i = est.sel.indexOf(c);
+    const partes = [['municipio', 'cidade', 'cidades'], ['zona', 'zona', 'zonas'], ['local', 'escola', 'escolas']]
+      .filter(([nivel]) => vitorias[nivel].disputados > 1)
+      .map(([nivel, um, varios]) => `${num(vitorias[nivel].cont[i])} de ${plural(vitorias[nivel].disputados, um, varios)}`);
+    return partes.length ? 'Na frente dos demais selecionados em ' + partes.join(' · ') : '';
+  }
+
   function renderResumo({ C, totCand, escopo, vitorias }) {
     const alvo = $('#resumo');
     const n = est.sel.length;
@@ -630,23 +640,10 @@
 
     const ordem = [...est.sel].sort((a, b) => totCand[b] - totCand[a]);
     const max = totCand[ordem[0]];
-    const niveis = [['municipio', 'cidade', 'cidades'], ['zona', 'zona', 'zonas'], ['local', 'escola', 'escolas']];
-
     $('#resumo-titulo').textContent = n === 1 ? 'Candidato selecionado' : 'Comparativo dos selecionados';
     $('#resumo-sub').textContent = `${descricaoEscopo()} · % sobre os votos válidos`;
 
-    alvo.innerHTML = ordem.map((c) => {
-      let detalhe = '';
-      if (vitorias) {
-        const i = est.sel.indexOf(c);
-        detalhe = 'Na frente dos demais selecionados em ' + niveis
-          .filter(([nivel]) => vitorias[nivel].disputados > 1)
-          .map(([nivel, um, varios]) => `${num(vitorias[nivel].cont[i])} de ${plural(vitorias[nivel].disputados, um, varios)}`)
-          .join(' · ');
-        if (!niveis.some(([nivel]) => vitorias[nivel].disputados > 1)) detalhe = '';
-      }
-      return linhaBarra(c, totCand[c], max, escopo.validos, cor(c), detalhe, false);
-    }).join('');
+    alvo.innerHTML = ordem.map((c) => linhaBarra(c, totCand[c], max, escopo.validos, cor(c), textoVitorias(vitorias, c), false)).join('');
 
     const sugestoes = [...C.keys()]
       .filter((c) => C[c][3] !== ESPECIAL && totCand[c] > 0 && !est.cor.has(c))
@@ -852,13 +849,21 @@
     $('#tabela-nota').textContent = notas[Math.min(est.sel.length, 2)];
   }
 
-  function baixarCsv() {
-    if (!tabelaAtual) return;
+  // colunas exportadas (CSV e PDF): as da tabela, com os números crus
+  function colunasExportacao() {
     const cabecalho = [];
     const valores = [];
     for (const col of tabelaAtual.cols) {
       for (const [rotulo, fn] of col.csv || []) { cabecalho.push(rotulo); valores.push(fn); }
     }
+    return { cabecalho, valores };
+  }
+
+  const nomeArquivo = () => semAcento(`${INFO.uf} ${CARGO_INFO.rotulo} por ${est.aba}`).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+  function baixarCsv() {
+    if (!tabelaAtual) return;
+    const { cabecalho, valores } = colunasExportacao();
     const celula = (v) => {
       const s = v == null ? '' : String(v);
       return /[";\r\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
@@ -867,11 +872,231 @@
       .map((linha) => linha.map(celula).join(';')).join('\r\n');
     const url = URL.createObjectURL(new Blob(['﻿' + texto], { type: 'text/csv;charset=utf-8' }));
     const link = document.createElement('a');
-    const nomeArquivo = semAcento(`${INFO.uf} ${CARGO_INFO.rotulo} por ${est.aba}`).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     link.href = url;
-    link.download = nomeArquivo + '.csv';
+    link.download = nomeArquivo() + '.csv';
     link.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  /* ---------- PDF ---------- */
+
+  // a biblioteca de PDF (jsPDF + tabelas) só é baixada no primeiro clique em "Baixar PDF"
+  let bibliotecaPdf = null;
+  function carregarPdf() {
+    bibliotecaPdf ??= ['vendor/jspdf/jspdf.umd.min.js', 'vendor/jspdf/jspdf.plugin.autotable.min.js']
+      .reduce((anterior, src) => anterior.then(() => new Promise((ok, falha) => {
+        const tag = document.createElement('script');
+        tag.src = src;
+        tag.onload = ok;
+        tag.onerror = () => falha(new Error(`não foi possível carregar ${src}`));
+        document.head.appendChild(tag);
+      })), Promise.resolve())
+      .catch((erro) => { bibliotecaPdf = null; throw erro; });
+    return bibliotecaPdf;
+  }
+
+  // o PDF sai sempre com as cores do tema claro, mesmo com a página no escuro
+  function coresDoPdf() {
+    const raiz = document.documentElement;
+    const tema = raiz.dataset.theme;
+    delete raiz.dataset.theme;
+    const estilo = getComputedStyle(raiz);
+    const cores = {};
+    for (const nome of ['marca', 'texto', 'texto-sec', 'texto-mudo', 'grade', 'neutro', 'superficie-2', 's1', 's2', 's3', 's4', 's5', 's6', 's7', 's8']) {
+      cores[nome] = estilo.getPropertyValue('--' + nome).trim();
+    }
+    if (tema) raiz.dataset.theme = tema;
+    // jsPDF quer [r, g, b]: o canvas converte qualquer cor CSS para #rrggbb
+    const ctx = document.createElement('canvas').getContext('2d');
+    for (const nome of Object.keys(cores)) {
+      ctx.fillStyle = '#000';
+      ctx.fillStyle = cores[nome] || '#000';
+      const hex = ctx.fillStyle.startsWith('#') ? ctx.fillStyle : '#000000';
+      cores[nome] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
+    }
+    return cores;
+  }
+
+  function montarPdf() {
+    const { jsPDF } = window.jspdf;
+    const { C, totCand, escopo, vitorias } = ultimo;
+    const { cabecalho, valores } = colunasExportacao();
+    const linhas = tabelaAtual.linhas;
+    const cores = coresDoPdf();
+    const larga = cabecalho.length > 7; // muitas colunas: página deitada e nomes curtos na tabela
+    const doc = new jsPDF({ orientation: larga ? 'landscape' : 'portrait', unit: 'pt', format: 'a4', compress: true });
+    const largura = doc.internal.pageSize.getWidth();
+    const altura = doc.internal.pageSize.getHeight();
+    const M = 36;
+    const util = largura - 2 * M;
+    const branco = [255, 255, 255];
+    const claroMarca = [195, 210, 232];
+
+    const escrever = (texto, x, y, { tam = 9, cor = cores.texto, negrito = false, alinhar = 'left' } = {}) => {
+      doc.setFont('helvetica', negrito ? 'bold' : 'normal');
+      doc.setFontSize(tam);
+      doc.setTextColor(...cor);
+      doc.text(String(texto), x, y, { align: alinhar });
+    };
+    // corta o texto com reticências para caber numa linha
+    const caber = (texto, larg, tam, negrito = false) => {
+      doc.setFont('helvetica', negrito ? 'bold' : 'normal');
+      doc.setFontSize(tam);
+      let s = String(texto);
+      if (doc.getTextWidth(s) <= larg) return s;
+      while (s.length > 1 && doc.getTextWidth(s + '…') > larg) s = s.slice(0, -1);
+      return s.trimEnd() + '…';
+    };
+    const corDoCandidato = (c) => {
+      const slot = est.cor.has(c) ? est.cor.get(c) : corFixa(c);
+      return slot >= 0 ? cores['s' + (slot + 1)] : cores.neutro;
+    };
+    const novaPaginaSe = (y, precisa) => {
+      if (y + precisa <= altura - 48) return y;
+      doc.addPage();
+      return 48;
+    };
+
+    // faixa com título, cargo e recorte
+    doc.setFillColor(...cores.marca);
+    doc.rect(0, 0, largura, 78, 'F');
+    escrever('PAINEL ELEITORAL', M, 24, { tam: 7.5, cor: claroMarca, negrito: true });
+    escrever(caber(INFO.titulo, util, 18, true), M, 47, { tam: 18, cor: branco, negrito: true });
+    escrever(caber(`${CARGO_INFO.rotulo} · ${descricaoEscopo()}`, util, 9.5), M, 65, { tam: 9.5, cor: claroMarca });
+
+    // indicadores
+    let y = 96;
+    const kpis = [
+      ['Votos apurados', escopo.total], ['Votos válidos', escopo.validos], ['Brancos e nulos', escopo.brancos + escopo.nulos],
+      ['Cidades', escopo.muns.size], ['Zonas', escopo.zonas.size], ['Escolas / locais', escopo.locais.size],
+    ];
+    const vao = 6;
+    const lk = (util - vao * (kpis.length - 1)) / kpis.length;
+    kpis.forEach(([rotulo, valor], i) => {
+      const x = M + i * (lk + vao);
+      doc.setDrawColor(...cores.grade);
+      doc.setFillColor(...branco);
+      doc.roundedRect(x, y, lk, 42, 4, 4, 'FD');
+      escrever(caber(rotulo, lk - 14, 7.5), x + 8, y + 15, { tam: 7.5, cor: cores['texto-sec'] });
+      escrever(num(valor), x + 8, y + 33, { tam: 12.5, negrito: true });
+    });
+    y += 66;
+
+    // resumo: mais votados, ou os candidatos escolhidos, com barras na cor de cada um
+    const n = est.sel.length;
+    const lista = n
+      ? [...est.sel].sort((a, b) => totCand[b] - totCand[a])
+      : [...C.keys()].filter((c) => C[c][3] !== ESPECIAL && totCand[c] > 0).sort((a, b) => totCand[b] - totCand[a]).slice(0, 10);
+    escrever(n ? (n === 1 ? 'Candidato selecionado' : 'Comparativo dos selecionados') : 'Mais votados', M, y, { tam: 11.5, negrito: true });
+    escrever('% sobre os votos válidos', M, y + 13, { tam: 8, cor: cores['texto-sec'] });
+    y += 30;
+    const larNome = Math.min(210, util * 0.32);
+    const larValor = 96;
+    const larBarra = util - larNome - larValor - 12;
+    const maior = lista.length ? totCand[lista[0]] : 1;
+    for (const c of lista) {
+      const detalhe = textoVitorias(vitorias, c);
+      y = novaPaginaSe(y, detalhe ? 28 : 16);
+      const cor = corDoCandidato(c);
+      doc.setFillColor(...cor);
+      doc.circle(M + 3, y - 3, 3, 'F');
+      escrever(caber(`${nomeCand(c)}  ${C[c][0]}`, larNome - 16, 8.5), M + 11, y, { tam: 8.5 });
+      doc.setFillColor(...cor); // escrever texto troca a cor de preenchimento do PDF
+      doc.roundedRect(M + larNome, y - 7.5, Math.max(1.5, (totCand[c] / maior) * larBarra), 8, 1.5, 1.5, 'F');
+      escrever(`${num(totCand[c])}   ${pct(totCand[c], escopo.validos)}`, largura - M, y, { tam: 8.5, negrito: true, alinhar: 'right' });
+      y += 16;
+      if (detalhe) {
+        escrever(caber(detalhe, larBarra + larValor, 7.5), M + larNome, y - 4, { tam: 7.5, cor: cores['texto-mudo'] });
+        y += 10;
+      }
+    }
+    if (n >= 2) {
+      const [a, b] = lista;
+      const dif = totCand[a] - totCand[b];
+      const pp = escopo.validos ? ((dif / escopo.validos) * 100).toLocaleString('pt-BR', { maximumFractionDigits: 1 }) : '0';
+      y = novaPaginaSe(y, 20);
+      escrever(caber(dif > 0
+        ? `${nomeCand(a)} tem ${num(dif)} votos a mais que ${nomeCand(b)} (${pp} pontos percentuais dos válidos).`
+        : `${nomeCand(a)} e ${nomeCand(b)} estão empatados neste recorte.`, util, 8.5), M, y + 4, { tam: 8.5, cor: cores['texto-sec'] });
+      y += 18;
+    }
+
+    // tabela completa (todas as linhas, não só as que aparecem na tela)
+    y = novaPaginaSe(y + 14, larga ? 200 : 140);
+    escrever(`Tabela por ${UNIDADES[est.aba][0]}`, M, y, { tam: 11.5, negrito: true });
+    escrever(`${plural(linhas.length, 'linha', 'linhas')}${est.busca.trim() ? ` · filtro "${est.busca.trim()}"` : ''} · % sobre os votos válidos de cada linha`, M, y + 13, { tam: 8, cor: cores['texto-sec'] });
+    const formatar = (valor, rotulo) => {
+      if (valor == null || valor === '') return '';
+      if (typeof valor === 'number') return num(valor);
+      return /%/.test(rotulo) && /^[\d,.-]+$/.test(String(valor)) ? `${valor}%` : String(valor);
+    };
+    const curtos = larga ? new Map(C.map((_, c) => [nomeCand(c), nomeCand(c, true)])) : null;
+    const encurtar = (texto) => (curtos && curtos.has(texto) ? curtos.get(texto) : texto);
+    const titulos = cabecalho.map((rotulo) => {
+      let t = rotulo.replace(/ - (votos|% válidos)$/, '\n$1');
+      if (curtos) t = t.replace(/^(.+?) \((\d+)\)\n/, (_, nome) => `${encurtar(nome)}\n`);
+      return t;
+    });
+    const corpo = linhas.map((g) => valores.map((fn, i) => encurtar(formatar(fn(g), cabecalho[i]))));
+    const total = linhaTotal(linhas, C);
+    const rodape = valores.map((fn, i) => {
+      if (i === 0) return 'Total';
+      try { return encurtar(formatar(fn(total), cabecalho[i])); } catch (erro) { return ''; }
+    });
+    // colunas numéricas alinhadas à direita
+    const amostra = linhas[0] ? valores.map((fn) => fn(linhas[0])) : [];
+    const columnStyles = {};
+    amostra.forEach((v, i) => {
+      if (typeof v === 'number' || (/%/.test(cabecalho[i]) && /^[\d,.-]*$/.test(String(v)))) columnStyles[i] = { halign: 'right' };
+    });
+    columnStyles[0] = { ...(columnStyles[0] || {}), fontStyle: 'bold' };
+    doc.autoTable({
+      startY: y + 22,
+      head: [titulos],
+      body: corpo,
+      foot: linhas.length > 1 ? [rodape] : undefined,
+      showFoot: 'lastPage',
+      rowPageBreak: 'avoid', // uma linha nunca fica partida entre duas páginas
+      theme: 'grid',
+      margin: { left: M, right: M, top: 40, bottom: 40 },
+      styles: { font: 'helvetica', fontSize: cabecalho.length > 10 ? 6.5 : 7.5, cellPadding: 3, textColor: cores.texto, lineColor: cores.grade, lineWidth: 0.5, overflow: 'linebreak', valign: 'middle' },
+      headStyles: { fillColor: cores['superficie-2'], textColor: cores['texto-sec'], fontStyle: 'bold' },
+      footStyles: { fillColor: cores['superficie-2'], textColor: cores.texto, fontStyle: 'bold' },
+      alternateRowStyles: { fillColor: [251, 252, 254] },
+      columnStyles,
+    });
+
+    // rodapé de todas as páginas
+    const paginas = doc.getNumberOfPages();
+    const gerado = new Date().toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' });
+    const fonte = `Fonte: ${INDICE.fonte || 'TSE'}${INFO.gerado ? ` (arquivo de ${INFO.gerado})` : ''} · PDF gerado em ${gerado}`;
+    const endereco = /^https?:/.test(location.protocol) ? location.href : '';
+    for (let p = 1; p <= paginas; p++) {
+      doc.setPage(p);
+      doc.setDrawColor(...cores.grade);
+      doc.line(M, altura - 30, largura - M, altura - 30);
+      escrever(caber(endereco ? `${fonte} · ${endereco}` : fonte, util - 70, 7), M, altura - 18, { tam: 7, cor: cores['texto-mudo'] });
+      escrever(`Página ${p} de ${paginas}`, largura - M, altura - 18, { tam: 7, cor: cores['texto-mudo'], alinhar: 'right' });
+    }
+    return doc;
+  }
+
+  async function baixarPdf() {
+    if (!tabelaAtual || !ultimo) return;
+    const botao = $('#btn-pdf');
+    const rotulo = botao.querySelector('.botao-rotulo');
+    botao.disabled = true;
+    rotulo.textContent = 'Gerando PDF…';
+    await new Promise((pronto) => setTimeout(pronto, 30)); // deixa o navegador mostrar o "Gerando PDF…"
+    try {
+      await carregarPdf();
+      montarPdf().save(nomeArquivo() + '.pdf');
+    } catch (erro) {
+      mostrarStatus(`Não foi possível gerar o PDF: ${erro.message}`, true);
+    } finally {
+      botao.disabled = false;
+      rotulo.textContent = 'Baixar PDF';
+    }
   }
 
   /* ---------- carregamento ---------- */
@@ -1301,6 +1526,7 @@
   });
 
   $('#btn-csv').addEventListener('click', baixarCsv);
+  $('#btn-pdf').addEventListener('click', baixarPdf);
 
   $('#tabela thead').addEventListener('click', (ev) => {
     const botao = ev.target.closest('[data-ordenar]');

@@ -333,6 +333,7 @@ button { cursor: pointer; }
 
 /* ---------- botões ---------- */
 
+.botao:disabled { opacity: 0.6; cursor: progress; }
 .botao {
   display: inline-flex;
   align-items: center;
