@@ -50,8 +50,10 @@ Fontes usadas:
 
 ## Como usar
 
-- **Estado / Cargo / Cidade / Zona**: filtram tudo que aparece na página. Ao trocar de
-  estado o cargo é mantido.
+- **Estado / Cargo / Cidade / Zona / Escola**: filtram tudo que aparece na página. Ao
+  trocar de estado o cargo é mantido. A lista de escolas mostra as da cidade/zona
+  escolhida; nos estados com mais de 1.500 escolas, escolha antes a cidade ou a zona.
+  Escolhendo uma escola, o resumo mostra quem foi mais votado nela.
 - **Candidatos**: digite parte do nome ou o número e marque um ou mais.
   - Nenhum selecionado: a tabela mostra o total de votos e o mais votado de cada local.
   - Um selecionado: votos, % dos válidos e colocação dele em cada local.
@@ -63,7 +65,8 @@ Fontes usadas:
 - **Mapa**: um círculo por cidade, zona ou escola, do tamanho dos votos. A cor depende
   da seleção: sem candidato, mostra o mais votado em cada lugar; com um, o % dele
   (quanto mais forte a cor, maior o %); com dois ou mais, quem está na frente entre
-  eles. Clicar numa cidade ou zona (no mapa ou no gráfico) mostra as escolas dela.
+  eles. Clicar numa cidade ou zona (no mapa ou no gráfico) mostra as escolas dela;
+  clicar numa escola filtra só ela.
   A roda do mouse só dá zoom depois de clicar no mapa.
 - **Gráfico**: as 15 cidades/zonas/escolas com mais votos. Sem candidato selecionado,
   mostra como os votos se dividiram entre os mais votados; com seleção, os votos dos

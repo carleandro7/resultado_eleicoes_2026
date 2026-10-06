@@ -59,6 +59,7 @@
   const est = {
     mun: -1,          // índice do município; -1 = todos
     zona: '',         // '' = todas
+    local: -1,        // índice da escola; -1 = todas
     aba: 'municipio', // municipio | zona | local
     busca: '',
     sel: [],          // candidatos selecionados, na ordem em que foram escolhidos
@@ -157,7 +158,7 @@
       const l = V[i];
       const fim = i + 2 + 2 * V[i + 1];
       const L = LOCAIS[l];
-      if ((est.mun >= 0 && L[0] !== est.mun) || (est.zona && L[1] !== est.zona)) {
+      if ((est.mun >= 0 && L[0] !== est.mun) || (est.zona && L[1] !== est.zona) || (est.local >= 0 && l !== est.local)) {
         i = fim;
         continue;
       }
@@ -235,6 +236,8 @@
   const selEleicao = $('#f-eleicao');
   const selMun = $('#f-municipio');
   const selZona = $('#f-zona');
+  const selLocal = $('#f-local');
+  const LIMITE_ESCOLAS = 1500; // sem cidade nem zona escolhida, listas maiores ficam pesadas demais
 
   function prepararEstado() {
     LOCAIS = D.locais;
@@ -267,9 +270,33 @@
     selZona.innerHTML = '<option value="">Todas as zonas</option>' +
       zonas.map((z) => `<option value="${h(z)}">Zona ${h(z)}</option>`).join('');
     selZona.value = est.zona;
+    montarLocais();
+  }
+
+  // escolas da cidade/zona escolhida; com o estado inteiro, só se a lista for pequena
+  function montarLocais() {
+    const escolas = [];
+    LOCAIS.forEach((L, l) => {
+      if ((est.mun < 0 || L[0] === est.mun) && (!est.zona || L[1] === est.zona)) escolas.push(l);
+    });
+    if (!escolas.includes(est.local)) est.local = -1;
+    const grande = est.mun < 0 && !est.zona && escolas.length > LIMITE_ESCOLAS;
+    selLocal.disabled = grande;
+    if (grande) {
+      selLocal.innerHTML = '<option value="-1">Escolha antes a cidade ou a zona</option>';
+      return;
+    }
+    escolas.sort((a, b) => ordenaTexto(LOCAIS[a][2], LOCAIS[b][2]));
+    selLocal.innerHTML = '<option value="-1">Todas as escolas</option>' + escolas.map((l) =>
+      `<option value="${l}">${h(LOCAIS[l][2])}${est.mun < 0 ? ` · ${h(D.municipios[LOCAIS[l][0]])}` : ''}</option>`).join('');
+    selLocal.value = String(est.local);
   }
 
   function descricaoEscopo() {
+    if (est.local >= 0) {
+      const [mun, zona, nome] = LOCAIS[est.local];
+      return `${nome} · ${D.municipios[mun]} · Zona ${zona}`;
+    }
     const partes = [est.mun >= 0 ? D.municipios[est.mun] : 'Todas as cidades'];
     if (est.zona) partes.push('Zona ' + est.zona);
     return partes.join(' · ');
@@ -716,6 +743,7 @@
         D = base;
         est.mun = -1;
         est.zona = '';
+        est.local = -1;
         est.busca = '';
         $('#f-busca').value = '';
         prepararEstado();
@@ -899,14 +927,15 @@
       pontos.addLayer(marca);
     }
 
-    const recorte = `${INFO.uf}|${est.mun}|${est.zona}`;
+    const recorte = `${INFO.uf}|${est.mun}|${est.zona}|${est.local}`;
     if (recorte !== enquadramento) {
       enquadramento = recorte;
       mapa.fitBounds(pontos.getBounds(), { padding: [20, 20], maxZoom: 15 });
     }
 
     const semPosicao = r.linhas.length - comPosicao.length;
-    $('#mapa-sub').textContent = sub + (est.aba !== 'local' ? ` · clique numa ${um} para ver as escolas` : '');
+    const dicaClique = est.aba !== 'local' ? ` · clique numa ${um} para ver as escolas` : est.local < 0 ? ' · clique numa escola para ver só ela' : '';
+    $('#mapa-sub').textContent = sub + dicaClique;
     $('#mapa-legenda').innerHTML = legenda;
     $('#mapa-nota').textContent = semPosicao
       ? `${plural(semPosicao, um, varios)} sem coordenadas no cadastro do TSE ${semPosicao === 1 ? 'fica' : 'ficam'} fora do mapa.`
@@ -956,7 +985,7 @@
 
     const top = r.linhas.filter((g) => valorDe(g) > 0).sort((a, b) => valorDe(b) - valorDe(a)).slice(0, TOP_BARRAS);
     const max = top.length ? valorDe(top[0]) : 0;
-    const detalhavel = est.aba !== 'local';
+    const detalhavel = !(est.aba === 'local' && est.local >= 0);
     $('#grafico-barras').innerHTML = top.length ? top.map((g) => {
       const total = valorDe(g);
       const segmentos = partesDe(g).filter(([, q]) => q > 0).map(([c, q]) => {
@@ -966,7 +995,7 @@
       }).join('');
       const nomeCompleto = est.aba === 'local' ? `${g.nome} · ${D.municipios[g.mun]}` : g.nome;
       const tag = detalhavel ? 'button' : 'div';
-      return `<${tag} ${detalhavel ? `type="button" data-detalhar="${h(String(g.chave))}" title="Ver as escolas de ${h(g.nome)}"` : ''} class="barra-linha">
+      return `<${tag} ${detalhavel ? `type="button" data-detalhar="${h(String(g.chave))}" title="${est.aba === 'local' ? 'Ver só esta escola' : `Ver as escolas de ${h(g.nome)}`}"` : ''} class="barra-linha">
         <span class="barra-nome"><span title="${h(nomeCompleto)}">${h(g.nome)}</span></span>
         <span class="barra-trilho"><span class="pilha-abs" style="width:${divisao ? 100 : ((total / max) * 100).toFixed(2)}%">${segmentos}</span></span>
         <span class="barra-valor">${num(total)}${n === 1 ? `<small>${pct(total, g.validos)}</small>` : ''}</span>
@@ -981,10 +1010,18 @@
     atualizar();
   }
 
-  // clique numa cidade ou zona (no mapa ou no gráfico): filtra por ela e mostra as escolas
+  // clique no mapa ou no gráfico: cidade ou zona filtra por ela e mostra as escolas; escola filtra só ela
   function detalhar(g) {
-    if (!g || est.aba === 'local') return;
+    if (!g || (est.aba === 'local' && est.local === g.chave)) return;
     dica.hidden = true;
+    if (est.aba === 'local') {
+      est.mun = LOCAIS[g.chave][0];
+      est.local = g.chave;
+      selMun.value = String(est.mun);
+      montarZonas(); // remonta a lista de escolas da cidade, com esta selecionada
+      atualizar();
+      return;
+    }
     if (est.aba === 'municipio') {
       est.mun = g.chave;
       selMun.value = String(est.mun);
@@ -1027,6 +1064,13 @@
 
   selZona.addEventListener('change', () => {
     est.zona = selZona.value;
+    est.limite = PAGINA;
+    montarLocais();
+    atualizar();
+  });
+
+  selLocal.addEventListener('change', () => {
+    est.local = Number(selLocal.value);
     est.limite = PAGINA;
     atualizar();
   });
