@@ -1,0 +1,33 @@
+{
+ "uf": "GO",
+ "nome": "Goiás",
+ "titulo": "Eleições municipais 2024 · Goiás",
+ "gerado": "22/06/2026 10:01",
+ "cidades": 246,
+ "locais": 2483,
+ "base": {
+  "bytes": 289382
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 84359
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1958344
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 8750
+  },
+  {
+   "id": "prefeito-1t-6277",
+   "rotulo": "Prefeito · 1º turno (Suplementar de Joviânia - GO)",
+   "bytes": 400
+  }
+ ]
+}

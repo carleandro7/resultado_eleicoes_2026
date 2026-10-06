@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/MG/prefeito-1t-6248", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Martins Soares)","candidatos":[["45","JOSE SANTANA EMERICK","MARTINS SOARES",0],["15","MICHELL BAHIA DUTRA EMERICK","MARTINS SOARES",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"BM940xCi0xA90xf0xd040A30D10a08040Q10J90d0b040Bo0As0704040-10-k0x00v"});

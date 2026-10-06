@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-406", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DIONÍSIO)","candidatos":[["15","FRANCISCO CASTRO SOUZA FILHO","DIONÍSIO",0],["70","HERMES FREITAS DA COSTA","DIONÍSIO",0],["22","AILTON ARTUZO","DIONÍSIO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"y-q50L10Bl0I30x209050He0Ge0Eo0xf0e050zh0Ch0At0r0a050Hl0H30Dp0t0f050J80I40Dg0xc0g040r070x601"});

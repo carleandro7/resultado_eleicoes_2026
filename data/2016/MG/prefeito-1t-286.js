@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-286", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR IBIRACATU)","candidatos":[["11","ARLIS SOARES COUTINHO","IBIRACATU",0],["14","CARLOS RENATO MENDES DE FREITAS","IBIRACATU",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"zXg40L20Jt0f06040Ks0Cs0q03040yu0yi0204040z00t0501030yl0A006040Ar0xp0401040Ge0zh0801040Ho0Gm0j07040Ds0I20e04"});

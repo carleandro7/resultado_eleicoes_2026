@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/MG/prefeito-1t-605", {"rotulo":"Prefeito · 1º turno (Eleição suplementar Divisa Alegre)","candidatos":[["11","ADEMIR ALVES","DIVISA ALEGRE",0],["13","MARIA APARECIDA FERRAZ SPOSITO","DIVISA ALEGRE",0],["40","GERSON MATOS PEREIRA","DIVISA ALEGRE",0],["14","PAULO FABIO LOPES COSTA","DIVISA ALEGRE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"zw460xEt0I10yi0xe0yd0xd060R80Cf0t0s0n0n060Dr0y00a060c0d"});

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-284", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR SANTANA DA VARGEM)","candidatos":[["12","RENATO TEODORO DA SILVA","SANTANA DA VARGEM",0],["13","EMERSON SILVA ARAUJO","SANTANA DA VARGEM",0],["15","JOAO MARTINS BOAVENTURA","SANTANA DA VARGEM",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Ex950Vb0Ke0y40xi0n050xxc0O30yl0xo0x7050-20Oo0y70xu0x8"});

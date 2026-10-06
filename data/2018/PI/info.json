@@ -1,0 +1,43 @@
+{
+ "uf": "PI",
+ "nome": "Piauí",
+ "titulo": "Eleições gerais 2018 · Piauí",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 224,
+ "locais": 3464,
+ "base": {
+  "bytes": 338004
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 83126
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 72227
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 122284
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 305355
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 364122
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 40349
+  }
+ ]
+}

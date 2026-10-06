@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SP/prefeito-1t-376", {"rotulo":"Prefeito · 1º turno (SUPLEMENTAR  LAGOINHA)","candidatos":[["22","TIAGO MAGNO DE OLIVEIRA","LAGOINHA",0],["45","JOSÉ GALVÃO DA ROCHA","LAGOINHA",0],["25","DIEGO JOSÉ DA SILVA","LAGOINHA",0],["50","TADEU ARQUIMEDES RIBEIRO DE OLIVEIRA","LAGOINHA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"zWu60xGf0_g0D90zq0xq0xm060Ou0Jo0zk0xu0q0i"});

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SP/prefeito-1t-279", {"rotulo":"Prefeito · 1º turno (SUPLEMENTAR DE SEBASTIANÓPOLIS DO SUL)","candidatos":[["14","MANOEL ERANI LEITE MAGALHÃES","SEBASTIANÓPOLIS DO SUL",0],["40","OTAMIR AMERICO MARQUES","SEBASTIANÓPOLIS DO SUL",0],["23","EDIVALDO DOMINGOS BORGES","SEBASTIANÓPOLIS DO SUL",0],["20","ANTONIO EDUARDO MENEGUINI","SEBASTIANÓPOLIS DO SUL",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"FEo60xD70_q0Bo0y60xn0p"});

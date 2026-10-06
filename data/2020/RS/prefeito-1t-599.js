@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/RS/prefeito-1t-599", {"rotulo":"Prefeito · 1º turno (Eleição suplementar Redentora/RS)","candidatos":[["15","MALBERK ANTOINE KUNST DULLIUS","REDENTORA",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"BD030An0q0f030C30u0e030An0r0d030xq0l06030A30h03030Fm0ym0e030Fn0yu0m030Wi0Bd0yo030Ea0xf05030xq0203030zn0r09030yo0m06130As0x70g"});

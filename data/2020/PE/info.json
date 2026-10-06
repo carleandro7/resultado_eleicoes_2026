@@ -1,0 +1,58 @@
+{
+ "uf": "PE",
+ "nome": "Pernambuco",
+ "titulo": "Eleições municipais 2020 · Pernambuco",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 184,
+ "locais": 3279,
+ "base": {
+  "bytes": 343116
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 115176
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2235340
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 7325
+  },
+  {
+   "id": "prefeito-1t-513",
+   "rotulo": "Prefeito · 1º turno (Eleições Suplementares Capoeiras 2021)",
+   "bytes": 451
+  },
+  {
+   "id": "prefeito-1t-581",
+   "rotulo": "Prefeito · 1º turno (Eleições Suplementares de Maraial)",
+   "bytes": 437
+  },
+  {
+   "id": "prefeito-1t-514",
+   "rotulo": "Prefeito · 1º turno (Eleições Suplementares Palmeirina 2021)",
+   "bytes": 411
+  },
+  {
+   "id": "vereador-1t-609",
+   "rotulo": "Vereador · 1º turno (Eleições Suplementares Tacaimbó 2023)",
+   "bytes": 2255
+  },
+  {
+   "id": "prefeito-2t-562",
+   "rotulo": "Prefeito · 2º turno (Eleições Suplementares Pesqueira 2022)",
+   "bytes": 768
+  },
+  {
+   "id": "prefeito-2t-574",
+   "rotulo": "Prefeito · 2º turno (Eleições Suplementares Joaquim Nabuco)",
+   "bytes": 520
+  }
+ ]
+}

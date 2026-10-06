@@ -1,0 +1,43 @@
+{
+ "uf": "AL",
+ "nome": "Alagoas",
+ "titulo": "Eleições gerais 2018 · Alagoas",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 102,
+ "locais": 991,
+ "base": {
+  "bytes": 103258
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 33970
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 20846
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 31589
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 139636
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 236502
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 13771
+  }
+ ]
+}

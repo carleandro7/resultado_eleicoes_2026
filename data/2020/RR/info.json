@@ -1,0 +1,33 @@
+{
+ "uf": "RR",
+ "nome": "Roraima",
+ "titulo": "Eleições municipais 2020 · Roraima",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 15,
+ "locais": 318,
+ "base": {
+  "bytes": 31607
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 10974
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 185558
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2197
+  },
+  {
+   "id": "prefeito-1t-626",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Alto Alegre)",
+   "bytes": 517
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/CE/prefeito-1t-483", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar - Martinópole/CE)","candidatos":[["11","FRANCISCO EDIBERTO DE SOUZA","MARTINÓPOLE",0],["22","FRANCISCO FONTENELE JUNIOR","MARTINÓPOLE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"AAo40Yi0Wu0n0a040Iq0I20905040R00Rr0f0e040H60Hq0807040Nv0Ov060d040yi0Av0104040Eu0B10504020ym0xj040Yi0Y00k0h"});

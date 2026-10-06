@@ -1,0 +1,48 @@
+{
+ "uf": "DF",
+ "nome": "Distrito Federal",
+ "titulo": "Eleições gerais 2010 · Distrito Federal",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 1,
+ "locais": 549,
+ "base": {
+  "bytes": 48228
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 15180
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 14972
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 23120
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 100186
+  },
+  {
+   "id": "deputado-distrital-1t",
+   "rotulo": "Deputado Distrital · 1º turno",
+   "bytes": 397094
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 8441
+  },
+  {
+   "id": "governador-2t",
+   "rotulo": "Governador · 2º turno",
+   "bytes": 8386
+  }
+ ]
+}

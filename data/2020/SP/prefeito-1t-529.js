@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SP/prefeito-1t-529", {"rotulo":"Prefeito · 1º turno (Suplementar de Mineiros do Tietê)","candidatos":[["17","GEZIEL PEREIRA LIMA","MINEIROS DO TIETÊ",0],["15","JOSÉ ROBERTO CIPPOLA","MINEIROS DO TIETÊ",0],["10","JUNIOR CESAR POLIANI MACHADO","MINEIROS DO TIETÊ",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"ANj50Vf0L80v0xi0xd050U60M00p0xg0xf050xw50J70xr0xh0xr050xBo0St0xb0y60xt"});

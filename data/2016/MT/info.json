@@ -1,0 +1,63 @@
+{
+ "uf": "MT",
+ "nome": "Mato Grosso",
+ "titulo": "Eleições municipais 2016 · Mato Grosso",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 141,
+ "locais": 1485,
+ "base": {
+  "bytes": 163946
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 47021
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 953585
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2618
+  },
+  {
+   "id": "prefeito-1t-280",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR PRIMAVERA DO LESTE)",
+   "bytes": 634
+  },
+  {
+   "id": "prefeito-1t-281",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR MIRASSOL D'OESTE)",
+   "bytes": 737
+  },
+  {
+   "id": "prefeito-1t-261",
+   "rotulo": "Prefeito · 1º turno (ALTO TAQUARI-MT-JUL-2017)",
+   "bytes": 451
+  },
+  {
+   "id": "prefeito-1t-381",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUP. RIBEIRÃO CASCALHEIRA)",
+   "bytes": 434
+  },
+  {
+   "id": "prefeito-1t-379",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUP. BOM JESUS DO ARAGUAIA)",
+   "bytes": 425
+  },
+  {
+   "id": "prefeito-1t-240",
+   "rotulo": "Prefeito · 1º turno (CONQUISTA D'OESTE-MT-MAR/2017)",
+   "bytes": 395
+  },
+  {
+   "id": "prefeito-1t-342",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUP. PLANALTO DA SERRA-MT)",
+   "bytes": 422
+  }
+ ]
+}

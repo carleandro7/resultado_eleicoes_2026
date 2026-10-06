@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-242", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR ERVÁLIA)","candidatos":[["25","ELOISIO ANTONIO DE CASTRO","ERVÁLIA",0],["45","ALEX RUELA DE ALMEIDA","ERVÁLIA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"zC340x20y30307140xJ90xC60xt0xt040Gk0Hp0k0f140B70D2070a040xGp0xz50z40y4040xSa0xJl0zd0z2040xx10V20x60xk040Cq0zr0a0i040Q90No0x80u040Ck0ze0909"});

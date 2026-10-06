@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/TO/prefeito-1t-292", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR ITACAJÁ-TO)","candidatos":[["22","CLEOMAN CORREIA COSTA","ITACAJÁ",0],["45","MANOEL DE SOUZA PINHEIRO","ITACAJÁ",0],["13","RAIMUNDO MARCOS SOARES COELHO","ITACAJÁ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"I050Ld0Mq050k06050xz20_h070o07050zt0zm020601030E80Ab19150Mt0Js040f0b"});

@@ -1,0 +1,48 @@
+{
+ "uf": "DF",
+ "nome": "Distrito Federal",
+ "titulo": "Eleições gerais 2014 · Distrito Federal",
+ "gerado": "28/07/2021 11:54",
+ "cidades": 1,
+ "locais": 599,
+ "base": {
+  "bytes": 53712
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 19750
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 15378
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 16794
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 141129
+  },
+  {
+   "id": "deputado-distrital-1t",
+   "rotulo": "Deputado Distrital · 1º turno",
+   "bytes": 458648
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 9117
+  },
+  {
+   "id": "governador-2t",
+   "rotulo": "Governador · 2º turno",
+   "bytes": 9194
+  }
+ ]
+}

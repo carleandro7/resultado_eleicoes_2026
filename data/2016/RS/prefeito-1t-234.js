@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RS/prefeito-1t-234", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE SÃO VENDELINO)","candidatos":[["14","EVANDRO LUIS SCHNEIDER","SÃO VENDELINO",0],["15","CAREN ISABEL SCHNEIDER DALCIN","SÃO VENDELINO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Dwq40Sd0Nj0b06040C10zo0405040A70zp0202030y00ya01"});

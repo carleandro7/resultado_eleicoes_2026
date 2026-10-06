@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/BA/prefeito-1t-533", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar João Dourado-BA)","candidatos":[["22","DIAMERSON COSTA CARDOSO DOURADO","JOÃO DOURADO",0],["55","ABIMAEL DOURADO LIMA JUNIOR","JOÃO DOURADO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"AM340xE40xBh0x40j040xMp0xBb0xd0x4040Bs0B60201040Hh0yl0705040Ev0B40201040xFj0xwd0xc0d040Dg0C60502040Bh0Ag0202030xm0xr12040Cj0Bc0a02020ym0x9040Tu0Vq0e0g040Ca0z70403040B60z50301140Id0Df0c03"});

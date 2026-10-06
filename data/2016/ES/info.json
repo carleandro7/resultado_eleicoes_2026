@@ -1,0 +1,48 @@
+{
+ "uf": "ES",
+ "nome": "Espírito Santo",
+ "titulo": "Eleições municipais 2016 · Espírito Santo",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 78,
+ "locais": 1674,
+ "base": {
+  "bytes": 162844
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 48719
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1061212
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 6151
+  },
+  {
+   "id": "prefeito-1t-411",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE CASTELO (ES))",
+   "bytes": 907
+  },
+  {
+   "id": "prefeito-1t-276",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE FUNDÃO (ES))",
+   "bytes": 470
+  },
+  {
+   "id": "prefeito-1t-262",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR MUQUI (ES))",
+   "bytes": 675
+  },
+  {
+   "id": "prefeito-1t-386",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE IRUPI (ES))",
+   "bytes": 446
+  }
+ ]
+}

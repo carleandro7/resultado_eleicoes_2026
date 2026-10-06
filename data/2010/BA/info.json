@@ -1,0 +1,43 @@
+{
+ "uf": "BA",
+ "nome": "Bahia",
+ "titulo": "Eleições gerais 2010 · Bahia",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 417,
+ "locais": 9548,
+ "base": {
+  "bytes": 1124585
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 168208
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 178374
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 257722
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 1087319
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 1313805
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 115526
+  }
+ ]
+}

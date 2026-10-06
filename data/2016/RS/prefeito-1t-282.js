@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RS/prefeito-1t-282", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE PARAÍ-RS)","candidatos":[["12","GILBERTO ZANOTTO","PARAÍ",0],["15","LAURIANO ARTICO","PARAÍ",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"AKu40Md0L10a0b040Lm0Kg0a07040Q40Ni0b08030yv0z812040Em0Fg0706120yh0ya040Ti0Q00a0b"});

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/MG/prefeito-1t-6200", {"rotulo":"Prefeito · 1º turno (Eleição suplementar Guapé)","candidatos":[["22","PEDRO LUIS SIMÕES","GUAPÉ",0],["10","RAYZA BEZERRA AGUIAR CAMARA","GUAPÉ",0],["11","LUIZ FERNANDO DE OLIVEIRA","GUAPÉ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"zT350Aa0yj0g0608030xj0xn04050Zp0Oc0z80u0x6050Qn0I60xj0t0t050D20yh080105050Ic0z60g0g0d050N20Ar0k0a0e050Wn0K00y60x20m050zf0A70b0404050z20q010106050y80y2080201050Q90Gu0xd0n0f"});

@@ -1,0 +1,58 @@
+{
+ "uf": "GO",
+ "nome": "Goiás",
+ "titulo": "Eleições municipais 2020 · Goiás",
+ "gerado": "06/12/2024 13:51",
+ "cidades": 246,
+ "locais": 2439,
+ "base": {
+  "bytes": 277395
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 109168
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2320411
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 6927
+  },
+  {
+   "id": "prefeito-1t-611",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de São Simão)",
+   "bytes": 518
+  },
+  {
+   "id": "prefeito-1t-607",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Cachoeira Alta)",
+   "bytes": 475
+  },
+  {
+   "id": "prefeito-1t-616",
+   "rotulo": "Prefeito · 1º turno (Suplementar de Bom Jardim de Goiás)",
+   "bytes": 435
+  },
+  {
+   "id": "prefeito-1t-601",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Iaciara - GO)",
+   "bytes": 480
+  },
+  {
+   "id": "prefeito-1t-627",
+   "rotulo": "Prefeito · 1º turno (Suplementar de Turvelândia - GO)",
+   "bytes": 382
+  },
+  {
+   "id": "vereador-1t-638",
+   "rotulo": "Vereador · 1º turno (Suplementar de Castelândia - GO)",
+   "bytes": 1595
+  }
+ ]
+}

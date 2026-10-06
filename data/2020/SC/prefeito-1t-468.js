@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SC/prefeito-1t-468", {"rotulo":"Prefeito · 1º turno (Nova Eleição Petrolândia)","candidatos":[["11","IRONE DUARTE","PETROLÂNDIA",0],["15","ANGELA ADRIANA KRINDGES DA MOTA","PETROLÂNDIA",0],["19","EDSON SILVA PADILHA","PETROLÂNDIA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yKu50Cv0E2060607050xzm0xA80zo0l0c050I30G10k0504050C90Cl0xf0704050Di0D3080201"});

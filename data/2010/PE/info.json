@@ -1,0 +1,43 @@
+{
+ "uf": "PE",
+ "nome": "Pernambuco",
+ "titulo": "Eleições gerais 2010 · Pernambuco",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 185,
+ "locais": 3168,
+ "base": {
+  "bytes": 311695
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 66883
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 62685
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 84471
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 448950
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 661074
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 42546
+  }
+ ]
+}

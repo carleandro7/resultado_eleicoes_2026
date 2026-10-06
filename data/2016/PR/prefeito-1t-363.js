@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/PR/prefeito-1t-363", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR CONGONHINHAS)","candidatos":[["14","VALDINEI APARECIDO DE OLIVEIRA","CONGONHINHAS",0],["45","APARECIDO RENATO HONORIO","CONGONHINHAS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xxp40Or0Jh0x30k040Bi0Fq0a08040_g0U00yc0t040Gk0E60j08040Pr0J40xc0f"});

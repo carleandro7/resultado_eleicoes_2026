@@ -1,0 +1,43 @@
+{
+ "uf": "BA",
+ "nome": "Bahia",
+ "titulo": "Eleições municipais 2016 · Bahia",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 417,
+ "locais": 9852,
+ "base": {
+  "bytes": 1174863
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 248440
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 4174337
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2189
+  },
+  {
+   "id": "prefeito-1t-303",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE JEREMOABO)",
+   "bytes": 904
+  },
+  {
+   "id": "prefeito-1t-425",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE PILÃO ARCADO)",
+   "bytes": 1184
+  },
+  {
+   "id": "prefeito-1t-404",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE CAMAMU)",
+   "bytes": 881
+  }
+ ]
+}

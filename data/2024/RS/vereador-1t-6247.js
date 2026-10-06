@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/RS/vereador-1t-6247", {"rotulo":"Vereador · 1º turno (Eleição Suplementar Braga - RS)","candidatos":[["11678","EVERTON DELLA LIBERA","BRAGA",0],["11000","VITORIA CAROLINE DELLA LIBERA","BRAGA",0],["11","PROGRESSISTAS","BRAGA",1],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"Rk50B50x2050xq0k050Fo0Bi0g0zs0x5050Ai0y7090xb0b050x706010o05050yq0x4010x405050q0q030903050yo0b040l03050xb0e010h04"});

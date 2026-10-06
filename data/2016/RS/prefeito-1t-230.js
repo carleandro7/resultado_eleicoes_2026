@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RS/prefeito-1t-230", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE ARVOREZINHA)","candidatos":[["12","ROGERIO FELINI FACHINETTO","ARVOREZINHA",0],["11","JAIME TALIETTI BORSATTO","ARVOREZINHA",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"I740yn0Ac0203030B00yb02040Eu0Fq0b02040Bd0Bj0602140yj0ys0205040R40Q20o0t030xi0u13240yt0yb0501040xz50xzt0xf0t140x00xr0201140yk0ys0604040zd0Af0105040Zr0Uq0x60j"});

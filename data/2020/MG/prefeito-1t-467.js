@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/MG/prefeito-1t-467", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Campestre)","candidatos":[["25","MARCO ANTONIO MESSIAS FRANCO","CAMPESTRE",0],["43","RAFAEL CÁSSIO DOS SANTOS","CAMPESTRE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xRr40On0N00xq0o040I20H70x90e040L40Ki0x60k040Rv0R30yj0t040X20Wg0ym0x0040xwb0Z60yp0s040Ei0Ct0l0g040zk0Eo0l04040S80Sl0xv0x1040Hu0H50x30q040D90Cu0j04"});

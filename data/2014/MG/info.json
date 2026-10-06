@@ -1,0 +1,43 @@
+{
+ "uf": "MG",
+ "nome": "Minas Gerais",
+ "titulo": "Eleições gerais 2014 · Minas Gerais",
+ "gerado": "28/07/2021 11:54",
+ "cidades": 853,
+ "locais": 10087,
+ "base": {
+  "bytes": 1055217
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 233725
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 193613
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 191964
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 1672250
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 1785000
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 127379
+  }
+ ]
+}

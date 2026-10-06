@@ -1,0 +1,43 @@
+{
+ "uf": "ES",
+ "nome": "Espírito Santo",
+ "titulo": "Eleições gerais 2010 · Espírito Santo",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 78,
+ "locais": 1643,
+ "base": {
+  "bytes": 155980
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 34796
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 26625
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 35474
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 170093
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 328622
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 21579
+  }
+ ]
+}

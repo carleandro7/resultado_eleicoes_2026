@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SC/prefeito-1t-428", {"rotulo":"Prefeito · 1º turno (NOVA ELEIÇÃO MAR/2020 - LAURENTINO)","candidatos":[["15","MARCELO TADEO ROCHA","LAURENTINO",0],["45","SALESIO NARDELLI","LAURENTINO",0],["14","ADEMIR CAETANO","LAURENTINO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yAs50Ak0zb0A8070a050xz10-70Tk0A40xl150Ar0yd0yk0803030yp0xk0y2050xi0k0xv0401050xg0v0o0402050yj0y20xk0404050x10k0x10202"});

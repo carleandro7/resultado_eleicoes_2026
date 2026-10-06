@@ -1,0 +1,48 @@
+{
+ "uf": "DF",
+ "nome": "Distrito Federal",
+ "titulo": "Eleições gerais 2018 · Distrito Federal",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 1,
+ "locais": 611,
+ "base": {
+  "bytes": 56092
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 24453
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 23405
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 35964
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 190900
+  },
+  {
+   "id": "deputado-distrital-1t",
+   "rotulo": "Deputado Distrital · 1º turno",
+   "bytes": 496034
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 9304
+  },
+  {
+   "id": "governador-2t",
+   "rotulo": "Governador · 2º turno",
+   "bytes": 9294
+  }
+ ]
+}

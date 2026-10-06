@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/PI/prefeito-1t-550", {"rotulo":"Prefeito · 1º turno (Suplementar Murici dos Portela - PI)","candidatos":[["55","FRANCISCA DAS CHAGAS CORREIA DE SOUSA","MURICI DOS PORTELAS",0],["14","AURIDEA SANTOS PORTELA","MURICI DOS PORTELAS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xVp40Ab0zk0504040E10B90h07040Be0A30a07040z30xn0601040At0yc0701030xi0yn02040zr0z60507040Lf0Gs0m05030zk0y802040xh0xr0104040Ml0Jf0n0b040z50yq0401040zj0zm0602030e0z405"});

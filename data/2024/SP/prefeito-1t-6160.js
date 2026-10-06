@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/SP/prefeito-1t-6160", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Panorama)","candidatos":[["40","DANIEL GENOVA","PANORAMA",0],["22","GIULIO CESAR LIMA PIRES","PANORAMA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"BFo40xIt0I20xh0u040T50zl0r0h040Fu0yh0d0b040xzd0D20xd0x2040xzm0Df0x00s040xw10Da0x60h"});

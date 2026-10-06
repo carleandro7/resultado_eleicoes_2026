@@ -1,0 +1,38 @@
+{
+ "uf": "PB",
+ "nome": "Paraíba",
+ "titulo": "Eleições gerais 2026 · Paraíba",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 223,
+ "locais": 1844,
+ "base": {
+  "bytes": 206469
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 44330
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 35987
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 57162
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 260877
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 283598
+  }
+ ]
+}

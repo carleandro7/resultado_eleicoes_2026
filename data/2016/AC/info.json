@@ -1,0 +1,23 @@
+{
+ "uf": "AC",
+ "nome": "Acre",
+ "titulo": "Eleições municipais 2016 · Acre",
+ "gerado": "07/12/2023 14:25",
+ "cidades": 22,
+ "locais": 702,
+ "base": {
+  "bytes": 71792
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 16313
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 279224
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/RS/prefeito-1t-470", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Putinga)","candidatos":[["11","PAULO SERGIO LIMA DOS SANTOS","PUTINGA",0],["55","FERNANDO GONÇALVES DOS SANTOS","PUTINGA",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"BB540D10B70702040Ko0J10707020xf0y3020xv0x3020xq0y2030xc0xj01030l0yj02030Ah0zd01030xt0xb01030xn0ym11030xb0xp11030xh0xt01040y20y00101040Jt0Io0708"});

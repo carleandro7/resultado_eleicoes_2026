@@ -1,0 +1,33 @@
+{
+ "uf": "RJ",
+ "nome": "Rio de Janeiro",
+ "titulo": "Eleições municipais 2024 · Rio de Janeiro",
+ "gerado": "06/10/2025 10:00",
+ "cidades": 92,
+ "locais": 4965,
+ "base": {
+  "bytes": 526286
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 147034
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 3287009
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 4044
+  },
+  {
+   "id": "prefeito-1t-6240",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Três Rios Out/2025)",
+   "bytes": 1549
+  }
+ ]
+}

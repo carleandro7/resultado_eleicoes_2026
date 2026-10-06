@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/TO/prefeito-1t-256", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR TAGUATINGA-TO)","candidatos":[["43","ALTAMIRANDO ZEQUINHA GONÇALVES TAGUATINGA","TAGUATINGA",0],["55","LUCIO RENATO JOSE PEREIRA","TAGUATINGA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Va40Tf0Nv0xf0j040Yf0Ol0xr0j040Le0L80xa0l040xg0x90501040Tc0Nk0xe0o040Is0Hh0x70f040C00B40g02040Qo0Q30xi0p"});

@@ -1,0 +1,38 @@
+{
+ "uf": "MG",
+ "nome": "Minas Gerais",
+ "titulo": "Eleições gerais 2026 · Minas Gerais",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 853,
+ "locais": 10091,
+ "base": {
+  "bytes": 1104018
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 241908
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 267744
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 367782
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 1780800
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 2029080
+  }
+ ]
+}

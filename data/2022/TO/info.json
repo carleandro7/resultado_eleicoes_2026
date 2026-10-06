@@ -1,0 +1,43 @@
+{
+ "uf": "TO",
+ "nome": "Tocantins",
+ "titulo": "Eleições gerais 2022 · Tocantins",
+ "gerado": "01/11/2022 16:05",
+ "cidades": 139,
+ "locais": 850,
+ "base": {
+  "bytes": 91351
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 18348
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 18698
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 22629
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 116004
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 147167
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 10641
+  }
+ ]
+}

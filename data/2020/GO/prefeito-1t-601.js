@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/GO/prefeito-1t-601", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Iaciara - GO)","candidatos":[["22","WAGNER NERY SAMPAIO","IACIARA",0],["23","ARTHUR HUMBERTO RODRIGUES DE PAULA","IACIARA",0],["12","GILMAR NERY DE OLIVEIRA","IACIARA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xCm50k0y4050305050Ga0F60Cm0x90m050Om0Oh0Iv0xs0xb050Qc0R50Mj0xh0xd050Bd0z80A60606"});

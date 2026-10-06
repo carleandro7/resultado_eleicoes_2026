@@ -1,0 +1,48 @@
+{
+ "uf": "PA",
+ "nome": "Pará",
+ "titulo": "Eleições municipais 2020 · Pará",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 144,
+ "locais": 5232,
+ "base": {
+  "bytes": 481998
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 153292
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2626830
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 8142
+  },
+  {
+   "id": "prefeito-1t-631",
+   "rotulo": "Prefeito · 1º turno (Suplementares de Monte Alegre/PA)",
+   "bytes": 2315
+  },
+  {
+   "id": "prefeito-1t-515",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Tomé-Açu - PA)",
+   "bytes": 830
+  },
+  {
+   "id": "prefeito-1t-591",
+   "rotulo": "Prefeito · 1º turno (Suplementar Viseu-PA 05/02/2023)",
+   "bytes": 1117
+  },
+  {
+   "id": "prefeito-1t-511",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Goianésia do Pará)",
+   "bytes": 806
+  }
+ ]
+}

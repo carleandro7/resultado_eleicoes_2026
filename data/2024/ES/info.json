@@ -1,0 +1,28 @@
+{
+ "uf": "ES",
+ "nome": "Espírito Santo",
+ "titulo": "Eleições municipais 2024 · Espírito Santo",
+ "gerado": "28/10/2024 11:46",
+ "cidades": 78,
+ "locais": 1750,
+ "base": {
+  "bytes": 177588
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 51025
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1009854
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 1915
+  }
+ ]
+}

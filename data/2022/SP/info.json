@@ -1,0 +1,48 @@
+{
+ "uf": "SP",
+ "nome": "São Paulo",
+ "titulo": "Eleições gerais 2022 · São Paulo",
+ "gerado": "01/11/2022 16:05",
+ "cidades": 645,
+ "locais": 10846,
+ "base": {
+  "bytes": 1151057
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 319258
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 307370
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 342242
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 5049219
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 5634462
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 157778
+  },
+  {
+   "id": "governador-2t",
+   "rotulo": "Governador · 2º turno",
+   "bytes": 160203
+  }
+ ]
+}

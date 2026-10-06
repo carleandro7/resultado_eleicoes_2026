@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RJ/prefeito-1t-347", {"rotulo":"Prefeito · 1º turno (RJ - SUPLEMENTAR DE APERIBÉ)","candidatos":[["45","VANDELAR DIAS DA SILVA","APERIBÉ",0],["11","VIRLEY GONÇALVES FIGUEIRA","APERIBÉ",0],["20","INACIO MARTINS ZANATA","APERIBÉ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"y850xwk0Rv0Cr0xq09050xDe0Yo0Dd0z80l150xK40xw10F40yv0i"});

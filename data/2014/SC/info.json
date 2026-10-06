@@ -1,0 +1,43 @@
+{
+ "uf": "SC",
+ "nome": "Santa Catarina",
+ "titulo": "Eleições gerais 2014 · Santa Catarina",
+ "gerado": "28/07/2021 11:54",
+ "cidades": 295,
+ "locais": 3891,
+ "base": {
+  "bytes": 448953
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 87818
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 79465
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 80362
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 398027
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 550069
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 48149
+  }
+ ]
+}

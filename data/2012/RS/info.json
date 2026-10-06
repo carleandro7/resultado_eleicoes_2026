@@ -1,0 +1,28 @@
+{
+ "uf": "RS",
+ "nome": "Rio Grande do Sul",
+ "titulo": "Eleições municipais 2012 · Rio Grande do Sul",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 497,
+ "locais": 8887,
+ "base": {
+  "bytes": 894859
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 211836
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 3289779
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 1884
+  }
+ ]
+}

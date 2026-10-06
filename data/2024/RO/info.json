@@ -1,0 +1,28 @@
+{
+ "uf": "RO",
+ "nome": "Rondônia",
+ "titulo": "Eleições municipais 2024 · Rondônia",
+ "gerado": "28/10/2024 11:46",
+ "cidades": 52,
+ "locais": 659,
+ "base": {
+  "bytes": 78159
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 21801
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 440684
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2303
+  }
+ ]
+}

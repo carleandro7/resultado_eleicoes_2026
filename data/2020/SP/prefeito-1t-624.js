@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SP/prefeito-1t-624", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Analândia)","candidatos":[["77","SILVANA MARCIA PERIN CAMPBELL PENNA","ANALÂNDIA",0],["15","LEANDRO EDUARDO SANTARPIO","ANALÂNDIA",0],["10","ROGÉRIO CONCEIÇÃO DOS SANTOS","ANALÂNDIA",0],["12","ODAIR JOSÉ ARGENTINO MISTRO","ANALÂNDIA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Ba60O40O90Bp0y80p0m060Ql0K70Dp0yj0xa0t"});

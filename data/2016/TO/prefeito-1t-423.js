@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/TO/prefeito-1t-423", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR PUGMIL-TO)","candidatos":[["45","DIRCINEU FRANCISCO BOLINA","PUGMIL",0],["23","NAZARÉ AMÂNCIO DE SOUZA","PUGMIL",0],["40","VALMOR HAGESTEDT","PUGMIL",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Si50Kq0Hl0x00g02050Ga0Dq0v0601"});

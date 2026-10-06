@@ -1,0 +1,53 @@
+{
+ "uf": "MG",
+ "nome": "Minas Gerais",
+ "titulo": "Eleições municipais 2024 · Minas Gerais",
+ "gerado": "22/06/2026 10:01",
+ "cidades": 853,
+ "locais": 10086,
+ "base": {
+  "bytes": 1098985
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 332853
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 7085411
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 8427
+  },
+  {
+   "id": "prefeito-1t-6200",
+   "rotulo": "Prefeito · 1º turno (Eleição suplementar Guapé)",
+   "bytes": 557
+  },
+  {
+   "id": "prefeito-1t-6275",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Bonito de Minas)",
+   "bytes": 678
+  },
+  {
+   "id": "prefeito-1t-6248",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Martins Soares)",
+   "bytes": 433
+  },
+  {
+   "id": "prefeito-1t-6276",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Amparo do Serra)",
+   "bytes": 410
+  },
+  {
+   "id": "prefeito-1t-6237",
+   "rotulo": "Prefeito · 1º turno (Eleição Supl. São José da Varginha)",
+   "bytes": 541
+  }
+ ]
+}

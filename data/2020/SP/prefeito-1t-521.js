@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SP/prefeito-1t-521", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Piacatu)","candidatos":[["45","RICARDO FRANCISCO LEMES DA SILVA","PIACATU",0],["19","MARCOS MORAES","PIACATU",0],["14","JOSE CARLOS DA SILVA","PIACATU",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"BHj50xH90Qh0Gm0yv0s050Li0Fh0yv0r0m"});

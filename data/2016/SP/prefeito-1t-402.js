@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SP/prefeito-1t-402", {"rotulo":"Prefeito · 1º turno (SUPLEMENTAR MIRANDOPOLIS 9/19)","candidatos":[["17","EVERTON LUIZ FERNANDES SODARIO RAIMUNDO","MIRANDÓPOLIS",0],["20","DAVID BOAVENTURA DA SILVA","MIRANDÓPOLIS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"AHh40Wc0O90C10z9040xTf0xAq0I80Db040xyt0Vi0E10Ah040Mc0M80yu0y9140xX40xzb0J40Cj"});

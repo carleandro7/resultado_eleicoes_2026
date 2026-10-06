@@ -1,18 +1,20 @@
 /* Painel eleitoral: lê os dados gerados por scripts/gerar_dados.py e desenha filtros, resumo e tabela.
  *
- * data/estados.js       window.ESTADOS_ELEICAO = { estados: [{ uf, nome, titulo, cargos: [{ id, rotulo, bytes }] }] }
- * data/<UF>/base.js     municipios: ["BOA VISTA", ...], bairros: ["CENTRO", ...]
- *                       locais:     [[índice do município, "zona", "nome do local", "endereço", latitude, longitude,
- *                                     índice do bairro (-1 = sem bairro)], ...]
- * data/<UF>/<cargo>.js  rotulo, candidatos: [[número, nome, UE, tipo], ...]
- *                       votos: [local, n, candidato, qtd, ... (n pares candidato/qtd), próximo local, n, ...]
+ * data/eleicoes.js            window.ELEICOES = { anos: [{ ano, tipo: "gerais" | "municipais",
+ *                               estados: [{ uf, nome, titulo, cargos: [{ id, rotulo, bytes }] }] }] }
+ * data/<ano>/<UF>/base.js     municipios: ["BOA VISTA", ...], bairros: ["CENTRO", ...]
+ *                             locais:     [[índice do município, "zona", "nome do local", "endereço", latitude, longitude,
+ *                                           índice do bairro (-1 = sem bairro)], ...]
+ * data/<ano>/<UF>/<cargo>.js  rotulo, candidatos: [[número, nome, UE (cidade, só em prefeito e vereador), tipo], ...]
+ *                             votos: texto compacto (ver descompactar), lido como
+ *                                    [local, n, candidato, qtd, ... (n pares candidato/qtd), próximo local, n, ...]
  * Tipo do candidato: 0 = candidato, 1 = voto de legenda, 2 = branco/nulo.
- * Cada arquivo chama window.registrarDados(chave, dados); só o estado e o cargo vistos são baixados.
+ * Cada arquivo chama window.registrarDados(chave, dados); só o ano, o estado e o cargo vistos são baixados.
  */
 (function () {
   'use strict';
 
-  const INDICE = window.ESTADOS_ELEICAO;
+  const INDICE = window.ELEICOES;
   const MAX_SELECIONADOS = 8; // uma cor categórica por candidato; acima disso a comparação fica ilegível
   const PAGINA = 50;
   const LEGENDA = 1;
@@ -32,15 +34,16 @@
     ? `${(bytes / 1e6).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} MB`
     : `${Math.max(1, Math.round(bytes / 1e3))} KB`);
 
-  if (!INDICE || !INDICE.estados || !INDICE.estados.length) {
+  if (!INDICE || !INDICE.anos || !INDICE.anos.length) {
     $('.pagina').innerHTML = `<div class="erro"><h1>Dados não encontrados</h1><p class="texto-sec">
       Gere a pasta <code>data/</code> com <code>python3 scripts/gerar_dados.py --ano 2026</code>
       e recarregue a página.</p></div>`;
     return;
   }
 
-  // estado e cargo abertos no momento
-  let INFO = null;       // entrada do estado em estados.js
+  // eleição, estado e cargo abertos no momento
+  let ANO = null;        // entrada da eleição (ano) em eleicoes.js
+  let INFO = null;       // entrada do estado em ANO.estados
   let CARGO_INFO = null; // entrada do cargo em INFO.cargos
   let D = null;          // base do estado: municipios e locais
   let CARGO = null;      // candidatos e votos do cargo
@@ -74,9 +77,37 @@
 
   const eleicao = () => CARGO;
   const cands = () => eleicao().candidatos;
+  // prefeito e vereador: cada cidade tem os seus candidatos
+  const porCidade = () => (eleicao()._variasUes ??= new Set(cands().filter((x) => x[3] !== ESPECIAL).map((x) => x[2])).size > 1);
+
   // Os 8 mais votados do cargo no estado têm cor fixa (a lista de candidatos vem ordenada por votos),
   // usada no mapa e no gráfico; ao ser selecionado, o candidato fica com essa mesma cor se ela estiver livre.
-  const corFixa = (c) => (c < MAX_SELECIONADOS && cands()[c][3] !== ESPECIAL ? c : -1);
+  // Com candidatos por cidade e uma cidade escolhida, são os 8 mais votados dela.
+  let slotFixo = new Int8Array(0);
+  let coresDe = '';
+  function prepararCores() {
+    const chave = `${ANO.ano}/${INFO.uf}/${CARGO_INFO.id}/${porCidade() ? est.mun : -1}`;
+    if (chave === coresDe) return;
+    coresDe = chave;
+    const { candidatos: C, votos: V } = eleicao();
+    let ordem = [...C.keys()];
+    if (porCidade() && est.mun >= 0) {
+      const total = new Float64Array(C.length);
+      for (let i = 0; i < V.length;) {
+        const fim = i + 2 + 2 * V[i + 1];
+        if (LOCAIS[V[i]][0] === est.mun) for (let j = i + 2; j < fim; j += 2) total[V[j]] += V[j + 1];
+        i = fim;
+      }
+      ordem = ordem.filter((c) => total[c] > 0).sort((a, b) => total[b] - total[a]);
+    }
+    slotFixo = new Int8Array(C.length).fill(-1);
+    let slot = 0;
+    for (const c of ordem) {
+      if (slot >= MAX_SELECIONADOS) break;
+      if (C[c][3] !== ESPECIAL) slotFixo[c] = slot++;
+    }
+  }
+  const corFixa = (c) => slotFixo[c];
   const corSlot = (slot) => `var(--s${slot + 1})`;
   const cor = (c) => corSlot(est.cor.get(c));
   const corNeutra = 'var(--neutro)';
@@ -93,8 +124,7 @@
   function detalheCand(c) {
     const [numero, , ue, tipo] = cands()[c];
     if (tipo === ESPECIAL) return 'brancos e nulos';
-    const varias = eleicao()._variasUes ??= new Set(cands().filter((x) => x[3] !== ESPECIAL).map((x) => x[2])).size > 1;
-    return `nº ${numero}${varias && ue ? ' · ' + nomeProprio(ue) : ''}`;
+    return `nº ${numero}${porCidade() && ue ? ' · ' + nomeProprio(ue) : ''}`;
   }
 
   function textoBuscaCand(c) {
@@ -239,6 +269,7 @@
 
   /* ---------- filtros ---------- */
 
+  const selAno = $('#f-ano');
   const selEstado = $('#f-estado');
   const selEleicao = $('#f-eleicao');
   const selMun = $('#f-municipio');
@@ -265,13 +296,15 @@
     nomesLocais = LOCAIS.map((L) => semAcento(L[2]));
     ordemLocais = [...LOCAIS.keys()].sort((a, b) => ordenaTexto(LOCAIS[a][2], LOCAIS[b][2]));
 
-    document.title = `${INFO.nome} · Painel Eleitoral`;
+    document.title = `${INFO.nome} ${ANO.ano} · Painel Eleitoral`;
     $('#titulo').textContent = INFO.titulo;
     $('#subtitulo').textContent = `${plural(INFO.cargos.length, 'cargo', 'cargos')} · ${plural(D.municipios.length, 'cidade', 'cidades')} · ${plural(LOCAIS.length, 'local de votação', 'locais de votação')}`;
     $('#rodape').textContent = `Fonte: ${INDICE.fonte || 'TSE'}${INFO.gerado ? ` · arquivo gerado pelo TSE em ${INFO.gerado}` : ''}`;
   }
 
   function montarFiltros() {
+    selAno.value = ANO.ano;
+    selEstado.innerHTML = ANO.estados.map((e) => `<option value="${h(e.uf)}">${h(e.nome)}</option>`).join('');
     selEstado.value = INFO.uf;
     selEleicao.innerHTML = INFO.cargos.map((c) => `<option value="${h(c.id)}">${h(c.rotulo)}</option>`).join('');
     selEleicao.value = CARGO_INFO.id;
@@ -604,9 +637,12 @@
 
   function linhaBarra(c, valor, max, validos, corBarra, detalhe, comoBotao) {
     const tag = comoBotao ? 'button' : 'div';
+    const [numero, , ue] = cands()[c];
+    // prefeito/vereador sem cidade escolhida: a lista mistura cidades, então mostra de onde é cada um
+    const onde = porCidade() && est.mun < 0 && ue ? ` · ${nomeProprio(ue)}` : '';
     return `<${tag} ${comoBotao ? `type="button" data-adicionar="${c}" title="Selecionar ${h(nomeCand(c))}"` : ''} class="barra-linha">
       <span class="barra-nome">${corBarra !== corNeutra ? `<span class="ponto" style="background:${corBarra}"></span>` : ''}
-        <span>${h(nomeCand(c))}</span><small>${h(cands()[c][0])}</small></span>
+        <span>${h(nomeCand(c))}</span><small>${h(numero + onde)}</small></span>
       <span class="barra-trilho"><span class="barra-preenchida" style="width:${max ? (valor / max) * 100 : 0}%;background:${corBarra}"></span></span>
       <span class="barra-valor">${num(valor)}<small>${pct(valor, validos)}</small></span>
       ${detalhe ? `<span class="barra-detalhe">${detalhe}</span>` : ''}
@@ -859,7 +895,7 @@
     return { cabecalho, valores };
   }
 
-  const nomeArquivo = () => semAcento(`${INFO.uf} ${CARGO_INFO.rotulo} por ${est.aba}`).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const nomeArquivo = () => semAcento(`${ANO.ano} ${INFO.uf} ${CARGO_INFO.rotulo} por ${est.aba}`).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
   function baixarCsv() {
     if (!tabelaAtual) return;
@@ -1000,7 +1036,8 @@
       const cor = corDoCandidato(c);
       doc.setFillColor(...cor);
       doc.circle(M + 3, y - 3, 3, 'F');
-      escrever(caber(`${nomeCand(c)}  ${C[c][0]}`, larNome - 16, 8.5), M + 11, y, { tam: 8.5 });
+      const onde = porCidade() && est.mun < 0 && C[c][2] ? ` · ${nomeProprio(C[c][2])}` : '';
+      escrever(caber(`${nomeCand(c)}  ${C[c][0]}${onde}`, larNome - 16, 8.5), M + 11, y, { tam: 8.5 });
       doc.setFillColor(...cor); // escrever texto troca a cor de preenchimento do PDF
       doc.roundedRect(M + larNome, y - 7.5, Math.max(1.5, (totCand[c] / maior) * larBarra), 8, 1.5, 1.5, 'F');
       escrever(`${num(totCand[c])}   ${pct(totCand[c], escopo.validos)}`, largura - M, y, { tam: 8.5, negrito: true, alinhar: 'right' });
@@ -1136,33 +1173,98 @@
     status.classList.toggle('status-erro', Boolean(erro));
   }
 
+  // Votos em texto compacto, gravados por scripts/gerar_dados.py (votos_compactos): cada número é uma
+  // sequência de "dígitos" de 5 bits do ALFABETO, os 32 primeiros fecham o número e os outros 32 dizem que
+  // ele continua. Locais e candidatos vêm como distância até o anterior; aqui voltam a ser índices.
+  const ALFABETO = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_';
+  const DIGITO = new Int8Array(128).fill(-1);
+  for (let i = 0; i < ALFABETO.length; i++) DIGITO[ALFABETO.charCodeAt(i)] = i;
+
+  function descompactar(texto) {
+    const V = new Int32Array(texto.length); // cada número ocupa pelo menos um caractere
+    let n = 0;
+    let valor = 0;
+    for (let i = 0; i < texto.length; i++) {
+      const d = DIGITO[texto.charCodeAt(i)];
+      if (d < 0) throw new Error('arquivo de votos corrompido');
+      if (d >= 32) valor = valor * 32 + (d - 32);
+      else { V[n++] = valor * 32 + d; valor = 0; }
+    }
+    for (let i = 0, local = -1; i < n;) {
+      local += V[i] + 1;
+      V[i] = local;
+      const fim = i + 2 + 2 * V[i + 1];
+      for (let j = i + 2, c = -1; j < fim; j += 2) {
+        c += V[j] + 1;
+        V[j] = c;
+      }
+      i = fim;
+    }
+    return V.subarray(0, n);
+  }
+
   let pedido = 0; // descarta respostas de trocas que já ficaram para trás
 
-  async function abrir(uf, idCargo) {
-    const meu = ++pedido;
-    const info = INDICE.estados.find((e) => e.uf === uf) || INDICE.estados[0];
-    const cargo = info.cargos.find((c) => c.id === idCargo)
-      || info.cargos.find((c) => c.rotulo === CARGO_INFO?.rotulo) // mantém o cargo ao trocar de estado
-      || info.cargos[0];
-    const trocaEstado = info !== INFO;
+  // cidade, zona, bairro e escola escolhidos, pelo nome: ao trocar de eleição no mesmo estado os
+  // índices mudam (cada ano tem o seu cadastro de locais), mas os nomes continuam valendo
+  function recortePorNome() {
+    const L = est.local >= 0 ? LOCAIS[est.local] : null;
+    return {
+      mun: est.mun >= 0 ? semAcento(D.municipios[est.mun]) : '',
+      zona: est.zona,
+      bairro: est.bairro >= 0 ? semAcento(D.bairros[est.bairro]) : '',
+      local: L ? semAcento(L[2]) : '',
+      zonaLocal: L ? L[1] : '',
+    };
+  }
 
-    selEstado.value = info.uf;
+  function aplicarRecorte(r) {
+    est.mun = r.mun ? D.municipios.findIndex((m) => semAcento(m) === r.mun) : -1;
+    est.zona = est.mun >= 0 || !r.mun ? r.zona : ''; // montarZonas tira a zona se ela não existir mais
+    est.bairro = est.mun >= 0 && r.bairro ? (D.bairros || []).findIndex((b) => semAcento(b) === r.bairro) : -1;
+    est.local = -1;
+    if (est.mun >= 0 && r.local) {
+      const mesmos = [...LOCAIS.keys()].filter((l) => LOCAIS[l][0] === est.mun && nomesLocais[l] === r.local);
+      est.local = mesmos.find((l) => LOCAIS[l][1] === r.zonaLocal) ?? mesmos[0] ?? -1;
+    }
+  }
+
+  async function abrir(ano, uf, idCargo) {
+    const meu = ++pedido;
+    const eleicaoAno = INDICE.anos.find((a) => a.ano === ano) || ANO || INDICE.anos[0];
+    const info = eleicaoAno.estados.find((e) => e.uf === uf) || eleicaoAno.estados[0];
+    const cargo = info.cargos.find((c) => c.id === idCargo)
+      || info.cargos.find((c) => c.rotulo === CARGO_INFO?.rotulo) // mantém o cargo ao trocar de estado ou de ano
+      || info.cargos[0];
+    const novaBase = info !== INFO;
+    const mesmoEstado = INFO && INFO.uf === info.uf;
+    const semOEstado = uf && info.uf !== uf ? INDICE.anos.flatMap((a) => a.estados).find((e) => e.uf === uf) : null;
+    const prefixo = `${eleicaoAno.ano}/${info.uf}`;
+
+    selAno.value = eleicaoAno.ano;
     document.body.classList.add('carregando');
-    mostrarStatus(`Carregando ${info.nome} · ${cargo.rotulo} (${tamanho(cargo.bytes + (trocaEstado ? info.base.bytes : 0))})…`);
+    mostrarStatus(`Carregando ${info.nome} ${eleicaoAno.ano} · ${cargo.rotulo} (${tamanho(cargo.bytes + (novaBase ? info.base.bytes : 0))})…`);
     try {
-      const [base, dados] = await Promise.all([carregar(`${info.uf}/base`), carregar(`${info.uf}/${cargo.id}`)]);
+      const [base, dados] = await Promise.all([carregar(`${prefixo}/base`), carregar(`${prefixo}/${cargo.id}`)]);
       if (meu !== pedido) return;
-      if (trocaEstado) {
+      if (typeof dados.votos === 'string') dados.votos = descompactar(dados.votos);
+      if (novaBase) {
+        const recorte = mesmoEstado ? recortePorNome() : null;
+        ANO = eleicaoAno;
         INFO = info;
         D = base;
-        est.mun = -1;
-        est.zona = '';
-        est.bairro = -1;
-        est.local = -1;
-        est.busca = '';
-        $('#f-busca').value = '';
         prepararEstado();
-        for (const chave of arquivos.keys()) if (!chave.startsWith(info.uf + '/')) arquivos.delete(chave); // libera memória
+        if (recorte) {
+          aplicarRecorte(recorte);
+        } else {
+          est.mun = -1;
+          est.zona = '';
+          est.bairro = -1;
+          est.local = -1;
+          est.busca = '';
+          $('#f-busca').value = '';
+        }
+        for (const chave of arquivos.keys()) if (!chave.startsWith(prefixo + '/')) arquivos.delete(chave); // libera memória
       }
       CARGO_INFO = cargo;
       CARGO = dados;
@@ -1174,27 +1276,30 @@
       montarFiltros();
       lembrar();
       atualizar();
-      mostrarStatus('');
+      // ex.: Distrito Federal não tem eleição municipal, e o exterior só vota para presidente
+      mostrarStatus(semOEstado ? `Não há dados de ${semOEstado.nome} na eleição de ${eleicaoAno.ano}; mostrando ${info.nome}.` : '');
     } catch (erro) {
       if (meu !== pedido) return;
-      if (INFO) { selEstado.value = INFO.uf; selEleicao.value = CARGO_INFO.id; }
+      if (INFO) { selAno.value = ANO.ano; selEstado.value = INFO.uf; selEleicao.value = CARGO_INFO.id; }
       mostrarStatus(`Erro: ${erro.message}`, true);
     } finally {
       if (meu === pedido) document.body.classList.remove('carregando');
     }
   }
 
-  // estado e cargo ficam no endereço (#PI/governador-1t), para recarregar ou compartilhar o link
+  // eleição, estado e cargo ficam no endereço (#2024/PI/prefeito-1t), para recarregar ou compartilhar o link
   function lembrar() {
     try {
-      history.replaceState(null, '', `#${INFO.uf}/${CARGO_INFO.id}`);
+      history.replaceState(null, '', `#${ANO.ano}/${INFO.uf}/${CARGO_INFO.id}`);
       localStorage.setItem('painel-eleitoral-uf', INFO.uf);
     } catch (erro) { /* navegação privada ou file:// restrito: só não lembra */ }
   }
 
   function lerEndereco() {
-    const [uf, cargo] = decodeURIComponent(location.hash.slice(1)).split('/');
-    return [uf ? uf.toUpperCase() : '', cargo];
+    const partes = decodeURIComponent(location.hash.slice(1)).split('/');
+    if (!/^\d{4}$/.test(partes[0])) partes.unshift(''); // links de antes dos outros anos: #PI/governador-1t
+    const [ano, uf, cargo] = partes;
+    return [ano, uf ? uf.toUpperCase() : '', cargo];
   }
 
   /* ---------- mapa e gráfico de barras ---------- */
@@ -1348,7 +1453,7 @@
       pontos.addLayer(marca);
     }
 
-    const recorte = `${INFO.uf}|${est.mun}|${est.zona}|${est.bairro}|${est.local}`;
+    const recorte = `${ANO.ano}|${INFO.uf}|${est.mun}|${est.zona}|${est.bairro}|${est.local}`;
     if (recorte !== enquadramento) {
       enquadramento = recorte;
       mapa.fitBounds(pontos.getBounds(), { padding: [20, 20], maxZoom: 15 });
@@ -1403,7 +1508,7 @@
         return [...partes, [-1, g.validos - partes.reduce((soma, [, q]) => soma + q, 0)]];
       };
       $('#barras-titulo').textContent = `Como votaram as ${TOP_BARRAS} ${varios} com mais votos`;
-      $('#barras-sub').textContent = 'Divisão dos votos válidos entre os mais votados do estado';
+      $('#barras-sub').textContent = `Divisão dos votos válidos entre os mais votados ${porCidade() && est.mun >= 0 ? 'da cidade' : 'do estado'}`;
       legenda = fixos.map((c) => itemLegenda(corPadrao(c), nomeCand(c, true))).join('') + itemLegenda(corNeutra, 'Outros');
     } else if (n === 1) {
       const c = est.sel[0];
@@ -1472,6 +1577,7 @@
   /* ---------- ciclo de atualização ---------- */
 
   function atualizar() {
+    prepararCores();
     ultimo = calcular();
     renderKpis(ultimo);
     renderResumo(ultimo);
@@ -1484,11 +1590,12 @@
 
   /* ---------- eventos ---------- */
 
-  selEstado.addEventListener('change', () => abrir(selEstado.value));
-  selEleicao.addEventListener('change', () => abrir(INFO.uf, selEleicao.value));
+  selAno.addEventListener('change', () => abrir(selAno.value, INFO?.uf));
+  selEstado.addEventListener('change', () => abrir(ANO.ano, selEstado.value));
+  selEleicao.addEventListener('change', () => abrir(ANO.ano, INFO.uf, selEleicao.value));
   window.addEventListener('hashchange', () => {
-    const [uf, cargo] = lerEndereco();
-    if (uf !== INFO?.uf || cargo !== CARGO_INFO?.id) abrir(uf, cargo);
+    const [ano, uf, cargo] = lerEndereco();
+    if ((ano && ano !== ANO?.ano) || uf !== INFO?.uf || cargo !== CARGO_INFO?.id) abrir(ano || ANO?.ano, uf, cargo);
   });
 
   selMun.addEventListener('change', () => {
@@ -1617,10 +1724,12 @@
 
   /* ---------- início ---------- */
 
-  selEstado.innerHTML = INDICE.estados.map((e) => `<option value="${h(e.uf)}">${h(e.nome)}</option>`).join('');
+  selAno.innerHTML = INDICE.anos.map((a) => `<option value="${h(a.ano)}">${h(`${a.ano} · ${a.tipo}`)}</option>`).join('');
   let ufSalva = '';
   try { ufSalva = localStorage.getItem('painel-eleitoral-uf') || ''; } catch (erro) { /* sem localStorage */ }
-  const [ufLink, cargoLink] = lerEndereco();
-  const ufInicial = [ufLink, ufSalva].find((uf) => INDICE.estados.some((e) => e.uf === uf)) || INDICE.estados[0].uf;
-  abrir(ufInicial, cargoLink);
+  const [anoLink, ufLink, cargoLink] = lerEndereco();
+  // sem ano no link: a eleição mais recente
+  const anoInicial = INDICE.anos.find((a) => a.ano === anoLink) || INDICE.anos[0];
+  const ufInicial = [ufLink, ufSalva].find((uf) => anoInicial.estados.some((e) => e.uf === uf)) || anoInicial.estados[0].uf;
+  abrir(anoInicial.ano, ufInicial, cargoLink);
 })();

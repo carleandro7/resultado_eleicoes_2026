@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MS/prefeito-1t-362", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR CAARAPÓ - MS)","candidatos":[["12","ANDRE LUIS NEZZI DE CARVALHO","CAARAPÓ",0],["70","ELZO CASSARO","CAARAPÓ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Ai40Aj0f0d04040At0x00c09040xyh0B80xr0xd040Jj0y00o05040M80xh0k0j040xIn0C90yi0xh040xV70G10A90yj040ywv0G80Ab0yu040Oe0yu0x90v040xB70h0x304040Md0yh0x30d040Mv0yc0x70n"});

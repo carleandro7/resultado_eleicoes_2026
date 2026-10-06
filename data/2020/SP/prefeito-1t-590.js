@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SP/prefeito-1t-590", {"rotulo":"Prefeito · 1º turno (Eleicao Suplementar de Leme)","candidatos":[["55","CLAUDEMIR APARECIDO BORGES","LEME",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Ax830xMs0Kd0F0030Es0m0x3030xFu0D10Cj030xz30Bc0B0030x-40Kc0H0030yFn0J60Hb030xKv0E80Dc030xIo0E10C5030xV90Ic0Ec030xKl0E50Dm030yyf0Ln0Ho030Fr0k0t030xSe0Kt0Fo030_r0A30A5030xwp0G50Bd030R10Bg0zl030xwo0At0Bu030xF10Bu0Bf030xEf0Ci0Ci030xJr0Df0D2030Ys0Bl0Af030-h0D10B4030xIi0C40C1030xZ60E30Do"});

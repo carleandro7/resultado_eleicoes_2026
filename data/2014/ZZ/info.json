@@ -1,0 +1,23 @@
+{
+ "uf": "ZZ",
+ "nome": "Exterior",
+ "titulo": "Eleições gerais 2014 · Exterior",
+ "gerado": "28/07/2021 11:54",
+ "cidades": 131,
+ "locais": 218,
+ "base": {
+  "bytes": 14955
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 5869
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 2789
+  }
+ ]
+}

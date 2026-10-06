@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SE/prefeito-1t-244", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE CARMÓPOLIS-SE)","candidatos":[["25","VOLNEY LEITE ALVES","CARMÓPOLIS",0],["40","LUIZ GUIMARÃES SILVA","CARMÓPOLIS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Ek40Le0Gr0x60n040X70Hf0xa0q040xTu0xBp0ze0xk040J10Bs0q04240xH00xwg0z90xa040-o0N50y80t040Fa0Da0c0f"});

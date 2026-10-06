@@ -1,0 +1,48 @@
+{
+ "uf": "RO",
+ "nome": "Rondônia",
+ "titulo": "Eleições municipais 2016 · Rondônia",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 52,
+ "locais": 656,
+ "base": {
+  "bytes": 74310
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 20860
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 427172
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2092
+  },
+  {
+   "id": "prefeito-1t-327",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR PREFEITO VILHENA - RO)",
+   "bytes": 727
+  },
+  {
+   "id": "prefeito-1t-246",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR GUAJARÁ-MIRIM)",
+   "bytes": 596
+  },
+  {
+   "id": "prefeito-1t-366",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR PIMENTA BUENO)",
+   "bytes": 622
+  },
+  {
+   "id": "prefeito-1t-395",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR CANDEIAS DO JAMARI)",
+   "bytes": 663
+  }
+ ]
+}

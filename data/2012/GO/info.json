@@ -1,0 +1,23 @@
+{
+ "uf": "GO",
+ "nome": "Goiás",
+ "titulo": "Eleições municipais 2012 · Goiás",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 246,
+ "locais": 2459,
+ "base": {
+  "bytes": 270498
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 84050
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1843429
+  }
+ ]
+}

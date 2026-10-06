@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SC/prefeito-1t-338", {"rotulo":"Prefeito · 1º turno (NOVA ELEIÇÃO OUT/2018 - VIDAL RAMOS)","candidatos":[["11","HELMUT STOLTENBERG","VIDAL RAMOS",0],["55","NABOR JOSE SCHMITZ","VIDAL RAMOS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"zQu40F80Ah0b03040xzo0xz70xb0i040B40Do0501030yb0yd02040zb0B40401040A30z30204130zm0zi02040A30zq0403140Bd0C70803"});

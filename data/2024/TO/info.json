@@ -1,0 +1,28 @@
+{
+ "uf": "TO",
+ "nome": "Tocantins",
+ "titulo": "Eleições municipais 2024 · Tocantins",
+ "gerado": "28/10/2024 11:46",
+ "cidades": 139,
+ "locais": 894,
+ "base": {
+  "bytes": 97101
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 31795
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 570169
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 1487
+  }
+ ]
+}

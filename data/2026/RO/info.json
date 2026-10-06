@@ -1,0 +1,38 @@
+{
+ "uf": "RO",
+ "nome": "Rondônia",
+ "titulo": "Eleições gerais 2026 · Rondônia",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 52,
+ "locais": 677,
+ "base": {
+  "bytes": 79989
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 16540
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 14939
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 22923
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 101238
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 133261
+  }
+ ]
+}

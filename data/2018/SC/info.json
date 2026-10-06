@@ -1,0 +1,48 @@
+{
+ "uf": "SC",
+ "nome": "Santa Catarina",
+ "titulo": "Eleições gerais 2018 · Santa Catarina",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 295,
+ "locais": 3708,
+ "base": {
+  "bytes": 432286
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 107275
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 85854
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 137298
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 557576
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 668129
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 47753
+  },
+  {
+   "id": "governador-2t",
+   "rotulo": "Governador · 2º turno",
+   "bytes": 48866
+  }
+ ]
+}

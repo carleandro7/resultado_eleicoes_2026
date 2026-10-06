@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/RJ/prefeito-1t-532", {"rotulo":"Prefeito · 1º turno (RJ - Suplementar de Carapebus)","candidatos":[["10","BERNARD TAVARES DIDIMO","CARAPEBUS",0],["70","LEANDRO DRUMOND ESTEVES","CARAPEBUS",0],["35","EDWARD FERREIRA DE ARAUJO FILHO","CARAPEBUS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"S950Wv0S5060t0k050Zj0Vq080x00c050xBq0xyd0h0xb0i050E40Ba020403050Wr0V0050x80h050xA20_m090xs0q"});

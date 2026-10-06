@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SP/prefeito-1t-524", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Anhembi)","candidatos":[["11","LINDEVAL AUGUSTO MOTTA","ANHEMBI",0],["23","ROGERIO ANGELO WINCKLER","ANHEMBI",0],["15","RAFAELA SOUZA DE GOIS","ANHEMBI",0],["55","RODRIGO ELIAS PINTO","ANHEMBI",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"C660Wu0_t0Dv0z00x40x0060Pa0De0xs0m0c0b060F40Fv0yn0j0f09"});

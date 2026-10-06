@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/GO/prefeito-1t-616", {"rotulo":"Prefeito · 1º turno (Suplementar de Bom Jardim de Goiás)","candidatos":[["44","WILLAN GREGORIO NETO","BOM JARDIM DE GOIÁS",0],["45","CLEUDES BERNARDES DA COSTA","BOM JARDIM DE GOIÁS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"I140Ym0Mr0d0b040xA90P80u0c040Cr0Ae0402040Nt0Hr0a05030Fk0Ce06"});

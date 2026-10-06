@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/ES/prefeito-1t-276", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE FUNDÃO (ES))","candidatos":[["12","JOILSON ROCHA NUNES","FUNDÃO",0],["25","JOÃO MANOEL MIRANDA NUNES","FUNDÃO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Ng40Cl0Cs0g09240Mc0L90xk0n040Ja0J20u0f040Mo0Kh0x10u040Nr0Jo0t0o040Mv0Op0x80s040V90Sf0yb0x3040Ti0Pc0xa0x5140xwp0xxa0yd0xg"});

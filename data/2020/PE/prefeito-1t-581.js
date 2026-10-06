@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/PE/prefeito-1t-581", {"rotulo":"Prefeito · 1º turno (Eleições Suplementares de Maraial)","candidatos":[["40","MARLOS HENRIQUE CAVALCANTI","MARAIAL",0],["70","TATIANA DA SILVA ROCHA","MARAIAL",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xOn40H80Fi0p0a040F90Co0e05040X60Rb0xn0g030Dn0Fr06040H10J70n01040Y60T40xb0f040Ej0Cj0g06"});

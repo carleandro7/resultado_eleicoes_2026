@@ -1,0 +1,88 @@
+{
+ "uf": "RN",
+ "nome": "Rio Grande do Norte",
+ "titulo": "Eleições municipais 2016 · Rio Grande do Norte",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 167,
+ "locais": 1574,
+ "base": {
+  "bytes": 163601
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 54120
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 885067
+  },
+  {
+   "id": "prefeito-1t-415",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE CEARÁ-MIRIM)",
+   "bytes": 1762
+  },
+  {
+   "id": "prefeito-1t-374",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE SANTA CRUZ)",
+   "bytes": 497
+  },
+  {
+   "id": "prefeito-1t-324",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE JOÃO CÂMARA)",
+   "bytes": 791
+  },
+  {
+   "id": "prefeito-1t-368",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE GUAMARÉ)",
+   "bytes": 498
+  },
+  {
+   "id": "prefeito-1t-360",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE PENDÊNCIAS)",
+   "bytes": 527
+  },
+  {
+   "id": "prefeito-1t-416",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEM DE ALTO DO RODRIGUES)",
+   "bytes": 500
+  },
+  {
+   "id": "prefeito-1t-317",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUP. DE SÃO JOSÉ DE CAMPESTRE)",
+   "bytes": 461
+  },
+  {
+   "id": "prefeito-1t-373",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE PASSA E FICA)",
+   "bytes": 418
+  },
+  {
+   "id": "prefeito-1t-318",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE PEDRO AVELINO)",
+   "bytes": 434
+  },
+  {
+   "id": "prefeito-1t-316",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE PARAZINHO)",
+   "bytes": 403
+  },
+  {
+   "id": "prefeito-1t-294",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE PARAÚ)",
+   "bytes": 395
+  },
+  {
+   "id": "prefeito-1t-361",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE ÁGUA NOVA)",
+   "bytes": 386
+  },
+  {
+   "id": "prefeito-1t-315",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE GALINHOS)",
+   "bytes": 390
+  }
+ ]
+}

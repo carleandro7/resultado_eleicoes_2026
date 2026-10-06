@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/SP/prefeito-1t-6236", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Guatapará)","candidatos":[["55","GILDEMIR DE SOUZA","GUATAPARÁ",0],["10","FRANCISCO FREDIANO FILHO","GUATAPARÁ",0],["15","ANGELO DOS SANTOS SILVA","GUATAPARÁ",0],["11","CESAR BRUNO CASTELHANO BOMFIM","GUATAPARÁ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"y_460Dm0zu0zg01070q060xzk0Kn0F7040xe0x3060Yo0Hc0Fi050x90v"});

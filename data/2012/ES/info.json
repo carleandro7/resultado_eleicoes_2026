@@ -1,0 +1,28 @@
+{
+ "uf": "ES",
+ "nome": "Espírito Santo",
+ "titulo": "Eleições municipais 2012 · Espírito Santo",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 78,
+ "locais": 1673,
+ "base": {
+  "bytes": 159827
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 42515
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 935564
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 4625
+  }
+ ]
+}

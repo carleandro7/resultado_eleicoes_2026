@@ -1,0 +1,38 @@
+{
+ "uf": "MA",
+ "nome": "Maranhão",
+ "titulo": "Eleições municipais 2016 · Maranhão",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 217,
+ "locais": 5638,
+ "base": {
+  "bytes": 632799
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 140994
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2132745
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 3933
+  },
+  {
+   "id": "prefeito-1t-343",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE BACABAL)",
+   "bytes": 1903
+  },
+  {
+   "id": "prefeito-1t-422",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENT. BELA VISTA DO MA)",
+   "bytes": 603
+  }
+ ]
+}

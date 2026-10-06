@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RN/prefeito-1t-360", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE PENDÊNCIAS)","candidatos":[["15","FLAUDIVAN MARTINS CABRAL","PENDÊNCIAS",0],["55","GUSTAVO ADOLPHO DOS SANTOS QUEIROZ","PENDÊNCIAS",0],["10","MARIA ZILDA DA COSTA SILVA","PENDÊNCIAS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xAp50Vn0Vh0x60x509050xT40xQj0yb0xv0c050Zg0Xn0yh0v0c040yl0xf0301050Ih0Jj090i05050E90B90p0304050z50yl050802"});

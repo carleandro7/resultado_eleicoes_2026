@@ -1,0 +1,28 @@
+{
+ "uf": "PB",
+ "nome": "Paraíba",
+ "titulo": "Eleições municipais 2016 · Paraíba",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 223,
+ "locais": 1791,
+ "base": {
+  "bytes": 195787
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 62723
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1102913
+  },
+  {
+   "id": "prefeito-1t-372",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - CABEDELO/PB)",
+   "bytes": 984
+  }
+ ]
+}

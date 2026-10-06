@@ -1,0 +1,43 @@
+{
+ "uf": "PE",
+ "nome": "Pernambuco",
+ "titulo": "Eleições gerais 2018 · Pernambuco",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 185,
+ "locais": 3249,
+ "base": {
+  "bytes": 338991
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 100732
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 73859
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 116789
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 617396
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 803495
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 43807
+  }
+ ]
+}

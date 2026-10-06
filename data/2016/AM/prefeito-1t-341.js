@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/AM/prefeito-1t-341", {"rotulo":"Prefeito · 1º turno (SUPLEMENTAR NOVO AIRÃO / AM)","candidatos":[["15","ROBERTO FREDERICO PAES JUNIOR","NOVO AIRÃO",0],["18","ROSIVALDO SOUSA DOS SANTOS","NOVO AIRÃO",0],["25","ANTONIO TIBURTINO DA SILVA","NOVO AIRÃO",0],["28","DANIEL BARROS DA CRUZ","NOVO AIRÃO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xB260Xr0Hk0Cv0y90xr04060y10j06010502040y70a0115050x40r010101040xb040112060Ou0Ds0zv0x20xc04060xIj0Ul0Hq0xr0A10g060xzv0Jj0F00yo0zd09"});

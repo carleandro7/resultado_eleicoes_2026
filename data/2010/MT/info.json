@@ -1,0 +1,43 @@
+{
+ "uf": "MT",
+ "nome": "Mato Grosso",
+ "titulo": "Eleições gerais 2010 · Mato Grosso",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 141,
+ "locais": 1528,
+ "base": {
+  "bytes": 163660
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 29651
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 26096
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 39818
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 141668
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 217588
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 18998
+  }
+ ]
+}

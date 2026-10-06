@@ -1,0 +1,23 @@
+{
+ "uf": "ZZ",
+ "nome": "Exterior",
+ "titulo": "Eleições gerais 2018 · Exterior",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 138,
+ "locais": 171,
+ "base": {
+  "bytes": 19673
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 5443
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 2287
+  }
+ ]
+}

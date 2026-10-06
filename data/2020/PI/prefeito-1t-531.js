@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/PI/prefeito-1t-531", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Juazeiro (PI))","candidatos":[["65","JOSÉ WILSON PEREIRA GOMES","JUAZEIRO DO PIAUÍ",0],["55","CRISTIANO GALDINO DE OLIVEIRA NETO","JUAZEIRO DO PIAUÍ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xKm40A10y90704040K50H30r0i040yo0o0303030zr0y503040z40t0503040B80Ad0602040xr0e0501040xs0i0402040Mv0If0x30t040Cj0yv0b01040Cg0B70c04040x00x80b01040xq0x80102030Cb0x40c040xe0u0301"});

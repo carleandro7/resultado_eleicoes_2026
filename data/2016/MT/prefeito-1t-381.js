@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MT/prefeito-1t-381", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUP. RIBEIRÃO CASCALHEIRA)","candidatos":[["77","LUZIA NUNES BRANDÃO","RIBEIRÃO CASCALHEIRA",0],["15","WISER BARBOSA MOURA","RIBEIRÃO CASCALHEIRA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xwj40Mt0Hi0v0b040_k0Xb0xc0p040Gv0Fh0a06040yu0Do0705040Ek0Bu0e05"});

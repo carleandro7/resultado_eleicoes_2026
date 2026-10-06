@@ -1,0 +1,43 @@
+{
+ "uf": "MA",
+ "nome": "Maranhão",
+ "titulo": "Eleições gerais 2014 · Maranhão",
+ "gerado": "28/07/2021 11:54",
+ "cidades": 217,
+ "locais": 5449,
+ "base": {
+  "bytes": 609039
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 105751
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 85727
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 85737
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 566890
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 666022
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 61845
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "uf": "MA",
+ "nome": "Maranhão",
+ "titulo": "Eleições gerais 2010 · Maranhão",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 217,
+ "locais": 5082,
+ "base": {
+  "bytes": 562854
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 86850
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 85940
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 138638
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 486383
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 609868
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 58654
+  }
+ ]
+}

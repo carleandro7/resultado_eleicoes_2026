@@ -1,0 +1,53 @@
+{
+ "uf": "SC",
+ "nome": "Santa Catarina",
+ "titulo": "Eleições municipais 2016 · Santa Catarina",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 295,
+ "locais": 3844,
+ "base": {
+  "bytes": 445094
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 105293
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1683178
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 4863
+  },
+  {
+   "id": "prefeito-1t-270",
+   "rotulo": "Prefeito · 1º turno (NOVA ELEIÇÃO SET/2017 - ABELARDO LUZ)",
+   "bytes": 619
+  },
+  {
+   "id": "prefeito-1t-239",
+   "rotulo": "Prefeito · 1º turno (NOVA ELEIÇÃO 2017 - SANGÃO)",
+   "bytes": 409
+  },
+  {
+   "id": "prefeito-1t-338",
+   "rotulo": "Prefeito · 1º turno (NOVA ELEIÇÃO OUT/2018 - VIDAL RAMOS)",
+   "bytes": 458
+  },
+  {
+   "id": "prefeito-1t-428",
+   "rotulo": "Prefeito · 1º turno (NOVA ELEIÇÃO MAR/2020 - LAURENTINO)",
+   "bytes": 501
+  },
+  {
+   "id": "prefeito-1t-238",
+   "rotulo": "Prefeito · 1º turno (NOVA ELEIÇÃO 2017 BOM JARDIM DA SERRA)",
+   "bytes": 445
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "uf": "MT",
+ "nome": "Mato Grosso",
+ "titulo": "Eleições gerais 2026 · Mato Grosso",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 142,
+ "locais": 1515,
+ "base": {
+  "bytes": 176608
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 35055
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 30528
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 48222
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 196323
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 252685
+  }
+ ]
+}

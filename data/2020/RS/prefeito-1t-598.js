@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/RS/prefeito-1t-598", {"rotulo":"Prefeito · 1º turno (Eleição suplementar Miraguaí/RS)","candidatos":[["15","LUIS CARLOS HERRMANN","MIRAGUAÍ",0],["14","RICARDO BARBOSA FINK","MIRAGUAÍ",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"zVc40_m0R70xd0j040zn0o0501040E00z60303040Bd0B60903040zd0y50504040x70x20403040zd0yq0704040x60x50101040A10yn0105040y20v0502"});

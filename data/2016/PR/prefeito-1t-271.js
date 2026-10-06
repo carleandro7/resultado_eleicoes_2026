@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/PR/prefeito-1t-271", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE NOVA FÁTIMA)","candidatos":[["14","ROBERTO CARLOS MESSIAS","NOVA FÁTIMA",0],["23","MARIO SERGIO DOS SANTOS","NOVA FÁTIMA",0],["19","SIDNEY ROQUE DA SILVA","NOVA FÁTIMA",0],["25","JOSÉ RICARDO CERULI MARINHO","NOVA FÁTIMA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"zyu60Zn0Od0Mt0Bs0x30m060V50Kj0I80A80x30l060Cf0B80yv0xe0d08060zv0r05030302"});

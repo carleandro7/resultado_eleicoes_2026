@@ -1,0 +1,43 @@
+{
+ "uf": "PB",
+ "nome": "Paraíba",
+ "titulo": "Eleições gerais 2018 · Paraíba",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 223,
+ "locais": 1775,
+ "base": {
+  "bytes": 195577
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 55008
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 34772
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 48474
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 271654
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 356127
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 23755
+  }
+ ]
+}

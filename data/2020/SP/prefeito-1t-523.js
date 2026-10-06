@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SP/prefeito-1t-523", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Cajati)","candidatos":[["45","LUIZ HENRIQUE KOGA","CAJATI",0],["25","SIDINEI APARECIDO RIBEIRO","CAJATI",0],["12","GERMANO MIGUEL NETO","CAJATI",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xBm50T20Rl0d0x00x4050xw30xwk0k0x70xm050Pd0Sl070q0x7050Vb0G9030p0k050Ht0Fk0a0b0c050-00xw70h0xl0xd050xFe0Wn0f0y20x5050Dv0Nk050q0p050D50Q8030j0k050Jp0E9050i07050Cn0xp010a0a050Bo0Af080509"});

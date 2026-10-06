@@ -1,0 +1,38 @@
+{
+ "uf": "SC",
+ "nome": "Santa Catarina",
+ "titulo": "Eleições gerais 2026 · Santa Catarina",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 295,
+ "locais": 3478,
+ "base": {
+  "bytes": 407478
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 83019
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 74922
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 117445
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 512136
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 632190
+  }
+ ]
+}

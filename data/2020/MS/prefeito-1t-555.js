@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/MS/prefeito-1t-555", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Angélica-MS)","candidatos":[["12","EDISON CASSUCI FERREIRA","ANGÉLICA",0],["45","APARECIDO GERALDO RODRIGUES","ANGÉLICA",0],["44","ROBERTO SILVA CAVALCANTI","ANGÉLICA",0],["15","FRANCISCO SOARES SOBRINHO","ANGÉLICA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"x960Mh0Fs0Ha0v0l09060Y70Nf0Q30y20x70m060Dm0M30x6040c0b060Pb0G10Fb0t0r0j060Bd0zc0zg060705"});

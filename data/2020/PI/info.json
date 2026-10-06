@@ -1,0 +1,48 @@
+{
+ "uf": "PI",
+ "nome": "Piauí",
+ "titulo": "Eleições municipais 2020 · Piauí",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 224,
+ "locais": 3422,
+ "base": {
+  "bytes": 335119
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 94721
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1099281
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 4404
+  },
+  {
+   "id": "prefeito-1t-550",
+   "rotulo": "Prefeito · 1º turno (Suplementar Murici dos Portela - PI)",
+   "bytes": 549
+  },
+  {
+   "id": "prefeito-1t-531",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Juazeiro (PI))",
+   "bytes": 559
+  },
+  {
+   "id": "prefeito-1t-606",
+   "rotulo": "Prefeito · 1º turno (Suplementar São Lourenço do Piauí - PI)",
+   "bytes": 527
+  },
+  {
+   "id": "vereador-1t-621",
+   "rotulo": "Vereador · 1º turno (Suplementar Gilbués-PI)",
+   "bytes": 2158
+  }
+ ]
+}

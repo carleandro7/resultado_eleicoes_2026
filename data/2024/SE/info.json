@@ -1,0 +1,28 @@
+{
+ "uf": "SE",
+ "nome": "Sergipe",
+ "titulo": "Eleições municipais 2024 · Sergipe",
+ "gerado": "28/10/2024 11:46",
+ "cidades": 75,
+ "locais": 1210,
+ "base": {
+  "bytes": 130460
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 33731
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 576994
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2839
+  }
+ ]
+}

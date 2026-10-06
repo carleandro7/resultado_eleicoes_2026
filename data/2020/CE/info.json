@@ -1,0 +1,73 @@
+{
+ "uf": "CE",
+ "nome": "Ceará",
+ "titulo": "Eleições municipais 2020 · Ceará",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 184,
+ "locais": 6743,
+ "base": {
+  "bytes": 664360
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 164897
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2291379
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 11581
+  },
+  {
+   "id": "prefeito-1t-539",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Viçosa do Ceará/CE)",
+   "bytes": 1058
+  },
+  {
+   "id": "prefeito-1t-486",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar - Pedra Branca/CE)",
+   "bytes": 1209
+  },
+  {
+   "id": "prefeito-1t-485",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar - Missão Velha/CE)",
+   "bytes": 816
+  },
+  {
+   "id": "prefeito-1t-537",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar - Jaguaruana/CE)",
+   "bytes": 835
+  },
+  {
+   "id": "prefeito-1t-538",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar - Barro/CE)",
+   "bytes": 638
+  },
+  {
+   "id": "prefeito-1t-483",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar - Martinópole/CE)",
+   "bytes": 476
+  },
+  {
+   "id": "prefeito-1t-594",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar - Palhano/CE)",
+   "bytes": 529
+  },
+  {
+   "id": "prefeito-1t-586",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar - Baixio/CE)",
+   "bytes": 464
+  },
+  {
+   "id": "vereador-1t-617",
+   "rotulo": "Vereador · 1º turno (Eleição Suplementar - Alto Santo/CE)",
+   "bytes": 3389
+  }
+ ]
+}

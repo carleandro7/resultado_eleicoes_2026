@@ -1,0 +1,48 @@
+{
+ "uf": "RS",
+ "nome": "Rio Grande do Sul",
+ "titulo": "Eleições gerais 2014 · Rio Grande do Sul",
+ "gerado": "28/07/2021 11:54",
+ "cidades": 497,
+ "locais": 8719,
+ "base": {
+  "bytes": 886664
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 182377
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 169043
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 171429
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 1073312
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 1397870
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 107615
+  },
+  {
+   "id": "governador-2t",
+   "rotulo": "Governador · 2º turno",
+   "bytes": 109367
+  }
+ ]
+}

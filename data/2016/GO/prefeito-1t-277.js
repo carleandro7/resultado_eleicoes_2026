@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/GO/prefeito-1t-277", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - PETROLINA (GO))","candidatos":[["11","DALTON VIEIRA SANTOS","PETROLINA DE GOIÁS",0],["65","CLEMENTINO TIAGO DA SILVA","PETROLINA DE GOIÁS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xVs40Ym0-60xq0j040Us0U40x80f040xGh0xEu0z10h"});

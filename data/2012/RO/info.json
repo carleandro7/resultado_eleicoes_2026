@@ -1,0 +1,28 @@
+{
+ "uf": "RO",
+ "nome": "Rondônia",
+ "titulo": "Eleições municipais 2012 · Rondônia",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 52,
+ "locais": 649,
+ "base": {
+  "bytes": 68426
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 20356
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 439788
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2032
+  }
+ ]
+}

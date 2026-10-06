@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-391", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR ELÓI MENDES)","candidatos":[["43","PAULO ROBERTO BELATO CARVALHO","ELÓI MENDES",0],["15","THIAGO JOEL TAVARES","ELÓI MENDES",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"zAq40Js0Ig0xc0t040xGq0xBd0Bk0ye040xAc0xC50zs0xo040Ta0N60z70xr040xF20Y80zo0xj040Mm0Kt0xu0r040xC30xze0B30yb040Ec0C00x20n040Qd0Lg0xi0xb"});

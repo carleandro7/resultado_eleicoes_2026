@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RS/prefeito-1t-312", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE BOM JESUS - RS)","candidatos":[["11","DIOGO GRAZZIOTIN DUTRA","BOM JESUS",0],["12","DIOGO KRAMER BOEIRA","BOM JESUS",0],["40","LUCIMAR VANIN RODRIGUES","BOM JESUS",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"Rf50_d0Zh0z40xg0xb150Rb0Ma0yr0x20r050ze0y80u0706050xb0y70x20903050ym0xo080301050N90Mo0yd0s0l050Ll0Kl0yg0x70t050x00g020705050f0o040404050m0g010701050xl0xa050405050v0i040201030c1a02"});

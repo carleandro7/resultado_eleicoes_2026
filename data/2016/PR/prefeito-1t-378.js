@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/PR/prefeito-1t-378", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR PIÊN)","candidatos":[["45","JOÃO OSMAR MENDES","PIÊN",0],["12","NEY JOSE CIUPKA","PIÊN",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"zK340G60Bs0v0l040Wv0Li0y20xd040Zh0Yj0zn0ya040Ea0Ee0xb0i040Jg0Bf0x90d040Es0D90x40d040Dd0Bg0f09040Cs0F20u0q040xj0yt0b08040xd0yp0204040Aj0xl0402040yg0x00705040Bu0z9060d040Am0yb0a06040y50xb0504"});

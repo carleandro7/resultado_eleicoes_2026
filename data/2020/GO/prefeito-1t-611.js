@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/GO/prefeito-1t-611", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de São Simão)","candidatos":[["19","WALLISSON JOSE DE FREITAS","SÃO SIMÃO",0],["44","LUCAS BARBOSA VASCONCELOS","SÃO SIMÃO",0],["12","JANE DAYSE GUIMARAES VILARINHO","SÃO SIMÃO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yBv50S70Qp0yo0xo0n050S10Rv0yq0yl0x1050In0I90d0e09050Ud0Qv0yu0xt0x4050Tl0Vc0zk0y80x5050Wv0Rb0zg0xv0x1"});

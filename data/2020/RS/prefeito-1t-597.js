@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/RS/prefeito-1t-597", {"rotulo":"Prefeito · 1º turno (Eleição suplementar Capão do Cipó/RS)","candidatos":[["12","ADAIR FRACARO CARDOSO","CAPÃO DO CIPÓ",0],["11","LEANDRO MELO PEREIRA","CAPÃO DO CIPÓ",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"xIe40Bf0yo0605040Aj0z70905030E50y702040zd0xj0a01040Bi0Al0402140xc0v0101040Hd0Cv0a08020xi0xb030xa0y912040j0xh0301"});

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SP/prefeito-1t-251", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEM. SÃO JOSÉ DA BELA VISTA)","candidatos":[["45","PAULO CESAR LOPES DO NASCIMENTO","SÃO JOSÉ DA BELA VISTA",0],["14","CÉLIA MARIA FERRACIOLI DOS SANTOS","SÃO JOSÉ DA BELA VISTA",0],["40","WALTER CASSIO CARVALHO FACCIROLLI","SÃO JOSÉ DA BELA VISTA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"CWt50yD90xKp0xya0zh0y9050Ej0Ba0zc0a07"});

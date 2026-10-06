@@ -1,0 +1,23 @@
+{
+ "uf": "TO",
+ "nome": "Tocantins",
+ "titulo": "Eleições municipais 2020 · Tocantins",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 139,
+ "locais": 856,
+ "base": {
+  "bytes": 90709
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 40414
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 654395
+  }
+ ]
+}

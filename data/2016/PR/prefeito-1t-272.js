@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/PR/prefeito-1t-272", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR PRIMEIRO DE MAIO)","candidatos":[["11","BRUNA DE OLIVEIRA CASANOVA","PRIMEIRO DE MAIO",0],["45","PAULO TEODORO FERNANDES JUNIOR","PRIMEIRO DE MAIO",0],["19","EZIQUIEL FERRAZ DE ARAUJO","PRIMEIRO DE MAIO",0],["23","ELIZEU DE SOUZA","PRIMEIRO DE MAIO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"zW760xB70X20Rf0za0xj0r060Bm0Bj0xg040h06060Ip0E90Bu0xc0i0l060Yh0R80Po0xv0x80xh060E30Cg0xp080c0a"});

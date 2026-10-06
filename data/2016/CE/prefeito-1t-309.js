@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/CE/prefeito-1t-309", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - PREFEITO)","candidatos":[["55","MIRINEIDE PINHEIRO MOURA","UMARI",0],["31","ANA PAULA ARAUJO VIANA ALENCAR","UMARI",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"CNr40N00Kt0x40f040A90A10704040L90H50x105040Ul0Oi0xa0l030Av0v06030x40y203040Ev0Bc0709040Bu0Ak0e01040ya0xr0503040x20xa0401"});

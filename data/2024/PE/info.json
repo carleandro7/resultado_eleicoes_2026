@@ -1,0 +1,33 @@
+{
+ "uf": "PE",
+ "nome": "Pernambuco",
+ "titulo": "Eleições municipais 2024 · Pernambuco",
+ "gerado": "05/05/2025 10:00",
+ "cidades": 184,
+ "locais": 3331,
+ "base": {
+  "bytes": 352239
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 97101
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1822502
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 3041
+  },
+  {
+   "id": "prefeito-1t-6140",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Goiana)",
+   "bytes": 849
+  }
+ ]
+}

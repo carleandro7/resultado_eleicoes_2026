@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SP/prefeito-1t-408", {"rotulo":"Prefeito · 1º turno (SUPLEMENTAR GENERAL SALGADO)","candidatos":[["45","JOSE AUGUSTO DE CARVALHO NETO","GENERAL SALGADO",0],["51","ADRIANO EUGENIO BARBOSA","GENERAL SALGADO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yHf40Fp0xe060b040xZ30L80A50yl040xWu0Nr0zh0yo040Bo0yu0h0h"});

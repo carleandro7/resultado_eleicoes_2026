@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/MS/prefeito-1t-512", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Paranhos-MS)","candidatos":[["15","DONIZETE APARECIDO VIARO","PARANHOS",0],["45","ALFREDO SOARES DOS SANTOS","PARANHOS",0],["13","ADELIO CILIRIO DA SILVA","PARANHOS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Ws50xCl0xNs0u0xq0u050xAj0Xd0u0y10s050I80F9040e06050Cf0zn030h03"});

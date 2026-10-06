@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SC/prefeito-1t-603", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Xavantina 2023)","candidatos":[["22","LUCIANO ANTONIO ALTENHOFEN","XAVANTINA",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"zJg30zq0x70h030A40g03030yc0xe0h030xn0f06030xl0g06030A40y20o030Id0Ah0yd030Kv0C40Ad030y60804030yj0h08030Ae0y10h"});

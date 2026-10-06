@@ -1,0 +1,43 @@
+{
+ "uf": "SE",
+ "nome": "Sergipe",
+ "titulo": "Eleições municipais 2016 · Sergipe",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 75,
+ "locais": 1113,
+ "base": {
+  "bytes": 115218
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 33891
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 570700
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2436
+  },
+  {
+   "id": "prefeito-1t-403",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR - RIACHÃO DO DANTAS)",
+   "bytes": 747
+  },
+  {
+   "id": "prefeito-1t-244",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE CARMÓPOLIS-SE)",
+   "bytes": 450
+  },
+  {
+   "id": "prefeito-1t-412",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR DE SÃO FRANCISCO)",
+   "bytes": 460
+  }
+ ]
+}

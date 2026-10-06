@@ -1,0 +1,38 @@
+{
+ "uf": "ES",
+ "nome": "Espírito Santo",
+ "titulo": "Eleições gerais 2026 · Espírito Santo",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 78,
+ "locais": 1767,
+ "base": {
+  "bytes": 180301
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 43583
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 34181
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 63502
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 224918
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 396669
+  }
+ ]
+}

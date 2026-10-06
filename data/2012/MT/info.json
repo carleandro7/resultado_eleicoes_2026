@@ -1,0 +1,28 @@
+{
+ "uf": "MT",
+ "nome": "Mato Grosso",
+ "titulo": "Eleições municipais 2012 · Mato Grosso",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 141,
+ "locais": 1508,
+ "base": {
+  "bytes": 164335
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 46327
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 926780
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2535
+  }
+ ]
+}

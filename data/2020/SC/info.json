@@ -1,0 +1,58 @@
+{
+ "uf": "SC",
+ "nome": "Santa Catarina",
+ "titulo": "Eleições municipais 2020 · Santa Catarina",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 295,
+ "locais": 3538,
+ "base": {
+  "bytes": 415466
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 120822
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1937611
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2766
+  },
+  {
+   "id": "prefeito-1t-610",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Brusque Set/2023)",
+   "bytes": 1356
+  },
+  {
+   "id": "prefeito-1t-556",
+   "rotulo": "Prefeito · 1º turno (Nova Eleição - Porto Belo)",
+   "bytes": 540
+  },
+  {
+   "id": "prefeito-1t-468",
+   "rotulo": "Prefeito · 1º turno (Nova Eleição Petrolândia)",
+   "bytes": 470
+  },
+  {
+   "id": "prefeito-1t-603",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Xavantina 2023)",
+   "bytes": 419
+  },
+  {
+   "id": "prefeito-1t-557",
+   "rotulo": "Prefeito · 1º turno (Nova Eleição - Pres. Castello Branco)",
+   "bytes": 417
+  },
+  {
+   "id": "prefeito-2t-563",
+   "rotulo": "Prefeito · 2º turno (Eleição Suplementar Canoinhas  2022)",
+   "bytes": 1093
+  }
+ ]
+}

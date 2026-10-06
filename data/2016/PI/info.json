@@ -1,0 +1,33 @@
+{
+ "uf": "PI",
+ "nome": "Piauí",
+ "titulo": "Eleições municipais 2016 · Piauí",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 224,
+ "locais": 3469,
+ "base": {
+  "bytes": 335249
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 89134
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1164476
+  },
+  {
+   "id": "prefeito-1t-400",
+   "rotulo": "Prefeito · 1º turno (PI-ELEIÇÃO SUP. DE BRASILEIRA)",
+   "bytes": 547
+  },
+  {
+   "id": "prefeito-1t-273",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR MIGUEL LEÃO (PI))",
+   "bytes": 406
+  }
+ ]
+}

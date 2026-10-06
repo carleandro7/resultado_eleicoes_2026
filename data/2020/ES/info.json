@@ -1,0 +1,43 @@
+{
+ "uf": "ES",
+ "nome": "Espírito Santo",
+ "titulo": "Eleições municipais 2020 · Espírito Santo",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 78,
+ "locais": 1700,
+ "base": {
+  "bytes": 169090
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 67114
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1200533
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 6533
+  },
+  {
+   "id": "prefeito-1t-558",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Itapemirim (ES))",
+   "bytes": 928
+  },
+  {
+   "id": "prefeito-1t-491",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Boa Esperança)",
+   "bytes": 547
+  },
+  {
+   "id": "prefeito-1t-588",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Ibitirama (ES))",
+   "bytes": 444
+  }
+ ]
+}

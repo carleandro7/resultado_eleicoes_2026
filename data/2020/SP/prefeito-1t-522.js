@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SP/prefeito-1t-522", {"rotulo":"Prefeito · 1º turno (Suplementar de Campina do Monte Alegre)","candidatos":[["45","TIAGO RICARDO FERREIRA","CAMPINA DO MONTE ALEGRE",0],["11","GIL VICENTE DE OLIVEIRA JUNIOR","CAMPINA DO MONTE ALEGRE",0],["15","SUELI FERREIRA DOS SANTOS PASSARINHO","CAMPINA DO MONTE ALEGRE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xCc50xG60Ou0Fq0xp0o050Cl0zt0ye0404050Jn0D40zj0b0f"});

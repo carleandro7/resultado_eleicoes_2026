@@ -1,0 +1,43 @@
+{
+ "uf": "MT",
+ "nome": "Mato Grosso",
+ "titulo": "Eleições municipais 2020 · Mato Grosso",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 141,
+ "locais": 1454,
+ "base": {
+  "bytes": 163555
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 56432
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1120997
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2531
+  },
+  {
+   "id": "prefeito-1t-489",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Matupá - MT)",
+   "bytes": 497
+  },
+  {
+   "id": "prefeito-1t-488",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Acorizal - MT)",
+   "bytes": 493
+  },
+  {
+   "id": "prefeito-1t-487",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Torixoréu - MT)",
+   "bytes": 408
+  }
+ ]
+}

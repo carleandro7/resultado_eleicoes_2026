@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SP/prefeito-1t-525", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Angatuba)","candidatos":[["10","NICOLAS BASILE ROCHEL","ANGATUBA",0],["45","MARIA TERESA RODRIGUES MENKE","ANGATUBA",0],["70","JULIANO VOLPI ABDELNUR CAMARGO","ANGATUBA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Bu50xHj0S00xh0z10xb050xJ40Oc0y00yc0xd050_p0Ki0xj0y40x6050xFt0Ns0xl0xo0s050Pb0G10r0xo0n050xw90Rq0x70y10xd050Iu0zh0j0f0h050Nn0Ek0j0xf0o"});

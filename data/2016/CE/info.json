@@ -1,0 +1,73 @@
+{
+ "uf": "CE",
+ "nome": "Ceará",
+ "titulo": "Eleições municipais 2016 · Ceará",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 184,
+ "locais": 6926,
+ "base": {
+  "bytes": 676674
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 153512
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2206515
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 11003
+  },
+  {
+   "id": "prefeito-1t-308",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - PREFEITO)",
+   "bytes": 1260
+  },
+  {
+   "id": "prefeito-1t-384",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - CASCAVEL/CE)",
+   "bytes": 1548
+  },
+  {
+   "id": "prefeito-1t-414",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - TIANGUÁ/CE)",
+   "bytes": 1543
+  },
+  {
+   "id": "prefeito-1t-418",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - ARACOIABA/CE)",
+   "bytes": 843
+  },
+  {
+   "id": "prefeito-1t-413",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - IRAUÇUBA/CE)",
+   "bytes": 656
+  },
+  {
+   "id": "prefeito-1t-359",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - CROATÁ)",
+   "bytes": 604
+  },
+  {
+   "id": "prefeito-1t-320",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR - SANTANA DO CARIRI)",
+   "bytes": 623
+  },
+  {
+   "id": "prefeito-1t-321",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPL. DE FRECHEIRINHA)",
+   "bytes": 494
+  },
+  {
+   "id": "prefeito-1t-309",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - PREFEITO)",
+   "bytes": 470
+  }
+ ]
+}

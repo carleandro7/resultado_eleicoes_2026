@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/CE/prefeito-1t-321", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPL. DE FRECHEIRINHA)","candidatos":[["12","HELTON LUIS AGUIAR JUNIOR","FRECHEIRINHA",0],["11","SILVIA LUCIA SOUSA AGUIAR ARAUJO","FRECHEIRINHA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yRm40Fp0Dm0c06040xA10xBc0xn0r040Bf0Bm0902040Nh0L50t0c040A60Cd0803040Em0Es0603040xCn0xw50x10h040Gj0Fh0n03040F40Ia0l0a040K20Jd0i0a"});

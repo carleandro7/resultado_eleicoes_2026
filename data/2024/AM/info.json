@@ -1,0 +1,28 @@
+{
+ "uf": "AM",
+ "nome": "Amazonas",
+ "titulo": "Eleições municipais 2024 · Amazonas",
+ "gerado": "28/10/2024 11:46",
+ "cidades": 62,
+ "locais": 1570,
+ "base": {
+  "bytes": 157974
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 42912
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 971102
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 7165
+  }
+ ]
+}

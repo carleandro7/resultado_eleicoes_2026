@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/PE/prefeito-1t-513", {"rotulo":"Prefeito · 1º turno (Eleições Suplementares Capoeiras 2021)","candidatos":[["40","JOAQUIM COSTA TEIXEIRA","CAPOEIRAS",0],["22","SEVERINA CELINA FERREIRA DE MIRANDA","CAPOEIRAS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"P640xLk0xJk0yp0r040xJj0xG50y30u040xS20xOq0ym0x3040M40El0p06040Kl0K10l0b040Kj0Hr0t0d"});

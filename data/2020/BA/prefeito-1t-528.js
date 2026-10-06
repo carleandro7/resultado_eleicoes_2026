@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/BA/prefeito-1t-528", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Firmino Alves-BA)","candidatos":[["12","FABIANO DE JESUS SAMPAIO","FIRMINO ALVES",0],["55","SAMUEL PEREIRA DOS SANTOS","FIRMINO ALVES",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yYv40Zm0Wn0xh07040Em0Fc0d04040La0Kh0d01040Bk0D40d03040yg0xi0203130xk0y002"});

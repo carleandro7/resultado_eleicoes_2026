@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/PI/prefeito-1t-606", {"rotulo":"Prefeito · 1º turno (Suplementar São Lourenço do Piauí - PI)","candidatos":[["55","THIAGO DAMASCENO RIBEIRO SANTANA","SÃO LOURENÇO DO PIAUÍ",0],["13","RAIMUNDO NONATO DE SOUSA MARQUES","SÃO LOURENÇO DO PIAUÍ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yTg40y20yk0401040El0Cb0906140yv0zj0201040Ko0Go0j07040Ah0zp0907040B40z90405030Bb0zf0c040A70zb0601040Kq0G90q0c040Ds0D20e06"});

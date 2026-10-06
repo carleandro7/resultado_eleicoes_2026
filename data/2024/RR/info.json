@@ -1,0 +1,23 @@
+{
+ "uf": "RR",
+ "nome": "Roraima",
+ "titulo": "Eleições municipais 2024 · Roraima",
+ "gerado": "28/10/2024 11:46",
+ "cidades": 15,
+ "locais": 340,
+ "base": {
+  "bytes": 38589
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 7367
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 140215
+  }
+ ]
+}

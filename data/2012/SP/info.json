@@ -1,0 +1,28 @@
+{
+ "uf": "SP",
+ "nome": "São Paulo",
+ "titulo": "Eleições municipais 2012 · São Paulo",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 645,
+ "locais": 10052,
+ "base": {
+  "bytes": 1048412
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 390916
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 9626399
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 50483
+  }
+ ]
+}

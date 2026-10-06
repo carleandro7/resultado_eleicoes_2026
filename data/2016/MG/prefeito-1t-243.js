@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-243", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR SÃO BENTO ABADE)","candidatos":[["13","JANE REZENDE SILVA ELIZEI","SÃO BENTO ABADE",0],["14","ENEIAS MACHADO DE SOUZA","SÃO BENTO ABADE",0],["12","JOSÉ ROBERTO FURTADO","SÃO BENTO ABADE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"ECe50Z10Xe0A30p0e050T60Qp0y40q0j"});

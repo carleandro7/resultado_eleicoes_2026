@@ -1,0 +1,28 @@
+{
+ "uf": "MA",
+ "nome": "Maranhão",
+ "titulo": "Eleições municipais 2020 · Maranhão",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 217,
+ "locais": 5552,
+ "base": {
+  "bytes": 626974
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 152098
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2245920
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 4046
+  }
+ ]
+}

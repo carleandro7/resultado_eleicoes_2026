@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SP/prefeito-1t-518", {"rotulo":"Prefeito · 1º turno (Suplementar de Santo Antônio do Jardim)","candidatos":[["19","OSVALDO MOREIRA","SANTO ANTÔNIO DO JARDIM",0],["11","IVONETE APARECIDA CHIARATO SCANAVACHI","SANTO ANTÔNIO DO JARDIM",0],["55","GILMAR DE OLIVEIRA PEZOTTI","SANTO ANTÔNIO DO JARDIM",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"CSr50Ss0Kb0Dk0x50v050Sq0N90E10xl0o050Ei0Cs0ys0j09"});

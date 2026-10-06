@@ -1,0 +1,43 @@
+{
+ "uf": "RS",
+ "nome": "Rio Grande do Sul",
+ "titulo": "Eleições gerais 2010 · Rio Grande do Sul",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 496,
+ "locais": 9009,
+ "base": {
+  "bytes": 899509
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 164947
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 176129
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 223146
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 993935
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 1314441
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 109226
+  }
+ ]
+}

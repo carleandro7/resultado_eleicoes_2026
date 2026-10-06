@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-394", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPL. NOVA PORTEIRINHA)","candidatos":[["15","JOELIA SANTOS BARBOSA","NOVA PORTEIRINHA",0],["17","REGINA ANTONIA DE SOUZA FREITAS","NOVA PORTEIRINHA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"CD840Dm0Eb0f06040C50A20h01040Ge0Hs0xc07040G50Gq0n08040As0E50g03040Gd0Ch0n0p040Ku0K40x40k"});

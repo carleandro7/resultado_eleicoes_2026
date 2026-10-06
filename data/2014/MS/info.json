@@ -1,0 +1,48 @@
+{
+ "uf": "MS",
+ "nome": "Mato Grosso do Sul",
+ "titulo": "Eleições gerais 2014 · Mato Grosso do Sul",
+ "gerado": "28/07/2021 11:54",
+ "cidades": 79,
+ "locais": 997,
+ "base": {
+  "bytes": 101470
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 25161
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 21112
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 21668
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 135941
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 228563
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 13002
+  },
+  {
+   "id": "governador-2t",
+   "rotulo": "Governador · 2º turno",
+   "bytes": 13259
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "uf": "RJ",
+ "nome": "Rio de Janeiro",
+ "titulo": "Eleições gerais 2018 · Rio de Janeiro",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 92,
+ "locais": 4891,
+ "base": {
+  "bytes": 510081
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 172751
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 177183
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 241564
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 2198098
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 2784111
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 69142
+  },
+  {
+   "id": "governador-2t",
+   "rotulo": "Governador · 2º turno",
+   "bytes": 70057
+  }
+ ]
+}

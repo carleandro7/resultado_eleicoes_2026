@@ -1,0 +1,28 @@
+{
+ "uf": "RJ",
+ "nome": "Rio de Janeiro",
+ "titulo": "Eleições municipais 2012 · Rio de Janeiro",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 92,
+ "locais": 5003,
+ "base": {
+  "bytes": 497099
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 149044
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 3810641
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 17082
+  }
+ ]
+}

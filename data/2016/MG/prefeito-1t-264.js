@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-264", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR CANAÃ )","candidatos":[["11","SEBASTIÃO HILÁRIO BITENCOURT","CANAÃ",0],["14","CÉZAR AGUIAR DE SOUZA","CANAÃ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xVa40Qb0Q70xb0i040J80Jc0r0i040ya0Bh0703040Ah0z90201040H80C80g0f040zk0B30906"});

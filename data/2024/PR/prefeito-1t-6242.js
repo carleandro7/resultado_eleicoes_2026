@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/PR/prefeito-1t-6242", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de São João/PR)","candidatos":[["22","JONI ZANELLA FERREIRA","SÃO JOÃO",0],["45","ALTAIR JOSÉ GASPARETTO","SÃO JOÃO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Azc30xr0xc01040C70D80c05040xxs0Tk0x20n040Es0Bv070b040Da0An0708040Fc0Fh0806040Z80Wo0q0n040W00Ph0u0n"});

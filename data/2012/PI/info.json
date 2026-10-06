@@ -1,0 +1,28 @@
+{
+ "uf": "PI",
+ "nome": "Piauí",
+ "titulo": "Eleições municipais 2012 · Piauí",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 224,
+ "locais": 3444,
+ "base": {
+  "bytes": 328907
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 88023
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1114661
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 4108
+  }
+ ]
+}

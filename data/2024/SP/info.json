@@ -1,0 +1,83 @@
+{
+ "uf": "SP",
+ "nome": "São Paulo",
+ "titulo": "Eleições municipais 2024 · São Paulo",
+ "gerado": "22/06/2026 10:01",
+ "cidades": 645,
+ "locais": 11015,
+ "base": {
+  "bytes": 1171738
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 401210
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 10029076
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 62283
+  },
+  {
+   "id": "prefeito-1t-6180",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Mongaguá)",
+   "bytes": 617
+  },
+  {
+   "id": "prefeito-1t-6249",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Guará)",
+   "bytes": 432
+  },
+  {
+   "id": "prefeito-1t-6042",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Eldorado)",
+   "bytes": 654
+  },
+  {
+   "id": "prefeito-1t-6160",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Panorama)",
+   "bytes": 423
+  },
+  {
+   "id": "prefeito-1t-6161",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Bocaina)",
+   "bytes": 529
+  },
+  {
+   "id": "prefeito-1t-6238",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Sales Oliveira)",
+   "bytes": 413
+  },
+  {
+   "id": "prefeito-1t-6041",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Neves Paulista)",
+   "bytes": 436
+  },
+  {
+   "id": "prefeito-1t-6236",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Guatapará)",
+   "bytes": 510
+  },
+  {
+   "id": "prefeito-1t-6281",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Tuiuti)",
+   "bytes": 461
+  },
+  {
+   "id": "prefeito-1t-6280",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Reginópolis)",
+   "bytes": 412
+  },
+  {
+   "id": "prefeito-1t-6272",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Brejo Alegre)",
+   "bytes": 389
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-265", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR CAMPO FLORIDO)","candidatos":[["55","RENATO SOARES DE FREITAS","CAMPO FLORIDO",0],["45","VANESSA ZAGO MELO","CAMPO FLORIDO",0],["18","RUFINO FRANCISCO VIEIRA NETO","CAMPO FLORIDO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xUi50xQ00xDa0yh0x40e050-c0Q30x30n0b030x30x40d"});

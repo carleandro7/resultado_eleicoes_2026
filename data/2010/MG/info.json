@@ -1,0 +1,43 @@
+{
+ "uf": "MG",
+ "nome": "Minas Gerais",
+ "titulo": "Eleições gerais 2010 · Minas Gerais",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 853,
+ "locais": 10144,
+ "base": {
+  "bytes": 1039337
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 203608
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 191130
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 266228
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 1539645
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 1746553
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 129591
+  }
+ ]
+}

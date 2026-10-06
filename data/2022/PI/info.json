@@ -1,0 +1,43 @@
+{
+ "uf": "PI",
+ "nome": "Piauí",
+ "titulo": "Eleições gerais 2022 · Piauí",
+ "gerado": "01/11/2022 16:05",
+ "cidades": 224,
+ "locais": 3386,
+ "base": {
+  "bytes": 336343
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 63974
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 58555
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 51547
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 304570
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 335127
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 39449
+  }
+ ]
+}

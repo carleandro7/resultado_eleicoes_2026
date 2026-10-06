@@ -1,0 +1,38 @@
+{
+ "uf": "RS",
+ "nome": "Rio Grande do Sul",
+ "titulo": "Eleições municipais 2024 · Rio Grande do Sul",
+ "gerado": "13/04/2026 10:38",
+ "cidades": 497,
+ "locais": 7951,
+ "base": {
+  "bytes": 838551
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 205396
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 3225835
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 12282
+  },
+  {
+   "id": "prefeito-1t-6268",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Cachoeirinha - RS)",
+   "bytes": 1118
+  },
+  {
+   "id": "vereador-1t-6247",
+   "rotulo": "Vereador · 1º turno (Eleição Suplementar Braga - RS)",
+   "bytes": 498
+  }
+ ]
+}

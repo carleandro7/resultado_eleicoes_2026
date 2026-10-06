@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/PR/prefeito-1t-249", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR NOVA LARANJEIRAS)","candidatos":[["23","JOSE LINEU GOMES","NOVA LARANJEIRAS",0],["15","ALTAMIRO DE CRISTO","NOVA LARANJEIRAS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"zz340Ju0L30m08040xA00Zf0xr0l040F80Hd0a04040Fj0Ag0e05040C10Be0604040Ac0zb0602040zj0ya0804040Ar0zm0301040Fn0H40c04640B80Bi0405"});

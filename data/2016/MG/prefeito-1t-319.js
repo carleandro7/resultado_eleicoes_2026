@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-319", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR POCRANE)","candidatos":[["14","ERNANE JOSÉ DE MACEDO","POCRANE",0],["40","EDERSON DOMINGOS DIONIS","POCRANE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"DAv40xW50xE00Bq0x8040yu0Am0r04040zv0Ek0i02040zc0z80k08040J00Fq0j0e040z40y60c05030xl0x402040A90yi0803"});

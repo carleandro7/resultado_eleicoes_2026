@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SP/prefeito-1t-530", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Guaíra)","candidatos":[["15","ANTONIO MANOEL DA SILVA JUNIOR","GUAÍRA",0],["45","EDVALDO DONISETI MORAIS","GUAÍRA",0],["33","CLAUDIO ARMANI","GUAÍRA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yLo50Z20Sd0zm0y70y9050xT40xCs0H20A70zf050xIm0Yf0Eo0z30y6050xD40Wf0Bn0ye0y2050xBn0Vs0Ct0yo0y7050xxa0Vl0G50zq0A5050Xl0Ok0A60y90xv"});

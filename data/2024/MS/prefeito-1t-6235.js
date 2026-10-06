@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/MS/prefeito-1t-6235", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Bandeirantes-MS)","candidatos":[["55","CELSO RIBEIRO ABRANTES","BANDEIRANTES",0],["15","TATIANE MARIA MIYASATO","BANDEIRANTES",0],["27","FLAVIO GONÇALVES PAIVA","BANDEIRANTES",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yt50A40za070304040zo0xu0e11050xBs0Xu0zq0xc0k050C70Bv0x00607030ya0u05040y00xe0c02050Pa0Ki0y40j0c050y30xt0a0203"});

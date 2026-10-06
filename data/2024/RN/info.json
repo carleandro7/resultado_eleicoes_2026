@@ -1,0 +1,38 @@
+{
+ "uf": "RN",
+ "nome": "Rio Grande do Norte",
+ "titulo": "Eleições municipais 2024 · Rio Grande do Norte",
+ "gerado": "15/06/2026 10:00",
+ "cidades": 167,
+ "locais": 1534,
+ "base": {
+  "bytes": 163045
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 48731
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 736631
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 3365
+  },
+  {
+   "id": "prefeito-1t-6270",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplem. Municipal RN Maio/2026)",
+   "bytes": 392
+  },
+  {
+   "id": "prefeito-1t-6271",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplem Municip Ouro Branco RN)",
+   "bytes": 411
+  }
+ ]
+}

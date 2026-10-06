@@ -1,0 +1,38 @@
+{
+ "uf": "MA",
+ "nome": "Maranhão",
+ "titulo": "Eleições gerais 2026 · Maranhão",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 217,
+ "locais": 5834,
+ "base": {
+  "bytes": 667540
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 111439
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 105075
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 178249
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 667141
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 656422
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "uf": "PR",
+ "nome": "Paraná",
+ "titulo": "Eleições municipais 2016 · Paraná",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 399,
+ "locais": 5087,
+ "base": {
+  "bytes": 599350
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 162871
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 3278685
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 9894
+  },
+  {
+   "id": "prefeito-1t-247",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE FOZ DO IGUAÇU)",
+   "bytes": 2154
+  },
+  {
+   "id": "prefeito-1t-248",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE PIRAÍ DO SUL)",
+   "bytes": 870
+  },
+  {
+   "id": "prefeito-1t-378",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR PIÊN)",
+   "bytes": 513
+  },
+  {
+   "id": "prefeito-1t-258",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE MOREIRA SALES)",
+   "bytes": 406
+  },
+  {
+   "id": "prefeito-1t-272",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR PRIMEIRO DE MAIO)",
+   "bytes": 576
+  },
+  {
+   "id": "prefeito-1t-249",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR NOVA LARANJEIRAS)",
+   "bytes": 482
+  },
+  {
+   "id": "prefeito-1t-257",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE GUARAQUEÇABA)",
+   "bytes": 521
+  },
+  {
+   "id": "prefeito-1t-250",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR QUATIGUÁ)",
+   "bytes": 382
+  },
+  {
+   "id": "prefeito-1t-363",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR CONGONHINHAS)",
+   "bytes": 431
+  },
+  {
+   "id": "prefeito-1t-271",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE NOVA FÁTIMA)",
+   "bytes": 536
+  },
+  {
+   "id": "prefeito-1t-382",
+   "rotulo": "Prefeito · 1º turno (SUP. DE SERRANÓPOLIS DO IGUAÇU)",
+   "bytes": 386
+  },
+  {
+   "id": "prefeito-1t-364",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR JAPIRA)",
+   "bytes": 415
+  },
+  {
+   "id": "prefeito-1t-365",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR RANCHO ALEGRE)",
+   "bytes": 419
+  }
+ ]
+}

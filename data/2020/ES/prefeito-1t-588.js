@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/ES/prefeito-1t-588", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Ibitirama (ES))","candidatos":[["45","AILTON DA COSTA SILVA","IBITIRAMA",0],["40","REGINALDO SIMÃO DE SOUZA","IBITIRAMA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Ri40Di0Am0702040Xf0Nh0x50n040Pg0Nu0i0m040Gr0Ck0f0d040Wr0Pf0x20j040Bn0za0a0d040xc0xe0101"});

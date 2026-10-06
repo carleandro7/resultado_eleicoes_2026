@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RN/prefeito-1t-317", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUP. DE SÃO JOSÉ DE CAMPESTRE)","candidatos":[["15","JOSEILSON BORGES DA COSTA","SÃO JOSÉ DO CAMPESTRE",0],["10","REGIO LUCIANO XAVIER ALVES","SÃO JOSÉ DO CAMPESTRE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xGn40Rh0Ql0y90o040xDk0xy80z80p040Og0Pd0y00i040Jd0Nl0x40a040-b0Xm0yl0h"});

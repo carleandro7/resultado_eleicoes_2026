@@ -1,0 +1,38 @@
+{
+ "uf": "AL",
+ "nome": "Alagoas",
+ "titulo": "Eleições gerais 2026 · Alagoas",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 102,
+ "locais": 1080,
+ "base": {
+  "bytes": 115160
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 27679
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 18364
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 29744
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 141625
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 160421
+  }
+ ]
+}

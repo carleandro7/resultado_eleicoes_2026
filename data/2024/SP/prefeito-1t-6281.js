@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/SP/prefeito-1t-6281", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Tuiuti)","candidatos":[["44","ALEXANDRE TADEU GONÇALVES","TUIUTI",0],["40","MILENA CRISTINA NASCIMENTO DE LIMA REIS","TUIUTI",0],["15","PEDRO DONIZETTI DE GODOY","TUIUTI",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"GL150M10K50K80xb0xc050J60Hf0Hf0x00x2050Ka0Jm0It0xa0x5"});

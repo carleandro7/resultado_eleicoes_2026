@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/RN/prefeito-1t-6271", {"rotulo":"Prefeito · 1º turno (Eleição Suplem Municip Ouro Branco RN)","candidatos":[["11","AMARIUDO DOS SANTOS SILVA","OURO BRANCO",0],["13","MARIA DE FÁTIMA ARAÚJO DA SILVA","OURO BRANCO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xwj30xv0y811040xx10_i0q07040Wj0X80s07"});

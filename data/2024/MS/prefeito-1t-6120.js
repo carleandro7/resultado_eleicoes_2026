@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/MS/prefeito-1t-6120", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Paranhos-MS)","candidatos":[["45","HELIO RAMÃO ACOSTA","PARANHOS",0],["13","JORGE RICARDO LAURICIO","PARANHOS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Wq40Dq0B90c02040x-90Up0xe0xk040xLt0Q60y30q030Bp0yk06040zv0ze0b05"});

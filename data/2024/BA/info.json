@@ -1,0 +1,33 @@
+{
+ "uf": "BA",
+ "nome": "Bahia",
+ "titulo": "Eleições municipais 2024 · Bahia",
+ "gerado": "07/04/2025 10:00",
+ "cidades": 417,
+ "locais": 9310,
+ "base": {
+  "bytes": 1138780
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 224176
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 3941439
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 1256
+  },
+  {
+   "id": "prefeito-1t-6081",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar - Ruy Barbosa)",
+   "bytes": 656
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "uf": "SE",
+ "nome": "Sergipe",
+ "titulo": "Eleições gerais 2014 · Sergipe",
+ "gerado": "28/07/2021 11:54",
+ "cidades": 75,
+ "locais": 1074,
+ "base": {
+  "bytes": 108811
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 27153
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 19441
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 20228
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 109788
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 156457
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 14037
+  }
+ ]
+}

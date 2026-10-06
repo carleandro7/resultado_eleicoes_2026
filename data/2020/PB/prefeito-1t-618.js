@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/PB/prefeito-1t-618", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Massaranduba/PB)","candidatos":[["44","JOÃO COSTA DE SOUSA","MASSARANDUBA",0],["55","FRANCISCO PEDRO DE LIMA","MASSARANDUBA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xws40U60Kg0xp0xa040Ho0Cm0x00i040Fb0Bs0l0f040xAq0R00zh0y1040_30Qt0yq0xi040Pb0Gf0xp0xa040xxp0Qs0yr0xl"});

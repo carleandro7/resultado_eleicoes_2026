@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SC/prefeito-1t-557", {"rotulo":"Prefeito · 1º turno (Nova Eleição - Pres. Castello Branco)","candidatos":[["15","NEIVA KLEEMANN TONIELO","PRESIDENTE CASTELLO BRANCO",0],["20","VINÍCIUS ZANESCO","PRESIDENTE CASTELLO BRANCO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yO740M40Hu0603030B70Au04130zo0xv02"});

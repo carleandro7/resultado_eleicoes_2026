@@ -1,0 +1,38 @@
+{
+ "uf": "PE",
+ "nome": "Pernambuco",
+ "titulo": "Eleições municipais 2016 · Pernambuco",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 184,
+ "locais": 3267,
+ "base": {
+  "bytes": 338014
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 102555
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2102580
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 11177
+  },
+  {
+   "id": "prefeito-1t-237",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR IPOJUCA PE)",
+   "bytes": 791
+  },
+  {
+   "id": "prefeito-1t-267",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE BELO JARDIM PE)",
+   "bytes": 963
+  }
+ ]
+}

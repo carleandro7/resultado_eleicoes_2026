@@ -1,0 +1,28 @@
+{
+ "uf": "MT",
+ "nome": "Mato Grosso",
+ "titulo": "Eleições municipais 2024 · Mato Grosso",
+ "gerado": "28/10/2024 11:46",
+ "cidades": 142,
+ "locais": 1486,
+ "base": {
+  "bytes": 169249
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 45430
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1003412
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2532
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "uf": "SE",
+ "nome": "Sergipe",
+ "titulo": "Eleições municipais 2012 · Sergipe",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 75,
+ "locais": 1064,
+ "base": {
+  "bytes": 106109
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 31379
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 536753
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "uf": "TO",
+ "nome": "Tocantins",
+ "titulo": "Eleições municipais 2016 · Tocantins",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 139,
+ "locais": 868,
+ "base": {
+  "bytes": 91019
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 37305
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 627507
+  },
+  {
+   "id": "prefeito-1t-256",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR TAGUATINGA-TO)",
+   "bytes": 479
+  },
+  {
+   "id": "prefeito-1t-292",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR ITACAJÁ-TO)",
+   "bytes": 468
+  },
+  {
+   "id": "prefeito-1t-371",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR SANDOLÂNDIA-TO)",
+   "bytes": 397
+  },
+  {
+   "id": "prefeito-1t-421",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR LAJEADO-TO)",
+   "bytes": 400
+  },
+  {
+   "id": "prefeito-1t-423",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR PUGMIL-TO)",
+   "bytes": 414
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "uf": "AM",
+ "nome": "Amazonas",
+ "titulo": "Eleições municipais 2016 · Amazonas",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 62,
+ "locais": 1459,
+ "base": {
+  "bytes": 144068
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 47259
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1091078
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 6624
+  },
+  {
+   "id": "prefeito-1t-293",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR NOVO ARIPUANÃ-AM)",
+   "bytes": 459
+  },
+  {
+   "id": "prefeito-1t-341",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR NOVO AIRÃO / AM)",
+   "bytes": 588
+  },
+  {
+   "id": "prefeito-1t-383",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEM. DE CAAPIRANGA - AM)",
+   "bytes": 412
+  },
+  {
+   "id": "prefeito-1t-340",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR ANAMÃ / AM)",
+   "bytes": 444
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "uf": "ZZ",
+ "nome": "Exterior",
+ "titulo": "Eleições gerais 2026 · Exterior",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 145,
+ "locais": 170,
+ "base": {
+  "bytes": 21738
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 5120
+  }
+ ]
+}

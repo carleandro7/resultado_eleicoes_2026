@@ -1,0 +1,48 @@
+{
+ "uf": "RR",
+ "nome": "Roraima",
+ "titulo": "Eleições gerais 2022 · Roraima",
+ "gerado": "22/06/2026 09:08",
+ "cidades": 15,
+ "locais": 410,
+ "base": {
+  "bytes": 41119
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 7543
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 6089
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 9268
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 58968
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 102925
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 4165
+  },
+  {
+   "id": "governador-1t-6278",
+   "rotulo": "Governador · 1º turno (Eleição Suplementar Governador 2026)",
+   "bytes": 5197
+  }
+ ]
+}

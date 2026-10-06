@@ -1,0 +1,88 @@
+{
+ "uf": "RS",
+ "nome": "Rio Grande do Sul",
+ "titulo": "Eleições municipais 2016 · Rio Grande do Sul",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 497,
+ "locais": 8533,
+ "base": {
+  "bytes": 874346
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 223732
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 3362677
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 11016
+  },
+  {
+   "id": "prefeito-1t-232",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE GRAVATAÍ)",
+   "bytes": 2272
+  },
+  {
+   "id": "prefeito-1t-424",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE PAROBÉ - RS)",
+   "bytes": 1044
+  },
+  {
+   "id": "prefeito-1t-283",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE IVOTI-RS)",
+   "bytes": 595
+  },
+  {
+   "id": "prefeito-1t-231",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE BUTIÁ)",
+   "bytes": 511
+  },
+  {
+   "id": "prefeito-1t-230",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE ARVOREZINHA)",
+   "bytes": 516
+  },
+  {
+   "id": "prefeito-1t-390",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR PALMARES DO SUL)",
+   "bytes": 616
+  },
+  {
+   "id": "prefeito-1t-233",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE SALTO DO JACUÍ)",
+   "bytes": 510
+  },
+  {
+   "id": "prefeito-1t-312",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE BOM JESUS - RS)",
+   "bytes": 578
+  },
+  {
+   "id": "prefeito-1t-235",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR SÃO VICENTE DO SUL)",
+   "bytes": 485
+  },
+  {
+   "id": "prefeito-1t-282",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE PARAÍ-RS)",
+   "bytes": 411
+  },
+  {
+   "id": "prefeito-1t-344",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR DE ALPESTRE - RS)",
+   "bytes": 431
+  },
+  {
+   "id": "prefeito-1t-234",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE SÃO VENDELINO)",
+   "bytes": 420
+  }
+ ]
+}

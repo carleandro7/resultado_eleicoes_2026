@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-266", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR STA. RITA DE MINAS)","candidatos":[["11","ADEMILSON LUCAS FERNANDES","SANTA RITA DE MINAS",0],["10","WALDIR ROSA DE FREITAS","SANTA RITA DE MINAS",0],["22","CLÉSSIO JOSÉ FERNANDES","SANTA RITA DE MINAS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"D_l50xOk0xH50b0z40x6050W90To050xh0f"});

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MT/prefeito-1t-379", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUP. BOM JESUS DO ARAGUAIA)","candidatos":[["25","RONALDO ROSA DE OLIVEIRA","BOM JESUS DO ARAGUAIA",0],["12","SILVIO MARIA DANTAS","BOM JESUS DO ARAGUAIA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Ba40Ah030701040xw40Wu0xf09040Ih0Fq0b02040yg0y20303"});

@@ -1,0 +1,23 @@
+{
+ "uf": "ZZ",
+ "nome": "Exterior",
+ "titulo": "Eleições gerais 2022 · Exterior",
+ "gerado": "01/11/2022 16:05",
+ "cidades": 140,
+ "locais": 162,
+ "base": {
+  "bytes": 18748
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 4498
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 2196
+  }
+ ]
+}

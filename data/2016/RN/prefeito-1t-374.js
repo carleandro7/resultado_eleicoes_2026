@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RN/prefeito-1t-374", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE SANTA CRUZ)","candidatos":[["40","IVANILDO FERREIRA LIMA FILHO","SANTA CRUZ",0],["55","JOSE PÉRICLES FARIAS DA ROCHA","SANTA CRUZ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xCu40V50Nk0xv0q040xIt0xBj0Ac0x7040Rp0-60yv0t140E90zl0d09240F30L60c02040xxd0xBi0z70x9340yL70yJ30Ep0y4040xCl0Y90ys0q140xH20xB00Ae0xf"});

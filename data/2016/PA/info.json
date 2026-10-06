@@ -1,0 +1,38 @@
+{
+ "uf": "PA",
+ "nome": "Pará",
+ "titulo": "Eleições municipais 2016 · Pará",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 144,
+ "locais": 5127,
+ "base": {
+  "bytes": 466966
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 133778
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2371577
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 4747
+  },
+  {
+   "id": "prefeito-1t-322",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE MOJU)",
+   "bytes": 1390
+  },
+  {
+   "id": "prefeito-1t-255",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE TOMÉ-AÇU)",
+   "bytes": 884
+  }
+ ]
+}

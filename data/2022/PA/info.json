@@ -1,0 +1,43 @@
+{
+ "uf": "PA",
+ "nome": "Pará",
+ "titulo": "Eleições gerais 2022 · Pará",
+ "gerado": "01/11/2022 16:05",
+ "cidades": 144,
+ "locais": 5284,
+ "base": {
+  "bytes": 491072
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 101995
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 87381
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 119722
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 681700
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 855449
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 62016
+  }
+ ]
+}

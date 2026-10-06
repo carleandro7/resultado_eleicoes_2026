@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/MG/prefeito-1t-6237", {"rotulo":"Prefeito · 1º turno (Eleição Supl. São José da Varginha)","candidatos":[["70","VICTOR PAULINO DE MELO PEREIRA","SÃO JOSÉ DA VARGINHA",0],["43","JOSIANA SOARES CARVALHO DE SANTANA","SÃO JOSÉ DA VARGINHA",0],["40","MATEUS AUGUSTO SOARES DOS SANTOS","SÃO JOSÉ DA VARGINHA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"EOc50Sm0Pa0xf0h0i050Ag0ze090402040xo0i0106050Mc0Mn0x80o04050A90Al030901"});

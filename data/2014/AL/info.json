@@ -1,0 +1,43 @@
+{
+ "uf": "AL",
+ "nome": "Alagoas",
+ "titulo": "Eleições gerais 2014 · Alagoas",
+ "gerado": "28/07/2021 11:54",
+ "cidades": 102,
+ "locais": 948,
+ "base": {
+  "bytes": 96939
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 26232
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 24176
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 21822
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 135563
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 197818
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 13124
+  }
+ ]
+}

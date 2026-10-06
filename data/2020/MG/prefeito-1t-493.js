@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/MG/prefeito-1t-493", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Antônio Carlos)","candidatos":[["45","MARCELO RIBEIRO DA SILVA","ANTÔNIO CARLOS",0],["36","HERBERT TADEU GLATER HALFELD","ANTÔNIO CARLOS",0],["25","LUIZ CARLOS DA SILVA","ANTÔNIO CARLOS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"En50xwj0X00r0y30n050Wo0Qp0n0xj0p050Jp0Jv080r09050Oa0J70h0yi0l050yq0r050502040ya0x31603040zt0xg150a050Ab0y1010507050Sh0zo020x80h040zs0b1303030xf0x103"});

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MT/prefeito-1t-261", {"rotulo":"Prefeito · 1º turno (ALTO TAQUARI-MT-JUL-2017)","candidatos":[["14","FABIO MAURI GARBUGIO","ALTO TAQUARI",0],["45","VANDERLEY SANTEIRO TEODORO","ALTO TAQUARI",0],["55","MAURO ANDRE DA SILVA BARBOSA","ALTO TAQUARI",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yb50_o0xx30J80xl0n050Qt0Om0Cv0v0o050Hd0H50Ak0d02"});

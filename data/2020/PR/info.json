@@ -1,0 +1,48 @@
+{
+ "uf": "PR",
+ "nome": "Paraná",
+ "titulo": "Eleições municipais 2020 · Paraná",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 399,
+ "locais": 4657,
+ "base": {
+  "bytes": 550857
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 188774
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 3557894
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 1924
+  },
+  {
+   "id": "prefeito-1t-469",
+   "rotulo": "Prefeito · 1º turno (Suplementar Nova Prata do Iguaçu)",
+   "bytes": 564
+  },
+  {
+   "id": "prefeito-1t-554",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Agudos do Sul/PR)",
+   "bytes": 472
+  },
+  {
+   "id": "prefeito-1t-536",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Francisco Alves)",
+   "bytes": 476
+  },
+  {
+   "id": "prefeito-1t-460",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Munhoz de Melo)",
+   "bytes": 375
+  }
+ ]
+}

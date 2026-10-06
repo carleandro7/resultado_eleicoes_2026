@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/RN/prefeito-1t-595", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Ipanguaçu)","candidatos":[["11","REMO DA FONSECA SILVEIRA","IPANGUAÇU",0],["22","JEFFERSON CHARLES DE ARAÚJO SANTOS","IPANGUAÇU",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Jj40Y80Th0b0g040W90Uk0l0e040xNu0xU40u0k040S50Qm0h04140P40T20608040P60M00906"});

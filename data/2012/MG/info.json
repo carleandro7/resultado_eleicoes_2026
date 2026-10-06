@@ -1,0 +1,28 @@
+{
+ "uf": "MG",
+ "nome": "Minas Gerais",
+ "titulo": "Eleições municipais 2012 · Minas Gerais",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 853,
+ "locais": 10130,
+ "base": {
+  "bytes": 1047715
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 322067
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 6990738
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 8020
+  }
+ ]
+}

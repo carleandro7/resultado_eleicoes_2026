@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/ES/prefeito-1t-386", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE IRUPI (ES))","candidatos":[["15","EDMILSON MEIRELES DE OLIVEIRA","IRUPI",0],["17","RAPHAEL JUNQUEIRA FONSECA","IRUPI",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Sb40Aj0A10906040xy90U90xh0x1040Bc0zu0d05040Gg0zp0804040Sv0Ig0xb0n040xYc0xFs0yh0xt040Bn0y40d06"});

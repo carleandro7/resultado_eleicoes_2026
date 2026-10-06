@@ -1,0 +1,73 @@
+{
+ "uf": "RJ",
+ "nome": "Rio de Janeiro",
+ "titulo": "Eleições municipais 2016 · Rio de Janeiro",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 92,
+ "locais": 5043,
+ "base": {
+  "bytes": 520076
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 172047
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 3930105
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 38898
+  },
+  {
+   "id": "prefeito-1t-330",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE CABO FRIO)",
+   "bytes": 1940
+  },
+  {
+   "id": "prefeito-1t-314",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE TERESÓPOLIS)",
+   "bytes": 3035
+  },
+  {
+   "id": "prefeito-1t-329",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE RIO DAS OSTRAS)",
+   "bytes": 1410
+  },
+  {
+   "id": "prefeito-1t-350",
+   "rotulo": "Prefeito · 1º turno (RJ - SUPLEMENTAR DE MANGARATIBA)",
+   "bytes": 921
+  },
+  {
+   "id": "prefeito-1t-399",
+   "rotulo": "Prefeito · 1º turno (RJ - SUPLEMENTAR DE PARATY)",
+   "bytes": 1155
+  },
+  {
+   "id": "prefeito-1t-387",
+   "rotulo": "Prefeito · 1º turno (RJ - SUPLEMENTAR DE IGUABA GRANDE)",
+   "bytes": 861
+  },
+  {
+   "id": "prefeito-1t-430",
+   "rotulo": "Prefeito · 1º turno (RJ - SUPLEMENTAR DE SILVA JARDIM)",
+   "bytes": 949
+  },
+  {
+   "id": "prefeito-1t-347",
+   "rotulo": "Prefeito · 1º turno (RJ - SUPLEMENTAR DE APERIBÉ)",
+   "bytes": 443
+  },
+  {
+   "id": "prefeito-1t-348",
+   "rotulo": "Prefeito · 1º turno (RJ - SUPLEMENTAR DE LAJE DO MURIAÉ)",
+   "bytes": 613
+  }
+ ]
+}

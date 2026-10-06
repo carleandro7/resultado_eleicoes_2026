@@ -1,0 +1,28 @@
+{
+ "uf": "AC",
+ "nome": "Acre",
+ "titulo": "Eleições municipais 2012 · Acre",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 22,
+ "locais": 647,
+ "base": {
+  "bytes": 64346
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 15209
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 267292
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2825
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "uf": "PI",
+ "nome": "Piauí",
+ "titulo": "Eleições municipais 2024 · Piauí",
+ "gerado": "28/10/2024 11:46",
+ "cidades": 224,
+ "locais": 3414,
+ "base": {
+  "bytes": 339751
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 81903
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 983067
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "uf": "PB",
+ "nome": "Paraíba",
+ "titulo": "Eleições municipais 2024 · Paraíba",
+ "gerado": "13/04/2026 10:38",
+ "cidades": 223,
+ "locais": 1809,
+ "base": {
+  "bytes": 201435
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 62038
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 934476
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 5262
+  },
+  {
+   "id": "prefeito-1t-6265",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Cabedelo/PB)",
+   "bytes": 785
+  }
+ ]
+}

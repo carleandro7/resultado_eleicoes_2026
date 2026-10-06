@@ -1,0 +1,28 @@
+{
+ "uf": "MS",
+ "nome": "Mato Grosso do Sul",
+ "titulo": "Eleições municipais 2012 · Mato Grosso do Sul",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 79,
+ "locais": 993,
+ "base": {
+  "bytes": 100550
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 29950
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 660688
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 3459
+  }
+ ]
+}

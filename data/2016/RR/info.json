@@ -1,0 +1,23 @@
+{
+ "uf": "RR",
+ "nome": "Roraima",
+ "titulo": "Eleições municipais 2016 · Roraima",
+ "gerado": "07/12/2023 14:25",
+ "cidades": 15,
+ "locais": 316,
+ "base": {
+  "bytes": 30937
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 11382
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 168967
+  }
+ ]
+}

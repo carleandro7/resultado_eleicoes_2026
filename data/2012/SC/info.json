@@ -1,0 +1,28 @@
+{
+ "uf": "SC",
+ "nome": "Santa Catarina",
+ "titulo": "Eleições municipais 2012 · Santa Catarina",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 295,
+ "locais": 3949,
+ "base": {
+  "bytes": 455537
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 97587
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1611830
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 4737
+  }
+ ]
+}

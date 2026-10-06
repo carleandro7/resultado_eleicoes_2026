@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SP/prefeito-1t-527", {"rotulo":"Prefeito · 1º turno (Suplementar de São Lourenço da Serra)","candidatos":[["45","FELIPE GEFERSON SEME AMED","SÃO LOURENÇO DA SERRA",0],["10","BENEDITO JOSE DOS SANTOS JUNIOR","SÃO LOURENÇO DA SERRA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"DIp40Zl0Ha0ye0xk040Mc0C00x60r040Ci0y70905040L20Ad0xc0o040Ya0Ed0yd0xp040xBl0Hg0yl0yc040Pr0An0n0q040C50p0304040y1020103"});

@@ -1,0 +1,43 @@
+{
+ "uf": "PR",
+ "nome": "Paraná",
+ "titulo": "Eleições municipais 2024 · Paraná",
+ "gerado": "06/10/2025 10:00",
+ "cidades": 399,
+ "locais": 4797,
+ "base": {
+  "bytes": 567665
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 160093
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 3332636
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 10598
+  },
+  {
+   "id": "prefeito-1t-6242",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de São João/PR)",
+   "bytes": 455
+  },
+  {
+   "id": "prefeito-1t-6241",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar São Tomé/PR)",
+   "bytes": 380
+  },
+  {
+   "id": "prefeito-1t-6243",
+   "rotulo": "Prefeito · 1º turno (Suplementar de Cruzeiro do Iguaçu/PR)",
+   "bytes": 402
+  }
+ ]
+}

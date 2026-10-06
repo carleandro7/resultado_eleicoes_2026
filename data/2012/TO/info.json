@@ -1,0 +1,23 @@
+{
+ "uf": "TO",
+ "nome": "Tocantins",
+ "titulo": "Eleições municipais 2012 · Tocantins",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 139,
+ "locais": 899,
+ "base": {
+  "bytes": 91749
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 36153
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 593385
+  }
+ ]
+}

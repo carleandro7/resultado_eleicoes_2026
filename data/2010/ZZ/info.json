@@ -1,0 +1,23 @@
+{
+ "uf": "ZZ",
+ "nome": "Exterior",
+ "titulo": "Eleições gerais 2010 · Exterior",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 126,
+ "locais": 209,
+ "base": {
+  "bytes": 14640
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 4701
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 2595
+  }
+ ]
+}

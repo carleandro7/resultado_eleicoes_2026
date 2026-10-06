@@ -1,0 +1,38 @@
+{
+ "uf": "RO",
+ "nome": "Rondônia",
+ "titulo": "Eleições municipais 2020 · Rondônia",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 52,
+ "locais": 632,
+ "base": {
+  "bytes": 73205
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 27186
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 509232
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2131
+  },
+  {
+   "id": "prefeito-1t-628",
+   "rotulo": "Prefeito · 1º turno (Suplementar Candeias do Jamari)",
+   "bytes": 593
+  },
+  {
+   "id": "prefeito-2t-571",
+   "rotulo": "Prefeito · 2º turno (Eleição Suplementar Vilhena (RO))",
+   "bytes": 843
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "uf": "BA",
+ "nome": "Bahia",
+ "titulo": "Eleições gerais 2018 · Bahia",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 417,
+ "locais": 9881,
+ "base": {
+  "bytes": 1184660
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 249583
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 172972
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 272261
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 1399699
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 1466188
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 120279
+  }
+ ]
+}

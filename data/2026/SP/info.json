@@ -1,0 +1,38 @@
+{
+ "uf": "SP",
+ "nome": "São Paulo",
+ "titulo": "Eleições gerais 2026 · São Paulo",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 645,
+ "locais": 11079,
+ "base": {
+  "bytes": 1179103
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 337832
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 238910
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 448734
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 4488473
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 4904087
+  }
+ ]
+}

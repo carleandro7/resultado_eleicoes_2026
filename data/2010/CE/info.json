@@ -1,0 +1,43 @@
+{
+ "uf": "CE",
+ "nome": "Ceará",
+ "titulo": "Eleições gerais 2010 · Ceará",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 184,
+ "locais": 6906,
+ "base": {
+  "bytes": 675991
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 120845
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 129545
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 161743
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 595959
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 869048
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 82287
+  }
+ ]
+}

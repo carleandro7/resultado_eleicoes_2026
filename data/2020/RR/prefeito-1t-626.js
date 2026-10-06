@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/RR/prefeito-1t-626", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Alto Alegre)","candidatos":[["10","WAGNER DE OLIVEIRA NUNES","ALTO ALEGRE",0],["15","VALDENIR SOARES ALVES","ALTO ALEGRE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"030z40A101040zg0zl0302040Aa0yt0902040Er0Gq0602040Gb0Bc0201040Ce0Cn0301040Fd0Cu0403020A608040R00Pg0s03040U40Q90x808040E30Ca0401040Vi0W80x409040H70D70b03040Cp0Cu0402"});

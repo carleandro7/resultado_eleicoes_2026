@@ -1,0 +1,23 @@
+{
+ "uf": "VT",
+ "nome": "Voto em trânsito",
+ "titulo": "Eleições gerais 2010 · Voto em trânsito",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 27,
+ "locais": 52,
+ "base": {
+  "bytes": 2452
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 1613
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 920
+  }
+ ]
+}

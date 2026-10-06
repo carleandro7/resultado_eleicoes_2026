@@ -1,0 +1,43 @@
+{
+ "uf": "MA",
+ "nome": "Maranhão",
+ "titulo": "Eleições gerais 2018 · Maranhão",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 217,
+ "locais": 5575,
+ "base": {
+  "bytes": 628955
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 131885
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 100959
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 165016
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 588656
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 718556
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 64010
+  }
+ ]
+}

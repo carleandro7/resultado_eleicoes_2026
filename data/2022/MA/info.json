@@ -1,0 +1,43 @@
+{
+ "uf": "MA",
+ "nome": "Maranhão",
+ "titulo": "Eleições gerais 2022 · Maranhão",
+ "gerado": "01/11/2022 16:05",
+ "cidades": 217,
+ "locais": 5656,
+ "base": {
+  "bytes": 638684
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 104479
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 105788
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 87821
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 676557
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 752577
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 64645
+  }
+ ]
+}

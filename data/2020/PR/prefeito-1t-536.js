@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/PR/prefeito-1t-536", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Francisco Alves)","candidatos":[["45","MILENA SILVA ROSA","FRANCISCO ALVES",0],["10","LIOMAR MENDES LISBOA","FRANCISCO ALVES",0],["14","VALDIR BARBOSA MELLÃO","FRANCISCO ALVES",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xR450_f0_p0za0y00x2050D60Bg0c0k0b050Cn0Ca0f0903050Q40N30yc0x80j"});

@@ -37,6 +37,10 @@
       <!-- filtros num cartão elevado, sobre a faixa da marca; candidatos escolhidos logo abaixo da busca -->
       <section class="filtros" aria-label="Filtros">
         <div class="filtros-grade">
+          <label class="campo campo-ano">
+            <span class="campo-rotulo">Eleição</span>
+            <select id="f-ano"></select>
+          </label>
           <label class="campo campo-estado">
             <span class="campo-rotulo">Estado</span>
             <select id="f-estado"></select>
@@ -181,7 +185,7 @@
   <div id="dica" class="dica" role="tooltip" hidden></div>
 
   <script src="vendor/leaflet/leaflet.js"></script>
-  <script src="data/estados.js"></script>
+  <script src="data/eleicoes.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

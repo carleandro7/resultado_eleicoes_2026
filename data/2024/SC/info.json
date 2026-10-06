@@ -1,0 +1,23 @@
+{
+ "uf": "SC",
+ "nome": "Santa Catarina",
+ "titulo": "Eleições municipais 2024 · Santa Catarina",
+ "gerado": "28/10/2024 11:46",
+ "cidades": 295,
+ "locais": 3432,
+ "base": {
+  "bytes": 405007
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 106641
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1748153
+  }
+ ]
+}

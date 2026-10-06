@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-260", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR CRISTIANO OTONI)","candidatos":[["40","JOSÉ ELCIO DE REZENDE","CRISTIANO OTONI",0],["13","EVALDO JESUS DE SOUZA","CRISTIANO OTONI",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yWe40We0Op0zp0xr040xo0xp0402040E30Ak0xb0e040Re0O50yl0xa040r0y30d03"});

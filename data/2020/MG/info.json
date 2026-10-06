@@ -1,0 +1,83 @@
+{
+ "uf": "MG",
+ "nome": "Minas Gerais",
+ "titulo": "Eleições municipais 2020 · Minas Gerais",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 853,
+ "locais": 10006,
+ "base": {
+  "bytes": 1073021
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 399277
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 7796747
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 7396
+  },
+  {
+   "id": "prefeito-1t-484",
+   "rotulo": "Prefeito · 1º turno (Eleição Supl. São Gonçalo do Sapucaí)",
+   "bytes": 547
+  },
+  {
+   "id": "prefeito-1t-466",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Espera Feliz)",
+   "bytes": 678
+  },
+  {
+   "id": "prefeito-1t-467",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Campestre)",
+   "bytes": 501
+  },
+  {
+   "id": "prefeito-1t-493",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Antônio Carlos)",
+   "bytes": 571
+  },
+  {
+   "id": "prefeito-1t-492",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Ibertioga)",
+   "bytes": 433
+  },
+  {
+   "id": "prefeito-1t-580",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Divisa Alegre)",
+   "bytes": 402
+  },
+  {
+   "id": "prefeito-1t-605",
+   "rotulo": "Prefeito · 1º turno (Eleição suplementar Divisa Alegre)",
+   "bytes": 511
+  },
+  {
+   "id": "prefeito-1t-630",
+   "rotulo": "Prefeito · 1º turno (Eleição suplementar Bertópolis)",
+   "bytes": 409
+  },
+  {
+   "id": "prefeito-1t-552",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Japaraíba)",
+   "bytes": 447
+  },
+  {
+   "id": "prefeito-1t-604",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Lamim)",
+   "bytes": 377
+  },
+  {
+   "id": "prefeito-1t-510",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Pedra do Anta)",
+   "bytes": 406
+  }
+ ]
+}

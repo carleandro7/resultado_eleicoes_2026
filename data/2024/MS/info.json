@@ -1,0 +1,38 @@
+{
+ "uf": "MS",
+ "nome": "Mato Grosso do Sul",
+ "titulo": "Eleições municipais 2024 · Mato Grosso do Sul",
+ "gerado": "07/07/2025 10:00",
+ "cidades": 79,
+ "locais": 1037,
+ "base": {
+  "bytes": 109751
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 33174
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 720410
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 3683
+  },
+  {
+   "id": "prefeito-1t-6120",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Paranhos-MS)",
+   "bytes": 409
+  },
+  {
+   "id": "prefeito-1t-6235",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Bandeirantes-MS)",
+   "bytes": 522
+  }
+ ]
+}

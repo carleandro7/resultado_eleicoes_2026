@@ -1,0 +1,43 @@
+{
+ "uf": "SP",
+ "nome": "São Paulo",
+ "titulo": "Eleições gerais 2010 · São Paulo",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 645,
+ "locais": 9760,
+ "base": {
+  "bytes": 992525
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 240406
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 266086
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 415490
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 3479267
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 3849154
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 140956
+  }
+ ]
+}

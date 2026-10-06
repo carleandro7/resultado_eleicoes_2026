@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/AM/prefeito-1t-293", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR NOVO ARIPUANÃ-AM)","candidatos":[["45","JOCIONE DOS SANTOS SOUZA","NOVO ARIPUANÃ",0],["15","HILTON LABORDA PINTO JUNIOR","NOVO ARIPUANÃ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xBa40Gs0Em0h03040Zk0Ve0xb07040xH30xEk0xl0a040Vr0Tt0xh0a240Pg0Q40v0e040E40D30d01030i0b01"});

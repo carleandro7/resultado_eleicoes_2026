@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/GO/prefeito-1t-355", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - DIVINÓPOLIS)","candidatos":[["10","CHARLEY RODRIGUES TOLENTINO","DIVINÓPOLIS DE GOIÁS",0],["22","MILTON FERREIRA DOS SANTOS","DIVINÓPOLIS DE GOIÁS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Rj40X10P60yc0a040Jl0Fk0xj02030yd0yh03040Rd0Mp0yc06"});

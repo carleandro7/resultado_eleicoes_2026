@@ -1,0 +1,48 @@
+{
+ "uf": "MT",
+ "nome": "Mato Grosso",
+ "titulo": "Eleições gerais 2018 · Mato Grosso",
+ "gerado": "10/04/2024 15:23",
+ "cidades": 141,
+ "locais": 1560,
+ "base": {
+  "bytes": 174989
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 44419
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 29440
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 51002
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 217107
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 310372
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 18956
+  },
+  {
+   "id": "senador-1t-438",
+   "rotulo": "Senador · 1º turno (Eleição Suplementar Senador - MT)",
+   "bytes": 47974
+  }
+ ]
+}

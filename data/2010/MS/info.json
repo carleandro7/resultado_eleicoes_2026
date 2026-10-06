@@ -1,0 +1,43 @@
+{
+ "uf": "MS",
+ "nome": "Mato Grosso do Sul",
+ "titulo": "Eleições gerais 2010 · Mato Grosso do Sul",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 79,
+ "locais": 980,
+ "base": {
+  "bytes": 98384
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 20966
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 15458
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 21901
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 104918
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 180376
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 12905
+  }
+ ]
+}

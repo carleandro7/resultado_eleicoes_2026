@@ -1,0 +1,23 @@
+{
+ "uf": "PE",
+ "nome": "Pernambuco",
+ "titulo": "Eleições municipais 2012 · Pernambuco",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 184,
+ "locais": 3209,
+ "base": {
+  "bytes": 320343
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 92649
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1835725
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/PR/prefeito-1t-257", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE GUARAQUEÇABA)","candidatos":[["15","HAYSSAN COLOMBES ZAHOUI","GUARAQUEÇABA",0],["45","LILIAN RAMOS NARLOCH","GUARAQUEÇABA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yxd40Dv0B70303040B00yf0402040F60Bj0c0c040Cg0Ds0503040Wb0P90o0d040Ro0M80c0b040yk0A80102040q0r0501040A90z10602040Da0B50802040ym0xv0804020yn0y8030xb0y503030xm0x202"});

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/SP/prefeito-1t-6280", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Reginópolis)","candidatos":[["55","JOÃO PAULO ARAUJO DE SOUSA VERISSIMO","REGINÓPOLIS",0],["44","MARCO ANTONIO MARTINS BASTOS","REGINÓPOLIS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Czj40Oi0Na0x30l040xE60xEc0xn0x3"});

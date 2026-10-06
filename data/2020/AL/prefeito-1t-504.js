@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/AL/prefeito-1t-504", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar-Campo Grande(AL))","candidatos":[["10","TEOGENES HIGINO MELO LESSA","CAMPO GRANDE",0],["15","CICERO FERREIRA NETO","CAMPO GRANDE",0],["55","MARIA INES CORREIA","CAMPO GRANDE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"A540Au0Av1f03050xOp0xR80g0z70x4050Uc0U0090xo0b050Qk0O3060q0b030xf0xj12"});

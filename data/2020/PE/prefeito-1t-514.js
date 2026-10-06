@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/PE/prefeito-1t-514", {"rotulo":"Prefeito · 1º turno (Eleições Suplementares Palmeirina 2021)","candidatos":[["77","THATIANNE PINTO MACEDO LIMA","PALMEIRINA",0],["15","MARIA NATALIA CATAO FERREIRA","PALMEIRINA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xV940xEt0-50y00n040Bl0zq0701040xxg0V50xt0j"});

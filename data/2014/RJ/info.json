@@ -1,0 +1,48 @@
+{
+ "uf": "RJ",
+ "nome": "Rio de Janeiro",
+ "titulo": "Eleições gerais 2014 · Rio de Janeiro",
+ "gerado": "28/07/2021 11:54",
+ "cidades": 92,
+ "locais": 5044,
+ "base": {
+  "bytes": 505400
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 151313
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 127638
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 136884
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 1764934
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 2112605
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 71168
+  },
+  {
+   "id": "governador-2t",
+   "rotulo": "Governador · 2º turno",
+   "bytes": 71712
+  }
+ ]
+}

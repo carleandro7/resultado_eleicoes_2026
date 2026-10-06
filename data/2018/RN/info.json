@@ -1,0 +1,48 @@
+{
+ "uf": "RN",
+ "nome": "Rio Grande do Norte",
+ "titulo": "Eleições gerais 2018 · Rio Grande do Norte",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 167,
+ "locais": 1537,
+ "base": {
+  "bytes": 160873
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 47268
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 38419
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 61963
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 220644
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 318824
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 20552
+  },
+  {
+   "id": "governador-2t",
+   "rotulo": "Governador · 2º turno",
+   "bytes": 20614
+  }
+ ]
+}

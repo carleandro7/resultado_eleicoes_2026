@@ -1,0 +1,23 @@
+{
+ "uf": "AC",
+ "nome": "Acre",
+ "titulo": "Eleições municipais 2024 · Acre",
+ "gerado": "28/10/2024 11:46",
+ "cidades": 22,
+ "locais": 674,
+ "base": {
+  "bytes": 68538
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 13769
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 261958
+  }
+ ]
+}

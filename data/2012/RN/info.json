@@ -1,0 +1,28 @@
+{
+ "uf": "RN",
+ "nome": "Rio Grande do Norte",
+ "titulo": "Eleições municipais 2012 · Rio Grande do Norte",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 167,
+ "locais": 1535,
+ "base": {
+  "bytes": 157658
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 51002
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 789336
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 3306
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/ES/prefeito-1t-491", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Boa Esperança)","candidatos":[["77","FERNANDA SIQUEIRA SUSSAI MILANESE","BOA ESPERANÇA",0],["25","CLAUDIO RODRIGUES DA SILVA","BOA ESPERANÇA",0],["10","ANTÔNIO JOSÉ DOS SANTOS BASTOS","BOA ESPERANÇA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Cp50Zs0xwp0Bf0x40i050Pi0Kk0r0h0b050H30Bp0x00903050Pu0Mn0Aj0p09050P10Rj0z90p0m050Ii0zu0xe0a0c050Dv0Cb0v0e09"});

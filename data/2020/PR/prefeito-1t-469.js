@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/PR/prefeito-1t-469", {"rotulo":"Prefeito · 1º turno (Suplementar Nova Prata do Iguaçu)","candidatos":[["22","SERGIO FAUST","NOVA PRATA DO IGUAÇU",0],["45","EDILSOM JOSE GRASSI","NOVA PRATA DO IGUAÇU",0],["40","SANDRO ANTONIO OLTRAMARI","NOVA PRATA DO IGUAÇU",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yY950xwv0Zl0xq0k0n040Al0Au0305050xw20Wu0x30m0b050Ju0M00u0d07050za0y70d0301050zn0Am090506050yq0yt080602050zh0ze010604050Af0yk030102050Cg0Am090102"});

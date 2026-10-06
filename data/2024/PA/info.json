@@ -1,0 +1,33 @@
+{
+ "uf": "PA",
+ "nome": "Pará",
+ "titulo": "Eleições municipais 2024 · Pará",
+ "gerado": "15/06/2026 10:00",
+ "cidades": 144,
+ "locais": 5727,
+ "base": {
+  "bytes": 537450
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 130793
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2267622
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 8917
+  },
+  {
+   "id": "vereador-1t-6269",
+   "rotulo": "Vereador · 1º turno (Eleição Suplementar de Melgaço)",
+   "bytes": 2644
+  }
+ ]
+}

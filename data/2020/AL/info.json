@@ -1,0 +1,38 @@
+{
+ "uf": "AL",
+ "nome": "Alagoas",
+ "titulo": "Eleições municipais 2020 · Alagoas",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 102,
+ "locais": 1008,
+ "base": {
+  "bytes": 105697
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 42278
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 678301
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 3595
+  },
+  {
+   "id": "prefeito-1t-504",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar-Campo Grande(AL))",
+   "bytes": 477
+  },
+  {
+   "id": "vereador-1t-632",
+   "rotulo": "Vereador · 1º turno (Suplementar Porto Real do Colégio (AL))",
+   "bytes": 2720
+  }
+ ]
+}

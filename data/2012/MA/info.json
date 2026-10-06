@@ -1,0 +1,28 @@
+{
+ "uf": "MA",
+ "nome": "Maranhão",
+ "titulo": "Eleições municipais 2012 · Maranhão",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 217,
+ "locais": 5395,
+ "base": {
+  "bytes": 600810
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 134809
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2067376
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 3874
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "uf": "PA",
+ "nome": "Pará",
+ "titulo": "Eleições municipais 2012 · Pará",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 144,
+ "locais": 4949,
+ "base": {
+  "bytes": 443506
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 120798
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2069899
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 4521
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "uf": "SE",
+ "nome": "Sergipe",
+ "titulo": "Eleições municipais 2020 · Sergipe",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 75,
+ "locais": 1159,
+ "base": {
+  "bytes": 122250
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 39246
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 656966
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2653
+  }
+ ]
+}

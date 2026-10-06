@@ -1,0 +1,48 @@
+{
+ "uf": "RJ",
+ "nome": "Rio de Janeiro",
+ "titulo": "Eleições municipais 2020 · Rio de Janeiro",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 92,
+ "locais": 4855,
+ "base": {
+  "bytes": 508187
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 206249
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 4270230
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 29884
+  },
+  {
+   "id": "prefeito-1t-551",
+   "rotulo": "Prefeito · 1º turno (RJ - Suplementar de Itatiaia)",
+   "bytes": 739
+  },
+  {
+   "id": "prefeito-1t-508",
+   "rotulo": "Prefeito · 1º turno (RJ - Suplementar de Silva Jardim)",
+   "bytes": 644
+  },
+  {
+   "id": "prefeito-1t-532",
+   "rotulo": "Prefeito · 1º turno (RJ - Suplementar de Carapebus)",
+   "bytes": 493
+  },
+  {
+   "id": "prefeito-1t-506",
+   "rotulo": "Prefeito · 1º turno (RJ - Suplementar de Sta. Ma. Madalena)",
+   "bytes": 638
+  }
+ ]
+}

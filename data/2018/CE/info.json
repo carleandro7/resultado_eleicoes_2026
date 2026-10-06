@@ -1,0 +1,43 @@
+{
+ "uf": "CE",
+ "nome": "Ceará",
+ "titulo": "Eleições gerais 2018 · Ceará",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 184,
+ "locais": 6820,
+ "base": {
+  "bytes": 666031
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 166260
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 114469
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 199733
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 814338
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 1010331
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 82978
+  }
+ ]
+}

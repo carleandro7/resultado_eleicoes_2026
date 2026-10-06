@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/RN/prefeito-1t-535", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Guamaré)","candidatos":[["40","ARTHUR HENRIQUE DA FONSECA TEIXEIRA","GUAMARÉ",0],["77","GUSTAVO HENRIQUE MIRANDA SANTIAGO","GUAMARÉ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"In40xym0Li0v0h040Qm0Lq0h0d030Ao0zd06040Lg0Io0v09040xxa0L50x70h040Kf0G20o08040yr0yn0702040Db0Ap0h07040xA80N60xo0q040xBa0xxd0xd0h040H30Dp0804"});

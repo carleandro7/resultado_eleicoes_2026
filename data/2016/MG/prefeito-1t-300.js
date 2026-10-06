@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-300", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR CAMPO AZUL)","candidatos":[["55","OSEAS ALMEIDA JUNIOR","CAMPO AZUL",0],["19","GERALDO COSTA JUNIOR","CAMPO AZUL",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xTj40x30yg0201040Yi0Tc0x00h040Bb0zg0601040ze0xn0403030z70yf02040Eq0Ha0b01030y70xb03"});

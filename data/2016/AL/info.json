@@ -1,0 +1,33 @@
+{
+ "uf": "AL",
+ "nome": "Alagoas",
+ "titulo": "Eleições municipais 2016 · Alagoas",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 102,
+ "locais": 976,
+ "base": {
+  "bytes": 100854
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 37250
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 647140
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 3529
+  },
+  {
+   "id": "prefeito-1t-385",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUP. SANTA LUZIA DO NORTE)",
+   "bytes": 730
+  }
+ ]
+}

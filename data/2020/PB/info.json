@@ -1,0 +1,58 @@
+{
+ "uf": "PB",
+ "nome": "Paraíba",
+ "titulo": "Eleições municipais 2020 · Paraíba",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 223,
+ "locais": 1783,
+ "base": {
+  "bytes": 197967
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 73659
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1084017
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 3342
+  },
+  {
+   "id": "prefeito-1t-618",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Massaranduba/PB)",
+   "bytes": 460
+  },
+  {
+   "id": "prefeito-1t-490",
+   "rotulo": "Prefeito · 1º turno (Suplementar - Gado Bravo/PB)",
+   "bytes": 394
+  },
+  {
+   "id": "vereador-1t-612",
+   "rotulo": "Vereador · 1º turno (Eleição Suplementar de Boqueirão/PB)",
+   "bytes": 2919
+  },
+  {
+   "id": "vereador-1t-602",
+   "rotulo": "Vereador · 1º turno (Eleição Suplementar de Boa Ventura/PB)",
+   "bytes": 1685
+  },
+  {
+   "id": "vereador-1t-584",
+   "rotulo": "Vereador · 1º turno (Eleição Suplementar Monte Horebe)",
+   "bytes": 1579
+  },
+  {
+   "id": "vereador-1t-613",
+   "rotulo": "Vereador · 1º turno (Eleição Suplementar de Mãe D Água/PB)",
+   "bytes": 1422
+  }
+ ]
+}

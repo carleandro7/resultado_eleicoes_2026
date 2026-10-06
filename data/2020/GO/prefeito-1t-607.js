@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/GO/prefeito-1t-607", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Cachoeira Alta)","candidatos":[["15","MARCELO BATISTA DE PAULA","CACHOEIRA ALTA",0],["19","TIAGO RAMALHO DE ARAUJO","CACHOEIRA ALTA",0],["45","CLOVIS DE OLIVEIRA","CACHOEIRA ALTA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Jf50N60I9030p0i050Iq0Gq020m0d050xAf0Xu060xj0q050Ws0Rj040x40l"});

@@ -1,0 +1,48 @@
+{
+ "uf": "MS",
+ "nome": "Mato Grosso do Sul",
+ "titulo": "Eleições gerais 2022 · Mato Grosso do Sul",
+ "gerado": "01/11/2022 16:05",
+ "cidades": 79,
+ "locais": 1026,
+ "base": {
+  "bytes": 108181
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 24949
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 28096
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 22240
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 186780
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 270250
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 13747
+  },
+  {
+   "id": "governador-2t",
+   "rotulo": "Governador · 2º turno",
+   "bytes": 14220
+  }
+ ]
+}

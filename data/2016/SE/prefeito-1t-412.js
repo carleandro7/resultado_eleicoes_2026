@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SE/prefeito-1t-412", {"rotulo":"Prefeito · 1º turno (SUPLEMENTAR DE SÃO FRANCISCO)","candidatos":[["15","ALBA DOS SANTOS NASCIMENTO","SÃO FRANCISCO",0],["40","LUAN ARAÚJO CARDOZO","SÃO FRANCISCO",0],["12","JOSE DO CARMO FILHO","SÃO FRANCISCO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"-u50S70Hl0b0x60b040y00l020e050Ob0Gg0d0m08050L20E40c0f07"});

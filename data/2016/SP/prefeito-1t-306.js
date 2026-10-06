@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SP/prefeito-1t-306", {"rotulo":"Prefeito · 1º turno (SUPLEMENTAR BARIRI)","candidatos":[["45","FRANCISCO LEONI NETO","BARIRI",0],["15","AIRTON LUIS PEGORARO","BARIRI",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"N740xxh0W80Bo0z8040xIt0xEp0D10za040xOk0xA00G80Al040xGd0xH10Du0z9040Q70Nd0Ar0xv040xMu0_00Ek0Ac040Nf0Gd0yg0xl040Ft0Bn0xb0v"});

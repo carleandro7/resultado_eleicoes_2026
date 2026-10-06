@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/CE/prefeito-1t-594", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar - Palhano/CE)","candidatos":[["13","JOSÉ LUCIANO SILVA","PALHANO",0],["55","JOÃO BATISTA DE SANTIAGO","PALHANO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"AVu40Ch0D40503040C60Ck0a07040zh0Af0103040A30Bh0906040B10ye0503040zo0k0904040No0M50h0b040Ao0yv0403040y80zf0502040Ki0Og0903040Ah0Ao0103040xCu0xA20l0m040z20yv0103040zb0yp0704040Ao0yg0204"});

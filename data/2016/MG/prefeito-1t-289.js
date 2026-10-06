@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-289", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUP. CONCEIÇÃO DO RIO VERDE)","candidatos":[["22","PEDRO PAULO","CONCEIÇÃO DO RIO VERDE",0],["43","ELOIZA APARECIDA CARVALHO PAGANELLI","CONCEIÇÃO DO RIO VERDE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yHi40A80A20c02040G40Bt0l07040y40zd0502040q0y20501040Db0Cp0f08040A10As0c06040Gl0M80t0d040K20Hu0x50j040Pr0Q60xd0o040Uv0Rp0xo0u040Fc0Dc0d08040Gp0Fn0k0d040zr0y70505"});

@@ -1,0 +1,23 @@
+{
+ "uf": "AL",
+ "nome": "Alagoas",
+ "titulo": "Eleições municipais 2012 · Alagoas",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 102,
+ "locais": 947,
+ "base": {
+  "bytes": 95977
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 37022
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 661033
+  }
+ ]
+}

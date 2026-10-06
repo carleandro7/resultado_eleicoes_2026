@@ -1,0 +1,33 @@
+{
+ "uf": "AM",
+ "nome": "Amazonas",
+ "titulo": "Eleições municipais 2020 · Amazonas",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 62,
+ "locais": 1477,
+ "base": {
+  "bytes": 146697
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 52437
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1188559
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 6799
+  },
+  {
+   "id": "prefeito-1t-543",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Coari/AM)",
+   "bytes": 1099
+  }
+ ]
+}

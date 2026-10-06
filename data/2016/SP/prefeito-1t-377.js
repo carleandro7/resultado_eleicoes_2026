@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SP/prefeito-1t-377", {"rotulo":"Prefeito · 1º turno (SUPLEMENTAR MACAUBAL)","candidatos":[["45","WANDERLEI MELHADO GUIZZI","MACAUBAL",0],["43","ACACIO TARDOQUE FERREIRA","MACAUBAL",0],["14","ROSICLER MARIA CESTARO PEIXOTO","MACAUBAL",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Ayl50Se0Lr0Lq0yq0xr050Zh0U00Sb0zs0y2"});

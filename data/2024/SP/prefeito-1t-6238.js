@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/SP/prefeito-1t-6238", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Sales Oliveira)","candidatos":[["15","MÔNICA DA SILVA FAVARIM","SALES OLIVEIRA",0],["10","THIAGO ALBERTO CAMILO DE OLIVEIRA","SALES OLIVEIRA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"CKj40xTn0xNs0zc0y5040xFm0xya0y20xi"});

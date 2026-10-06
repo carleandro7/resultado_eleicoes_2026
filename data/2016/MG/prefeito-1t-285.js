@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-285", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR JORDÂNIA)","candidatos":[["15","MARQUES-UEL MEIRA DE OLIVEIRA","JORDÂNIA",0],["12","EDÉSIO SARMENTO SILVA","JORDÂNIA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"AY140_20Xv0x20j040Pv0Pv0xd0c040Vj0Rp0xn0j040Dm0C60k05040Ei0Cj0x108"});

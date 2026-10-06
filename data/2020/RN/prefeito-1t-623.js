@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/RN/prefeito-1t-623", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Pedro Velho RN)","candidatos":[["44","PEDRO GOMES DA SILVA JÚNIOR","PEDRO VELHO",0],["15","JOAO CELSO PEIXOTO TARGINO","PEDRO VELHO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xzo40xBm0P00y60v040Rm0He0xi0j040xAd0Qa0yc0x0040_f0L90y00x8040N70Bn0s09040P90Fu0x70i"});

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SP/prefeito-1t-346", {"rotulo":"Prefeito · 1º turno (SUPLEMENTAR DE RINCÃO)","candidatos":[["13","EDSON BRITO BOLITO","RINCÃO",0],["10","ANTONIO FERREIRA VALENTE NETO","RINCÃO",0],["11","PAULO ROGÉRIO CATELANI","RINCÃO",0],["14","ANTONIO BENEDITO BALESTERE","RINCÃO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"B-960xyk0Wu0Hc0C60Cg0yi060xxj0Ri0Fv0B00B90xo060G80Cu0x70d0xc0c"});

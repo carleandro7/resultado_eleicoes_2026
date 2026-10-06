@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/CE/prefeito-1t-6264", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Potiretama)","candidatos":[["13","SOLANGE MARY HOLANDA CAMPELO BALBINO","POTIRETAMA",0],["11","CLEVERLANDIO PEREIRA BEZERRA","POTIRETAMA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"BCs20yk0ye040D70Ec0305040Vu0P30c08040xo0xo0201040D10E30402040zl0Ao0204040zc0y20301020xd0x2040zs0Bg0201030xp0A501040Sb0N50b08030yp0ys01"});

@@ -1,0 +1,43 @@
+{
+ "uf": "BA",
+ "nome": "Bahia",
+ "titulo": "Eleições municipais 2020 · Bahia",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 417,
+ "locais": 9400,
+ "base": {
+  "bytes": 1134571
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 259308
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 4493873
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 4392
+  },
+  {
+   "id": "prefeito-1t-533",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar João Dourado-BA)",
+   "bytes": 562
+  },
+  {
+   "id": "prefeito-1t-585",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Maiquinique-BA)",
+   "bytes": 466
+  },
+  {
+   "id": "prefeito-1t-528",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Firmino Alves-BA)",
+   "bytes": 440
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RS/prefeito-1t-235", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR SÃO VICENTE DO SUL)","candidatos":[["15","PAULO SERGIO RODRIGUES FLORES","SÃO VICENTE DO SUL",0],["11","FERNANDO DA ROSA PAHIM","SÃO VICENTE DO SUL",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"Dwu40E50D00k09040Fa0F20409040Rf0Mr0k0l040xxn0_t0xc0x1040D00Fb0b05140xi0x10402040Dr0C90904040x10xg0304"});

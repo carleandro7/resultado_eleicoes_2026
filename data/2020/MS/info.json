@@ -1,0 +1,43 @@
+{
+ "uf": "MS",
+ "nome": "Mato Grosso do Sul",
+ "titulo": "Eleições municipais 2020 · Mato Grosso do Sul",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 79,
+ "locais": 1035,
+ "base": {
+  "bytes": 108615
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 42641
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 822828
+  },
+  {
+   "id": "prefeito-1t-482",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Sidrolândia-MS)",
+   "bytes": 612
+  },
+  {
+   "id": "prefeito-1t-512",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Paranhos-MS)",
+   "bytes": 460
+  },
+  {
+   "id": "prefeito-1t-555",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Angélica-MS)",
+   "bytes": 541
+  },
+  {
+   "id": "prefeito-1t-534",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Bandeirantes-MS)",
+   "bytes": 594
+  }
+ ]
+}

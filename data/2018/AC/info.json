@@ -1,0 +1,43 @@
+{
+ "uf": "AC",
+ "nome": "Acre",
+ "titulo": "Eleições gerais 2018 · Acre",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 22,
+ "locais": 693,
+ "base": {
+  "bytes": 70551
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 19511
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 12217
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 17072
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 83760
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 181075
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 8477
+  }
+ ]
+}

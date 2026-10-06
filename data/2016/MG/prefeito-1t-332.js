@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-332", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR ITANHOMI)","candidatos":[["15","RAIMUNDO FRANCISCO PENAFORTE","ITANHOMI",0],["25","HILDA ROSANE LOPES GOMES","ITANHOMI",0],["13","ANTONIELI COSTA MAIA","ITANHOMI",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"AHm50xyj0Wt0P60zi0s050Wu0Qm0It0yh0o050A20zg0z00i02050zb0Al0xe0803050Fl0Eh0A50x30e050Kk0Ht0Cp0xv0a"});

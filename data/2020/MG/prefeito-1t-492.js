@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/MG/prefeito-1t-492", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Ibertioga)","candidatos":[["51","RICARDO MARCELO PIRES DE OLIVEIRA","IBERTIOGA",0],["14","JOSE FRANCISCO RODRIGUES DE ALMEIDA","IBERTIOGA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"zU840xB20_e0y30p030z40zh09040Qb0Nn0l0c040zj0xj0701040yd0xb0502"});

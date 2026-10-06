@@ -1,0 +1,33 @@
+{
+ "uf": "AP",
+ "nome": "Amapá",
+ "titulo": "Eleições municipais 2016 · Amapá",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 16,
+ "locais": 334,
+ "base": {
+  "bytes": 34709
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 11162
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 184709
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 2178
+  },
+  {
+   "id": "prefeito-1t-236",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE CALÇOENE-AP)",
+   "bytes": 594
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RN/prefeito-1t-318", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE PEDRO AVELINO)","candidatos":[["15","JOSE ALEXANDRE SOBRINHO","PEDRO AVELINO",0],["10","FRANCISCO HELIO DE ARAUJO","PEDRO AVELINO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xA640Kq0Ic0x308040xDa0xwr0xm0b040Lh0Ih0x108040Co0G00j04040Jr0Jl0x407"});

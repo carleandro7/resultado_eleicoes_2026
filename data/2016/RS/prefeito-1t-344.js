@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RS/prefeito-1t-344", {"rotulo":"Prefeito · 1º turno (SUPLEMENTAR DE ALPESTRE - RS)","candidatos":[["12","VALDIR JOSE ZASSO","ALPESTRE",0],["15","ALCIR JOSE HENDGES","ALPESTRE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Ad40xBc0Z90y40x8030A20yn07040Ec0Bh0e09040Ge0Ep0e08040Ae0ze0c02040C40Cq0h07040G60Hp0m0e040D10Bn0k08"});

@@ -1,0 +1,43 @@
+{
+ "uf": "RN",
+ "nome": "Rio Grande do Norte",
+ "titulo": "Eleições gerais 2010 · Rio Grande do Norte",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 167,
+ "locais": 1500,
+ "base": {
+  "bytes": 153446
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 32415
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 32783
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 43105
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 138866
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 214907
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 19850
+  }
+ ]
+}

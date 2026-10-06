@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MT/prefeito-1t-342", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUP. PLANALTO DA SERRA-MT)","candidatos":[["55","DENIO PEIXOTO RIBEIRO","PLANALTO DA SERRA",0],["45","NATAL ALVES DE ASSIS SOBRINHO","PLANALTO DA SERRA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Yu40Ph0Lq0i05040xd0xj0a02040Dh0Be0j04040E30Bu0e01"});

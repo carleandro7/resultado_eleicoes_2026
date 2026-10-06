@@ -1,0 +1,43 @@
+{
+ "uf": "PE",
+ "nome": "Pernambuco",
+ "titulo": "Eleições gerais 2026 · Pernambuco",
+ "gerado": "05/10/2026 09:50",
+ "cidades": 185,
+ "locais": 3386,
+ "base": {
+  "bytes": 356595
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 82218
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 65438
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 110427
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 714022
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 793224
+  },
+  {
+   "id": "conselheiro-distrital-1t",
+   "rotulo": "Conselheiro Distrital · 1º turno",
+   "bytes": 1247
+  }
+ ]
+}

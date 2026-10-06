@@ -1,0 +1,28 @@
+{
+ "uf": "AM",
+ "nome": "Amazonas",
+ "titulo": "Eleições municipais 2012 · Amazonas",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 62,
+ "locais": 1403,
+ "base": {
+  "bytes": 136765
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 43793
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 854792
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 6301
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RS/prefeito-1t-233", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE SALTO DO JACUÍ)","candidatos":[["12","CLAUDIOMIRO GAMST ROBINSON","SALTO DO JACUÍ",0],["11","ALTENIR RORIGUES DA SILVA","SALTO DO JACUÍ",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"BSu40H10Bc0p0d040Bo0zj0904040xJn0Vp0yc0y6030x80n04040Gp0C00n0b040K20E40x80m040y90y40303040z50ye0301040z40Ag0d03040-t0Nv0y80xb030xj0y105"});

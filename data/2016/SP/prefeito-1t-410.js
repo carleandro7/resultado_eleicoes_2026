@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SP/prefeito-1t-410", {"rotulo":"Prefeito · 1º turno (SUPLEMENTAR GUAIÇARA 27/10/19)","candidatos":[["25","BRUNO FLORIANO DE OLIVEIRA","GUAIÇARA",0],["40","SERGIO APARECIDO DA SILVA","GUAIÇARA",0],["20","ANTONIO PAULINO","GUAIÇARA",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"yHv50Qe0ye0y20xo0xc050Zh0Ai0zp0xp0xu050Zt0zf0zl0xe0xr050Nk0xa0xo0x00x2050Z90A10z30yb0y1"});

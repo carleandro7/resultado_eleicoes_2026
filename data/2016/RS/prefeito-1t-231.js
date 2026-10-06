@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RS/prefeito-1t-231", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE BUTIÁ)","candidatos":[["13","DANIEL PEREIRA DE ALMEIDA","BUTIÁ",0],["11","FERNANDO RUSKOWSKI LOPES","BUTIÁ",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"Ur40Fa0Fe0m0l040Me0Lh0xf0x4040We0Yq0xt0y3020v0x1040zq0yq0801040-d0Ue0y10x6040N40Np0x10o040Q60P20xd0xf040Hj0G30n0d040Aa0ze090b040y40z30803040Z50Y80y10y9040Rf0Rp0xt0xe"});

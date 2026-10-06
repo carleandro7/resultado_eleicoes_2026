@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-302", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR SANTA CRUZ SALINAS)","candidatos":[["23","ALINE TEIXEIRA","SANTA CRUZ DE SALINAS",0],["45","RENALDO TEIXEIRA DA SILVA","SANTA CRUZ DE SALINAS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"DXe40x50xf0301040Ku0Ee0x30a040Rs0Ki0xj0e030xe0o02040za0zk0602040z90x60801040zk0xo0403040yr0x80601030x50x907040xg0x70404"});

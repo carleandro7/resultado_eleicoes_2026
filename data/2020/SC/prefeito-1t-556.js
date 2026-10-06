@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SC/prefeito-1t-556", {"rotulo":"Prefeito · 1º turno (Nova Eleição - Porto Belo)","candidatos":[["15","JOEL ORLANDO LUCINDA","PORTO BELO",0],["28","DAVID JORDELINO DA SILVA","PORTO BELO",0],["13","ROSAURA DE OLIVEIRA RODRIGUES","PORTO BELO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yMl50Dl0i0a060b050xCk0Bt0Cs0y70ys050xy80Bv0B10y30xm050xKj0zh0Cj0yg0x9050_s0D20Bd0yd0xr050Df0yg0k0e0i050Hk0y60x80g0p050Ag0a030505050D90d080501"});

@@ -1,0 +1,43 @@
+{
+ "uf": "AM",
+ "nome": "Amazonas",
+ "titulo": "Eleições gerais 2010 · Amazonas",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 62,
+ "locais": 1380,
+ "base": {
+  "bytes": 132978
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 25963
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 23857
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 33628
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 114521
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 307058
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 16715
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-429", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR JACINTO)","candidatos":[["45","VALDENIR PEREIRA DA SILVA JUNIOR","JACINTO",0],["28","ADAILTON ALVES DE ALMEIDA","JACINTO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"ANq40G30H10n0d040Pe0Ph0xp0c040Ka0It0o06040Uc0R20xu0i040Qi0Pb0x40c040zt0yr0504040xe0xm0501"});

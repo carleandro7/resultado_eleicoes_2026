@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RN/prefeito-1t-373", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE PASSA E FICA)","candidatos":[["40","CELSO LUIZ MARINHO LISBOA","PASSA E FICA",0],["45","CIBELLY FONSECA JORGE","PASSA E FICA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xz840xCs0-i0xv0d040Pr0Md0x80c040xw90U30xr0m040xAm0Wb0xt0j"});

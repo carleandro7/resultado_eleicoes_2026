@@ -1,0 +1,143 @@
+{
+ "uf": "SP",
+ "nome": "São Paulo",
+ "titulo": "Eleições municipais 2020 · São Paulo",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 645,
+ "locais": 10831,
+ "base": {
+  "bytes": 1146120
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 515595
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 11873985
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 58493
+  },
+  {
+   "id": "prefeito-1t-589",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Ribeirão Pires)",
+   "bytes": 1307
+  },
+  {
+   "id": "prefeito-1t-590",
+   "rotulo": "Prefeito · 1º turno (Eleicao Suplementar de Leme)",
+   "bytes": 577
+  },
+  {
+   "id": "prefeito-1t-615",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Itupeva)",
+   "bytes": 722
+  },
+  {
+   "id": "prefeito-1t-530",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Guaíra)",
+   "bytes": 516
+  },
+  {
+   "id": "prefeito-1t-587",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Tanabi)",
+   "bytes": 616
+  },
+  {
+   "id": "prefeito-1t-523",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Cajati)",
+   "bytes": 563
+  },
+  {
+   "id": "prefeito-1t-516",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Apiaí)",
+   "bytes": 712
+  },
+  {
+   "id": "prefeito-1t-525",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Angatuba)",
+   "bytes": 538
+  },
+  {
+   "id": "prefeito-1t-527",
+   "rotulo": "Prefeito · 1º turno (Suplementar de São Lourenço da Serra)",
+   "bytes": 511
+  },
+  {
+   "id": "prefeito-1t-529",
+   "rotulo": "Prefeito · 1º turno (Suplementar de Mineiros do Tietê)",
+   "bytes": 494
+  },
+  {
+   "id": "prefeito-1t-542",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Vargem)",
+   "bytes": 442
+  },
+  {
+   "id": "prefeito-1t-524",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Anhembi)",
+   "bytes": 484
+  },
+  {
+   "id": "prefeito-1t-518",
+   "rotulo": "Prefeito · 1º turno (Suplementar de Santo Antônio do Jardim)",
+   "bytes": 507
+  },
+  {
+   "id": "prefeito-1t-526",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Mendonça)",
+   "bytes": 392
+  },
+  {
+   "id": "prefeito-1t-541",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Reginópolis)",
+   "bytes": 403
+  },
+  {
+   "id": "prefeito-1t-522",
+   "rotulo": "Prefeito · 1º turno (Suplementar de Campina do Monte Alegre)",
+   "bytes": 513
+  },
+  {
+   "id": "prefeito-1t-521",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Piacatu)",
+   "bytes": 421
+  },
+  {
+   "id": "prefeito-1t-614",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Ubarana)",
+   "bytes": 379
+  },
+  {
+   "id": "prefeito-1t-540",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Salmourão)",
+   "bytes": 372
+  },
+  {
+   "id": "prefeito-1t-624",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Analândia)",
+   "bytes": 516
+  },
+  {
+   "id": "prefeito-1t-517",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Itaoca)",
+   "bytes": 349
+  },
+  {
+   "id": "prefeito-1t-519",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Trabiju)",
+   "bytes": 365
+  },
+  {
+   "id": "prefeito-2t-572",
+   "rotulo": "Prefeito · 2º turno (Eleição Suplementar de Pinhalzinho)",
+   "bytes": 590
+  }
+ ]
+}

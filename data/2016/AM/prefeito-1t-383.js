@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/AM/prefeito-1t-383", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEM. DE CAAPIRANGA - AM)","candidatos":[["25","FRANCISCO ANDRADE BRAZ","CAAPIRANGA",0],["90","ANTONIO FERREIRA DE QUEIROZ","CAAPIRANGA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Bk40xHs0xyh0xj07040Wq0Vc0xk04030Jd0Eg0f040xCp0Mq0x907"});

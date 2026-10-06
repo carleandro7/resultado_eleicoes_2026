@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/SP/prefeito-1t-6249", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Guará)","candidatos":[["20","TULIO DE MATTOS FIGUEIREDO","GUARÁ",0],["10","FILIPE FURTADO DA ROCHA","GUARÁ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yO240R00Hg0q0u040yAs0xBh0yk0y8040B80y5020a040Wo0Lb0x80u040xOb0Ut0yg0xv040xzh0Ka0xf0xo"});

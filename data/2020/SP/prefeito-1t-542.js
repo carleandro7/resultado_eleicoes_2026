@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/SP/prefeito-1t-542", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Vargem)","candidatos":[["12","LEODECIO ALVES DE LIMA","VARGEM",0],["22","JOSE AIRTON TAVELA","VARGEM",0],["55","MOACIR BARBOSA DE ARAUJO JUNIOR","VARGEM",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"GJ450Uu0Gr0Ao0yt0xk050Uv0Gh0Ai0z30y5050Q60E20zj0yb0xl"});

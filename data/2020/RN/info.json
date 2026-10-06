@@ -1,0 +1,48 @@
+{
+ "uf": "RN",
+ "nome": "Rio Grande do Norte",
+ "titulo": "Eleições municipais 2020 · Rio Grande do Norte",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 167,
+ "locais": 1526,
+ "base": {
+  "bytes": 160750
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 62768
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 942744
+  },
+  {
+   "id": "prefeito-1t-583",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Canguaretama)",
+   "bytes": 712
+  },
+  {
+   "id": "prefeito-1t-535",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Guamaré)",
+   "bytes": 510
+  },
+  {
+   "id": "prefeito-1t-595",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Ipanguaçu)",
+   "bytes": 443
+  },
+  {
+   "id": "prefeito-1t-582",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Pedro Velho)",
+   "bytes": 603
+  },
+  {
+   "id": "prefeito-1t-623",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Pedro Velho RN)",
+   "bytes": 452
+  }
+ ]
+}

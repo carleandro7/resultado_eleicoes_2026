@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/PR/prefeito-1t-364", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR JAPIRA)","candidatos":[["40","ANGELO MARCOS VIGILATO","JAPIRA",0],["45","NELSON CESARE DE OLIVEIRA WEISHEIMER","JAPIRA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"yIk40It0Ed0t0h040U20Kj0xp0k040y90xl0506140yp0y20c03040Ge0Ch0m0a"});

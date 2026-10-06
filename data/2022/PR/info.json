@@ -1,0 +1,43 @@
+{
+ "uf": "PR",
+ "nome": "Paraná",
+ "titulo": "Eleições gerais 2022 · Paraná",
+ "gerado": "01/11/2022 16:05",
+ "cidades": 399,
+ "locais": 4682,
+ "base": {
+  "bytes": 554150
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 113252
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 106574
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 127769
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 1034454
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 1171683
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 60554
+  }
+ ]
+}

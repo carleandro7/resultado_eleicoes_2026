@@ -1,0 +1,43 @@
+{
+ "uf": "GO",
+ "nome": "Goiás",
+ "titulo": "Eleições gerais 2018 · Goiás",
+ "gerado": "15/07/2021 10:53",
+ "cidades": 246,
+ "locais": 2428,
+ "base": {
+  "bytes": 274822
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 79908
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 57829
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 90688
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 435348
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 748077
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 32803
+  }
+ ]
+}

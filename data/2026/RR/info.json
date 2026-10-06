@@ -1,0 +1,38 @@
+{
+ "uf": "RR",
+ "nome": "Roraima",
+ "titulo": "Eleições gerais 2026 · Roraima",
+ "gerado": "05/10/2026 14:03",
+ "cidades": 15,
+ "locais": 367,
+ "base": {
+  "bytes": 41369
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 8264
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 5879
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 13983
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 48532
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 75203
+  }
+ ]
+}

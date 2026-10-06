@@ -1,0 +1,43 @@
+{
+ "uf": "AC",
+ "nome": "Acre",
+ "titulo": "Eleições gerais 2010 · Acre",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 22,
+ "locais": 682,
+ "base": {
+  "bytes": 66415
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 11980
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 9203
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 13176
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 48987
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 150240
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 8230
+  }
+ ]
+}

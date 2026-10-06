@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/MG/prefeito-1t-241", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR ALVORADA DE MINAS)","candidatos":[["77","VITOR HUGO FERREIRA DOS SANTOS","ALVORADA DE MINAS",0],["70","CLEBER BOSCO PADILHA","ALVORADA DE MINAS",0],["15","CARLOS FREDERICO CALDEIRA DE ABREU","ALVORADA DE MINAS",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"De50Bj0x60u0408050Ip0C20Dd0x40d050Xf0Mb0Cf0x90n050Df0x00j0103"});

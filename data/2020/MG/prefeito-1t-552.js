@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/MG/prefeito-1t-552", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Japaraíba)","candidatos":[["65","ECIO JOSE DE SOUSA","JAPARAÍBA",0],["23","GERALDO ALEXANDRE LOPES","JAPARAÍBA",0],["13","NOELI JORGE TEIXEIRA PEREIRA","JAPARAÍBA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"APh50Vg0Ps0C70x30e050G40Es0m0h07050Ec0Cc0xm0d02"});

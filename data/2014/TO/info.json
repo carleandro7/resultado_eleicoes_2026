@@ -1,0 +1,43 @@
+{
+ "uf": "TO",
+ "nome": "Tocantins",
+ "titulo": "Eleições gerais 2014 · Tocantins",
+ "gerado": "28/07/2021 11:54",
+ "cidades": 139,
+ "locais": 883,
+ "base": {
+  "bytes": 91249
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 19669
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 15015
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 16316
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 75846
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 134444
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 10935
+  }
+ ]
+}

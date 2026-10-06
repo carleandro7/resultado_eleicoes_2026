@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/PE/prefeito-2t-574", {"rotulo":"Prefeito · 2º turno (Eleições Suplementares Joaquim Nabuco)","candidatos":[["77","CHARLES BATISTA DE MELO","JOAQUIM NABUCO",0],["40","LIRIO ADEMOUR DAS OLIVEIRAS E PEREIRAL JUNIOR","JOAQUIM NABUCO",0],["11","JOSE ARNALDO DA SILVA","JOAQUIM NABUCO",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"xK250xGn0xwd020ya0u050R60Se010xs0c040xEr0xxc1y00u050xA40_5020ze0r050xy20-l040yl0i"});

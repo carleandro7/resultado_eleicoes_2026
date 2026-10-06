@@ -1,0 +1,23 @@
+{
+ "uf": "RR",
+ "nome": "Roraima",
+ "titulo": "Eleições municipais 2012 · Roraima",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 15,
+ "locais": 292,
+ "base": {
+  "bytes": 29030
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 7353
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 155022
+  }
+ ]
+}

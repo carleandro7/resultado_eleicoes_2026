@@ -1,0 +1,48 @@
+{
+ "uf": "CE",
+ "nome": "Ceará",
+ "titulo": "Eleições municipais 2024 · Ceará",
+ "gerado": "02/03/2026 10:00",
+ "cidades": 184,
+ "locais": 6743,
+ "base": {
+  "bytes": 666649
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 145557
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2017222
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 11703
+  },
+  {
+   "id": "prefeito-1t-6244",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Santa Quitéria)",
+   "bytes": 1207
+  },
+  {
+   "id": "prefeito-1t-6262",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Choró)",
+   "bytes": 641
+  },
+  {
+   "id": "prefeito-1t-6264",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Potiretama)",
+   "bytes": 508
+  },
+  {
+   "id": "prefeito-1t-6263",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Senador Sá)",
+   "bytes": 354
+  }
+ ]
+}

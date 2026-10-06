@@ -1,0 +1,43 @@
+{
+ "uf": "TO",
+ "nome": "Tocantins",
+ "titulo": "Eleições gerais 2010 · Tocantins",
+ "gerado": "08/07/2021 16:32",
+ "cidades": 139,
+ "locais": 882,
+ "base": {
+  "bytes": 88979
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 16962
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 11563
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 17515
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 69406
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 127788
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 10954
+  }
+ ]
+}

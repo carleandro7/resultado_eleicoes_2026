@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/SP/prefeito-1t-6041", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Neves Paulista)","candidatos":[["22","NORIVAL DONIZETI ROSSALI","NEVES PAULISTA",0],["55","GILBERTO MARTINELLI MILANI JUNIOR","NEVES PAULISTA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Bw640xBv0Hb0yi0yd040xR40In0yu0yd040Qn0B90xa0x6040zl0t030a"});

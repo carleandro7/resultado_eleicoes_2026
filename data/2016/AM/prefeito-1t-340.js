@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/AM/prefeito-1t-340", {"rotulo":"Prefeito · 1º turno (SUPLEMENTAR ANAMÃ / AM)","candidatos":[["33","FRANCISCO NUNES BASTOS","ANAMÃ",0],["15","HUERTON COLARES NOGUEIRA","ANAMÃ",0],["13","EDILSON FERNANDES DA SILVA","ANAMÃ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"e50Z10Vh0xb0o03050H40E50d0c02050xEl0W20xk0x809050Vj0Oo0x60x105"});

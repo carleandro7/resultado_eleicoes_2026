@@ -1,0 +1,78 @@
+{
+ "uf": "RS",
+ "nome": "Rio Grande do Sul",
+ "titulo": "Eleições municipais 2020 · Rio Grande do Sul",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 497,
+ "locais": 8199,
+ "base": {
+  "bytes": 846266
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 239246
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 3732000
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 12339
+  },
+  {
+   "id": "prefeito-1t-553",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Garibaldi)",
+   "bytes": 783
+  },
+  {
+   "id": "prefeito-1t-629",
+   "rotulo": "Prefeito · 1º turno (Suplementar São Francisco de Assis)",
+   "bytes": 885
+  },
+  {
+   "id": "prefeito-1t-471",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar Pinheiro Machado)",
+   "bytes": 638
+  },
+  {
+   "id": "prefeito-1t-599",
+   "rotulo": "Prefeito · 1º turno (Eleição suplementar Redentora/RS)",
+   "bytes": 436
+  },
+  {
+   "id": "prefeito-1t-470",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar de Putinga)",
+   "bytes": 501
+  },
+  {
+   "id": "prefeito-1t-598",
+   "rotulo": "Prefeito · 1º turno (Eleição suplementar Miraguaí/RS)",
+   "bytes": 467
+  },
+  {
+   "id": "prefeito-1t-597",
+   "rotulo": "Prefeito · 1º turno (Eleição suplementar Capão do Cipó/RS)",
+   "bytes": 477
+  },
+  {
+   "id": "prefeito-2t-564",
+   "rotulo": "Prefeito · 2º turno (Suplementar Cachoeirinha (RS))",
+   "bytes": 1013
+  },
+  {
+   "id": "prefeito-2t-565",
+   "rotulo": "Prefeito · 2º turno (Suplementar Cerro Grande (RS))",
+   "bytes": 395
+  },
+  {
+   "id": "prefeito-2t-566",
+   "rotulo": "Prefeito · 2º turno (Suplementar Entre Rios do Sul (RS))",
+   "bytes": 358
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "uf": "PR",
+ "nome": "Paraná",
+ "titulo": "Eleições gerais 2014 · Paraná",
+ "gerado": "28/07/2021 11:54",
+ "cidades": 399,
+ "locais": 5338,
+ "base": {
+  "bytes": 614627
+ },
+ "cargos": [
+  {
+   "id": "presidente-1t",
+   "rotulo": "Presidente · 1º turno",
+   "bytes": 127184
+  },
+  {
+   "id": "governador-1t",
+   "rotulo": "Governador · 1º turno",
+   "bytes": 111672
+  },
+  {
+   "id": "senador-1t",
+   "rotulo": "Senador · 1º turno",
+   "bytes": 111956
+  },
+  {
+   "id": "deputado-federal-1t",
+   "rotulo": "Deputado Federal · 1º turno",
+   "bytes": 753232
+  },
+  {
+   "id": "deputado-estadual-1t",
+   "rotulo": "Deputado Estadual · 1º turno",
+   "bytes": 982559
+  },
+  {
+   "id": "presidente-2t",
+   "rotulo": "Presidente · 2º turno",
+   "bytes": 66872
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/BA/prefeito-1t-585", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Maiquinique-BA)","candidatos":[["19","VALÉRIA FERREIRA SILVEIRA MOREIRA","MAIQUINIQUE",0],["77","LOURISVALDO RODRIGUES DE SOUZA","MAIQUINIQUE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Bxb40Mo0O40s05040Dh0Em0901040Sv0Pe0xe08040Kv0Le0xe03030Cb0Et07040As0za0703040Mb0Jr0x007"});

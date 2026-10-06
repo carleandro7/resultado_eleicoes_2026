@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/PR/prefeito-1t-554", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Agudos do Sul/PR)","candidatos":[["11","JESSE DA ROCHA ZOELLNER","AGUDOS DO SUL",0],["15","DIEGO LUIZ TEIXEIRA","AGUDOS DO SUL",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"a40Ao0B90e06040xOo0xGb0xg0x5140Ar0Cv0706140Ab0yp0302140zb0B30603140Dp0C90a08040Ai0Ea0402040Ee0Bv0805040Ej0As0805"});

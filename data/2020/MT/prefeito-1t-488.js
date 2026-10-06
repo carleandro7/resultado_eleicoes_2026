@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/MT/prefeito-1t-488", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Acorizal - MT)","candidatos":[["55","DIEGO EWERTON FIGUEIREDO TAQUES","ACORIZAL",0],["25","BENANCY LEMES DA SILVA","ACORIZAL",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"030xc0n02030l0xh01040r0zm0403040_v0Rk0g0b040Km0Hb0e05040E60De0403040J60H30f04030Al0zq03030y30xu01030y20yu12030xj0x501030x90x002020zj0y4"});

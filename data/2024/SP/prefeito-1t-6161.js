@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/SP/prefeito-1t-6161", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar de Bocaina)","candidatos":[["15","CAIO AUGUSTO CREPALDI","BOCAINA",0],["12","JONAS MARQUES DE FREITAS FILHO","BOCAINA",0],["43","ROBERTO DONIZETE ANEZIO","BOCAINA",0],["22","CAMILA DOS SANTOS","BOCAINA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Yu60H90D70Cs0h0x40o060O90Gp0Fk0t0xt0p060Hm0G80Et0f0xf0x1060Nn0H70Fb0f0xr0o060Qk0Ni0Hn0p0y80xm"});

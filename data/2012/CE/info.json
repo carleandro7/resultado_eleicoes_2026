@@ -1,0 +1,28 @@
+{
+ "uf": "CE",
+ "nome": "Ceará",
+ "titulo": "Eleições municipais 2012 · Ceará",
+ "gerado": "27/07/2021 17:04",
+ "cidades": 184,
+ "locais": 7040,
+ "base": {
+  "bytes": 686271
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 153099
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2050482
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 8913
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/PR/prefeito-1t-365", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR RANCHO ALEGRE)","candidatos":[["45","FERNANDO CARLOS COIMBRA","RANCHO ALEGRE",0],["15","EDMAR LIMA","RANCHO ALEGRE",0],["12","APARECIDO MIGUEL DA SILVA","RANCHO ALEGRE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"z_550xMc0_1060ya0i"});

@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RN/prefeito-1t-416", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEM DE ALTO DO RODRIGUES)","candidatos":[["25","NIXON DA SILVA BARACHO","ALTO DO RODRIGUES",0],["55","RENAN SANTOS MELO","ALTO DO RODRIGUES",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"s40Ea0yv0l07040P20Bt0t0d040Bp0xa0c0a040Ir0Cd0i05040O80Ck0u09040Vm0D00y20k040xe0xt0203040A6070301040Zn0Ee0xg0p040E60x80i09040xW30Lm0yt0xs"});

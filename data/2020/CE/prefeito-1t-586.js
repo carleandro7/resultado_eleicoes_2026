@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/CE/prefeito-1t-586", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar - Baixio/CE)","candidatos":[["12","RAIMUNDO AMAURÍLIO ARAÚJO OLIVEIRA","BAIXIO",0],["13","JOSEFA NUNES PINHEIRO","BAIXIO",0],["95","VOTO BRANCO","",2],["96","VOTO NULO","",2]],"votos":"P140y60o0301040Ib0Bl0i0g040K00El0r0i040Y30If0xm0x9040Gd0B6080b040F30Au030a040yt0u0302040A50yd0505040yh0l0402"});

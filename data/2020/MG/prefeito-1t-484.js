@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/MG/prefeito-1t-484", {"rotulo":"Prefeito · 1º turno (Eleição Supl. São Gonçalo do Sapucaí)","candidatos":[["17","BRIAN MENDES DRAGO","SÃO GONÇALO DO SAPUCAÍ",0],["40","TERESINHA ALLERAND","SÃO GONÇALO DO SAPUCAÍ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"ED440Na0Ep0x00f040xUt0-t0yh0x4040xS30Ya0y30xf040U20Lv0xg0f040Cp0Cq0c02030x90702040z70Bb0607040xAo0Rp0xp0x0040Q70G30x40b040Bl0Ch0d06040xh0q0501040zo0C80403040N10Dg0n09"});

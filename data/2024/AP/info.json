@@ -1,0 +1,28 @@
+{
+ "uf": "AP",
+ "nome": "Amapá",
+ "titulo": "Eleições municipais 2024 · Amapá",
+ "gerado": "13/04/2026 10:38",
+ "cidades": 16,
+ "locais": 371,
+ "base": {
+  "bytes": 40652
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 9256
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 163922
+  },
+  {
+   "id": "prefeito-1t-6266",
+   "rotulo": "Prefeito · 1º turno (Eleição Suplementar - Oiapoque)",
+   "bytes": 651
+  }
+ ]
+}

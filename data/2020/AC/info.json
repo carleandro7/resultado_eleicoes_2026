@@ -1,0 +1,28 @@
+{
+ "uf": "AC",
+ "nome": "Acre",
+ "titulo": "Eleições municipais 2020 · Acre",
+ "gerado": "16/09/2024 17:49",
+ "cidades": 22,
+ "locais": 685,
+ "base": {
+  "bytes": 70025
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 18903
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 336225
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 3439
+  }
+ ]
+}

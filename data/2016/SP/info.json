@@ -1,0 +1,153 @@
+{
+ "uf": "SP",
+ "nome": "São Paulo",
+ "titulo": "Eleições municipais 2016 · São Paulo",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 645,
+ "locais": 10422,
+ "base": {
+  "bytes": 1096586
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 422200
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 10707839
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 23676
+  },
+  {
+   "id": "prefeito-1t-345",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR DE ARARAS )",
+   "bytes": 954
+  },
+  {
+   "id": "prefeito-1t-405",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR DE PAULINIA 9/19)",
+   "bytes": 1451
+  },
+  {
+   "id": "prefeito-1t-375",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR CAJAMAR)",
+   "bytes": 1143
+  },
+  {
+   "id": "prefeito-1t-253",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR MOCOCA)",
+   "bytes": 764
+  },
+  {
+   "id": "prefeito-1t-352",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR DE MONGAGUA)",
+   "bytes": 729
+  },
+  {
+   "id": "prefeito-1t-274",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE MAIRINQUE)",
+   "bytes": 819
+  },
+  {
+   "id": "prefeito-1t-306",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR BARIRI)",
+   "bytes": 444
+  },
+  {
+   "id": "prefeito-1t-334",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR SANTA CRUZ DAS PALMEIRAS)",
+   "bytes": 575
+  },
+  {
+   "id": "prefeito-1t-402",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR MIRANDOPOLIS 9/19)",
+   "bytes": 450
+  },
+  {
+   "id": "prefeito-1t-351",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR DE MONTE AZUL PAULISTA)",
+   "bytes": 379
+  },
+  {
+   "id": "prefeito-1t-263",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE  ITATINGA)",
+   "bytes": 614
+  },
+  {
+   "id": "prefeito-1t-252",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR  CAFELÂNDIA)",
+   "bytes": 598
+  },
+  {
+   "id": "prefeito-1t-307",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR PIRAPORA DO BOM JESUS)",
+   "bytes": 688
+  },
+  {
+   "id": "prefeito-1t-408",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR GENERAL SALGADO)",
+   "bytes": 419
+  },
+  {
+   "id": "prefeito-1t-346",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR DE RINCÃO)",
+   "bytes": 492
+  },
+  {
+   "id": "prefeito-1t-251",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEM. SÃO JOSÉ DA BELA VISTA)",
+   "bytes": 518
+  },
+  {
+   "id": "prefeito-1t-410",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR GUAIÇARA 27/10/19)",
+   "bytes": 479
+  },
+  {
+   "id": "prefeito-1t-417",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR DE BOFETE)",
+   "bytes": 310
+  },
+  {
+   "id": "prefeito-1t-377",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR MACAUBAL)",
+   "bytes": 427
+  },
+  {
+   "id": "prefeito-1t-376",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR  LAGOINHA)",
+   "bytes": 479
+  },
+  {
+   "id": "prefeito-1t-397",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR MERIDIANO 08/19)",
+   "bytes": 377
+  },
+  {
+   "id": "prefeito-1t-275",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE MOMBUCA)",
+   "bytes": 385
+  },
+  {
+   "id": "prefeito-1t-279",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR DE SEBASTIANÓPOLIS DO SUL)",
+   "bytes": 536
+  },
+  {
+   "id": "prefeito-1t-396",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR FLOREAL - 08/19)",
+   "bytes": 379
+  },
+  {
+   "id": "prefeito-1t-311",
+   "rotulo": "Prefeito · 1º turno (SUPLEMENTAR TURMALINA)",
+   "bytes": 368
+  }
+ ]
+}

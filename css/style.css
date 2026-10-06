@@ -395,11 +395,13 @@ button { cursor: pointer; }
 
 .filtros-grade {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));  /* estado, cargo, cidade, zona / bairro, escola, candidatos */
+  grid-template-columns: repeat(12, minmax(0, 1fr));  /* eleição, estado, cargo, cidade, zona / bairro, escola, candidatos */
   gap: var(--e-3) var(--e-4);
   align-items: end;
 }
-.campo-candidatos { grid-column: span 2; }
+.campo-ano, .campo-estado, .campo-zona { grid-column: span 2; }
+.campo-cargo, .campo-cidade { grid-column: span 3; }   /* os nomes mais longos */
+.campo-bairro, .campo-escola, .campo-candidatos { grid-column: span 4; }
 
 .campo { display: flex; flex-direction: column; gap: var(--e-15); min-width: 0; }
 .campo-rotulo { font-size: var(--t-s); font-weight: 600; color: var(--texto-sec); }
@@ -1141,9 +1143,10 @@ td.vazio { position: static; box-shadow: none; animation: none; }
 
 @media (max-width: 1180px) {
   .kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); }   /* totais numa linha, contagens na outra */
-  /* três campos por linha (o cargo mais longo não cabe em quatro colunas); candidatos em linha inteira */
+  /* três campos por linha (o cargo mais longo não cabe em cinco colunas); candidatos ao lado da escola */
   .filtros-grade { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .campo-candidatos { grid-column: 1 / -1; }
+  .campo-ano, .campo-estado, .campo-cargo, .campo-cidade, .campo-zona, .campo-bairro, .campo-escola { grid-column: auto; }
+  .campo-candidatos { grid-column: span 2; }
 }
 
 @media (max-width: 1100px) {
@@ -1153,6 +1156,7 @@ td.vazio { position: static; box-shadow: none; animation: none; }
 
 @media (max-width: 860px) {
   .filtros-grade { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .campo-escola, .campo-candidatos { grid-column: 1 / -1; }
 }
 
 /* ---------- celular ---------- */
@@ -1186,9 +1190,9 @@ td.vazio { position: static; box-shadow: none; animation: none; }
 
   .conteudo { gap: var(--e-4); }
   .filtros { padding: var(--e-3) var(--e-3) var(--e-4); gap: var(--e-3); }
-  /* estado e cargo em linha inteira (nomes longos); cidade e zona lado a lado; bairro, escola e candidatos em linha inteira */
+  /* eleição, estado e cargo em linha inteira (nomes longos); cidade e zona lado a lado; bairro, escola e candidatos em linha inteira */
   .filtros-grade { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--e-3) var(--e-2); }
-  .campo-estado, .campo-cargo, .campo-bairro, .campo-escola, .campo-candidatos { grid-column: 1 / -1; }
+  .campo-ano, .campo-estado, .campo-cargo, .campo-bairro, .campo-escola, .campo-candidatos { grid-column: 1 / -1; }
   .campo { gap: var(--e-1); }
   /* 16px nos campos evita o zoom automático do iOS; seta menor para "Todas as cidades" e "Todas as zonas" caberem lado a lado */
   select, input[type="search"] { font-size: var(--t-l); }

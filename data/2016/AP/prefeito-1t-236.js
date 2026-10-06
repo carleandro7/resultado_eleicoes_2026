@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/AP/prefeito-1t-236", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE CALÇOENE-AP)","candidatos":[["23","JONES FABIO NUNES CAVALCANTE","CALÇOENE",0],["35","GRACILENE  ALEIXO BARROS","CALÇOENE",0],["20","LINDOVAL SANTOS DO ROSARIO","CALÇOENE",0],["43","JOSE VALTER CAVALCANTE","CALÇOENE",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"860At0A00zv0x00702060Bh0Av0B20xp0d04060Bv0Bh0An0y90504050g0y40j0202060Cm0En0ya040c02060Ie0Gh0F00o0k0c060It0Dq0Cl0zh0j02060I80G30Gp0yv0g06"});

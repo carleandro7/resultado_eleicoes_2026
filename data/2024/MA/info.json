@@ -1,0 +1,28 @@
+{
+ "uf": "MA",
+ "nome": "Maranhão",
+ "titulo": "Eleições municipais 2024 · Maranhão",
+ "gerado": "28/10/2024 11:46",
+ "cidades": 217,
+ "locais": 5823,
+ "base": {
+  "bytes": 663200
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 136439
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 1980632
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 1627
+  }
+ ]
+}

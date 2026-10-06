@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/SC/prefeito-1t-238", {"rotulo":"Prefeito · 1º turno (NOVA ELEIÇÃO 2017 BOM JARDIM DA SERRA)","candidatos":[["14","SERGINHO RODRIGUES DE OLIVEIRA","BOM JARDIM DA SERRA",0],["55","PEDRO LUIZ OSTETTO","BOM JARDIM DA SERRA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Kp30C90Dq03040D60E50503040Yf0X50i0h040A40zi0101030y20u01030y90x302"});

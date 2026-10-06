@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2024/MG/prefeito-1t-6276", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Amparo do Serra)","candidatos":[["70","AILA MARTINS VIANA BARBOSA","AMPARO DO SERRA",0],["15","TÚLIO BARBOSA CÁRIA","AMPARO DO SERRA",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Dj40xAq0X20x90x6040Qj0Lq0x10f040zf0zj0f08"});

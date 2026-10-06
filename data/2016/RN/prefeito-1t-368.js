@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2016/RN/prefeito-1t-368", {"rotulo":"Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE GUAMARÉ)","candidatos":[["15","FRANCISCO ADRIANO HOLANDA DIOGENES","GUAMARÉ",0],["77","MOZANIEL DE MELO RODRIGUES","GUAMARÉ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Iu40J30Le0f03040Yn0Rb0b09040_j0Qq0d07040Ml0Mc0b06040yv0B90604040Js0Hs0704040y90z80201040Bp0Ct0b02040xB00xCs0t0b040-d0Vc0u05040Gk0Fj0902"});

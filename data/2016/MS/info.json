@@ -1,0 +1,48 @@
+{
+ "uf": "MS",
+ "nome": "Mato Grosso do Sul",
+ "titulo": "Eleições municipais 2016 · Mato Grosso do Sul",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 79,
+ "locais": 1015,
+ "base": {
+  "bytes": 104780
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 35031
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 754883
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 3688
+  },
+  {
+   "id": "prefeito-1t-362",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR CAARAPÓ - MS)",
+   "bytes": 505
+  },
+  {
+   "id": "prefeito-1t-409",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR MIRANDA-MS)",
+   "bytes": 795
+  },
+  {
+   "id": "prefeito-1t-259",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR TACURU)",
+   "bytes": 373
+  },
+  {
+   "id": "prefeito-1t-420",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR DE JAPORÃ - MS)",
+   "bytes": 338
+  }
+ ]
+}

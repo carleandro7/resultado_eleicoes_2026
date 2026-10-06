@@ -1,0 +1,2 @@
+// Gerado por scripts/gerar_dados.py - não edite à mão.
+window.registrarDados("2020/MT/prefeito-1t-489", {"rotulo":"Prefeito · 1º turno (Eleição Suplementar Matupá - MT)","candidatos":[["25","BRUNO SANTOS MENA","MATUPÁ",0],["15","MARINILDE BERNARDI DALL ACQUA","MATUPÁ",0],["40","GERALDO GEZONI FILHO","MATUPÁ",0],["96","VOTO NULO","",2],["95","VOTO BRANCO","",2]],"votos":"Ss50Gi0C60yf0d08050xx00Lp0D50s0p050xwt0N00Dj0r0h050xyu0Mn0C00n0k050K90Df0z30m0e050Hh0Ku0xm0g0f040y50zh0xp07"});

@@ -1,0 +1,68 @@
+{
+ "uf": "GO",
+ "nome": "Goiás",
+ "titulo": "Eleições municipais 2016 · Goiás",
+ "gerado": "07/12/2023 17:21",
+ "cidades": 246,
+ "locais": 2466,
+ "base": {
+  "bytes": 276761
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 87823
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 2078459
+  },
+  {
+   "id": "prefeito-2t",
+   "rotulo": "Prefeito · 2º turno",
+   "bytes": 7061
+  },
+  {
+   "id": "prefeito-1t-356",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - PLANALTINA)",
+   "bytes": 1136
+  },
+  {
+   "id": "prefeito-1t-328",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - NIQUELÂNDIA (GO))",
+   "bytes": 909
+  },
+  {
+   "id": "prefeito-1t-277",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - PETROLINA (GO))",
+   "bytes": 418
+  },
+  {
+   "id": "prefeito-1t-357",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - SERRANÓPOLIS)",
+   "bytes": 337
+  },
+  {
+   "id": "prefeito-1t-355",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - DIVINÓPOLIS)",
+   "bytes": 437
+  },
+  {
+   "id": "prefeito-1t-353",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - TURVELÂNDIA)",
+   "bytes": 378
+  },
+  {
+   "id": "prefeito-1t-354",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR - DAVINÓPOLIS)",
+   "bytes": 381
+  },
+  {
+   "id": "prefeito-1t-407",
+   "rotulo": "Prefeito · 1º turno (ELEIÇÃO SUPLEMENTAR MIMOSO DE GOIÁS)",
+   "bytes": 405
+  }
+ ]
+}

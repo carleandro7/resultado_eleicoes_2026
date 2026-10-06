@@ -1,0 +1,23 @@
+{
+ "uf": "AL",
+ "nome": "Alagoas",
+ "titulo": "Eleições municipais 2024 · Alagoas",
+ "gerado": "28/10/2024 11:46",
+ "cidades": 102,
+ "locais": 1057,
+ "base": {
+  "bytes": 111552
+ },
+ "cargos": [
+  {
+   "id": "prefeito-1t",
+   "rotulo": "Prefeito · 1º turno",
+   "bytes": 34174
+  },
+  {
+   "id": "vereador-1t",
+   "rotulo": "Vereador · 1º turno",
+   "bytes": 561855
+  }
+ ]
+}
